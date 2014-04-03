@@ -40,15 +40,24 @@
 	function comprobar(NUM)
 	{
 			//comprobar num 1
-		   if(a.src=="./images/gato.png" && b.src=="./images/sero.png" && c.src=="./images/sero.png" && NUM=="1")
+		   if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
+              document.getElementById("b").getAttribute("src") == "./images/sero.png" && 
+              document.getElementById("c").getAttribute("src") == "./images/sero.png" && 
+              NUM=="1")
 		   {
 			   window.alert("CORRECTO!");
 		   }
-		   else if(a.src=="./images/gato.png" && b.src=="./images/gato.png" && c.src=="./images/sero.png" && NUM=="2")	   //comprobar num 2
+		   else if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
+                   document.getElementById("b").getAttribute("src") == "./images/gato.png" && 
+                   document.getElementById("c").getAttribute("src") == "./images/sero.png" && 
+                   NUM=="2")	   //comprobar num 2
 		   {
 			   window.alert("CORRECTO!");
 		   }
-			else if(a.src=="./images/gato.png" && b.src=="./images/gato.png" && c.src=="./images/gato.png" && NUM=="3")  //comprobar num 3
+		   else if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
+                   document.getElementById("b").getAttribute("src") == "./images/gato.png" && 
+                   document.getElementById("c").getAttribute("src") == "./images/gato.png" && 
+                    NUM=="3")  //comprobar num 3
 		   {
 			   window.alert("CORRECTO!");
 		   }
