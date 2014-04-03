@@ -3,83 +3,83 @@
  <head>
   <title> Reconocer cantidades </title>
 <style>
-		/*imagenes*/
-		.elem
-		{	 
-			position:absolute;
-			width:200px;
-			margin:auto;
-		}
-		#a{left:20%;}
-		#b {left: 50%;}
-		#c {left:35%;}
-		/*botones*/
-		.boton
-		{
-			font-size:50px;
-			margin:10px;
-			width:100px;
-			background-color:#ccccff;
-			color:#6600ff;
-			font-family:"calibri";
-			border:double;
-		}
-		/*contenedores*/
-		.opciones{background-color:#ccffff;}
-		div
-		{
-			position:relative;
-			margin:auto;
-			text-align:center;
-			width:60%;
-			padding:20px;
-		}
+        /*imagenes*/
+        .elem
+        {     
+            position:absolute;
+            width:200px;
+            margin:auto;
+        }
+        #a{left:20%;}
+        #b {left: 50%;}
+        #c {left:35%;}
+        /*botones*/
+        .boton
+        {
+            font-size:50px;
+            margin:10px;
+            width:100px;
+            background-color:#ccccff;
+            color:#6600ff;
+            font-family:"calibri";
+            border:double;
+        }
+        /*contenedores*/
+        .opciones{background-color:#ccffff;}
+        div
+        {
+            position:relative;
+            margin:auto;
+            text-align:center;
+            width:60%;
+            padding:20px;
+        }
 </style>
-<script>	  
-	
-	function comprobar(NUM)
-	{
-			//comprobar num 1
-		   if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
+<script>      
+    
+    function comprobar(NUM)
+    {
+            //comprobar num 1
+           if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
               document.getElementById("b").getAttribute("src") == "./images/sero.png" && 
               document.getElementById("c").getAttribute("src") == "./images/sero.png" && 
               NUM=="1")
-		   {
-			   window.alert("CORRECTO!");
-		   }
-		   else if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
+           {
+               window.alert("CORRECTO!");
+           }
+           else if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
                    document.getElementById("b").getAttribute("src") == "./images/gato.png" && 
                    document.getElementById("c").getAttribute("src") == "./images/sero.png" && 
-                   NUM=="2")	   //comprobar num 2
-		   {
-			   window.alert("CORRECTO!");
-		   }
-		   else if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
+                   NUM=="2")       //comprobar num 2
+           {
+               window.alert("CORRECTO!");
+           }
+           else if(document.getElementById("a").getAttribute("src") == "./images/gato.png" && 
                    document.getElementById("b").getAttribute("src") == "./images/gato.png" && 
                    document.getElementById("c").getAttribute("src") == "./images/gato.png" && 
                     NUM=="3")  //comprobar num 3
-		   {
-			   window.alert("CORRECTO!");
-		   }
-		   else
-		   {
-		   	   window.alert("ERROR!");
-		   }
-	}
+           {
+               window.alert("CORRECTO!");
+           }
+           else
+           {
+                  window.alert("ERROR!");
+           }
+    }
 
 </script>
  </head>
 
  <body>
-	<div class="opciones">
-		<input type="button"	id="ba" value="1" class="boton" onclick="comprobar(ba.value)">
-		<input type="button"	id="bb" value="2" class="boton" onclick="comprobar(bb.value)">
-		<input type="button"	id="bc" value="3" class="boton" onclick="comprobar(bc.value)">
-	</div>
-	<div class="elementos">
-		<img src="./images/gato.png" height="200" class="elem" id="a" alt="a"/>
-		<img src="./images/gato.png" height="200" class="elem" id="b"/>
-		<img src="./images/gato.png" height="200" class="elem" id="c"/>
-	 </div>
+    <div class="opciones">
+        <input type="button"    id="ba" value="1" class="boton" onclick="comprobar(ba.value)">
+        <input type="button"    id="bb" value="2" class="boton" onclick="comprobar(bb.value)">
+        <input type="button"    id="bc" value="3" class="boton" onclick="comprobar(bc.value)">
+    </div>
+    <div class="elementos">
+        <img src="./images/gato.png" height="200" class="elem" id="a" alt="a"/>
+        <img src="./images/gato.png" height="200" class="elem" id="b"/>
+        <img src="./images/gato.png" height="200" class="elem" id="c"/>
+     </div>
  </body>
 </html>
