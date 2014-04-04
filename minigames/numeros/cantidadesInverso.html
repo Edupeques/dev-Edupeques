@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Reconocer cantidades inersamente </title>
+<style>
+        /*imagenes*/
+        .elem
+        {     
+            height:75px;
+            margin:auto;
+			position:absolute;
+        }
+        #a, #d{left:20%;}
+		#d, #e{top:40%;}
+        #b, #e {left: 50%;}
+        #c,#f {left:35%;}
+		#f{top:70%;}
+		.opcion
+		{
+			margin:auto;
+			position:absolute;
+			left:25%;
+			top:15%;
+			height:250px;
+		}
+        /*contenedores*/
+        .opciones
+		{
+			background-color:#ccffff;
+			float:left;
+			margin-left:25%;
+		}
+		.elementos
+		{
+			background-color:#ffcccc;
+			float:left;
+			
+		}
+        div
+        {
+            position:relative;
+            margin:auto;
+            width:20%;
+			height:300px;
+            padding:20px;
+        }
+</style>
+<script>
+	var ran1,ran2,ran3, elemento;
+     imagenes=new Array();
+	 imagenes[0]="./images/gato.png";
+	 imagenes[1]="./images/canguro.png";
+	 imagenes[2]="./images/conejo.png";
+	 imagenes[3]="./images/leon.png";
+	 imagenes[4]="./images/perro.png";
+	 imagenes[5]="./images/pollito.png";	
+	 numeros=new Array();
+	 numeros[0]="./images/uno.png";
+	 numeros[1]="./images/dos.png";
+	 numeros[2]="./images/tres.png";
+	 
+	 //mostramos las imagenes seleccionadas aleatoriamente
+	 function vista()
+	 {
+		ran1 = Math.round(Math.random()*5);
+		ran2 =	Math.round(Math.random()*2);
+		//si alguien conoce algun metodo para simplificar estas lineas que lo modifique
+		//solo dire que tienen la misma class
+		a1.src=imagenes[ran1];
+		a2.src=imagenes[ran1];
+		a3.src=imagenes[ran1];
+		a4.src=imagenes[ran1];
+		a5.src=imagenes[ran1];
+		a6.src=imagenes[ran1];
+		num.src=numeros[ran2];
+	 }
+
+</script>
+ </head>
+
+ <body onload="vista()">
+    <div class="opciones" >
+           <img src="./images/sero.png" class="opcion" id="num" name="num"/>
+    </div>
+    <div class="elementos">
+        <img src="./images/sero.png" class="elem" id="a" name="a1"/>
+        <img src="./images/sero.png" class="elem" id="b" name="a2"/>
+        <img src="./images/sero.png" class="elem" id="c"  name="a3"/>
+		 <img src="./images/gato.png" class="elem" id="d" name="a4"/>
+        <img src="./images/gato.png" class="elem" id="e" name="a5"/>
+		  <img src="./images/gato.png" class="elem" id="f" name="a6"/>
+     </div>
+ </body>
+</html>
