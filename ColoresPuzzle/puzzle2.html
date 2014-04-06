@@ -1,0 +1,34 @@
+<html >
+<head>
+	<meta charset="utf-8" />
+	<title>Puzzle para aprender colores</title>
+	<script type="text/javascript"></script>	
+	<link rel="stylesheet" type="text/css" href="css/estilo3.css" />
+	<script type="text/javascript" src="js/puzzle.js"></script>
+</head>
+<body>
+
+
+	&nbsp;<img src="./images/ran.jpg" width=150px>
+	<section id="contenedorPuzzle">
+
+		<h2>Color Verde </h2>
+
+
+		<div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)">
+			<img id="pieza3" src="./images/ran1.png" alt="pieza3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="pieza2" src="./images/ran2.png" alt="pieza2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="pieza4" src="./images/ran3.png" alt="pieza4" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="pieza1" src="./images/ran4.png" alt="pieza1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+		</div>
+		<div id="puzzle">
+			<div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+		</div>	
+	</section>
+
+	
+</body>
+</html>
