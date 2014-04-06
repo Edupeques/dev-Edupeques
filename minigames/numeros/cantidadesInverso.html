@@ -11,10 +11,10 @@
 			position:absolute;
         }
         #a, #d{left:20%;}
-		#d, #e{top:40%;}
         #b, #e {left: 50%;}
         #c,#f {left:35%;}
-		#f{top:70%;}
+	    #d, #e{top:10%;} 
+		#f{top:10%;}
 		.opcion
 		{
 			margin:auto;
@@ -36,7 +36,7 @@
 			float:left;
 			
 		}
-        div
+        .elementos, .opciones
         {
             position:relative;
             margin:auto;
@@ -44,6 +44,15 @@
 			height:300px;
             padding:20px;
         }
+		#tres,#dos, #uno
+		{
+			position:relative;
+			margin:auto;
+			width:100%;
+			height:30%;
+			padding-top:10px;
+			float:left;
+		}
 </style>
 <script>
 	var ran1,ran2,ran3, elemento;
@@ -65,7 +74,19 @@
 		a1.src = a2.src = a3.src = a4.src = a5.src = a6.src = imagenes[Math.round(Math.random()*5)];
 		num.src=numeros[Math.round(Math.random()*2)];
 	 }
+	function comprobar(elemento)
+	{
+		if (document.getElementById("num").getAttribute("src") == "./images/tres.png" 
+		&& elemento=="tres" ){ window.alert("CORRECTO"); }
 
+		else if  (document.getElementById("num").getAttribute("src") == "./images/dos.png" 
+		&& elemento=="dos"){ window.alert("CORRECTO"); }
+
+		else if (document.getElementById("num").getAttribute("src") == "./images/uno.png" 
+		&& elemento=="uno"){ window.alert("CORRECTO"); }
+
+		else { window.alert("ERROR"); }
+	}
 </script>
  </head>
 
@@ -74,12 +95,18 @@
            <img src="./images/sero.png" class="opcion" id="num" name="num"/>
     </div>
     <div class="elementos">
-        <img src="./images/sero.png" class="elem" id="a" name="a1"/>
-        <img src="./images/sero.png" class="elem" id="b" name="a2"/>
-        <img src="./images/sero.png" class="elem" id="c" name="a3"/>
-		<img src="./images/gato.png" class="elem" id="d" name="a4"/>
-        <img src="./images/gato.png" class="elem" id="e" name="a5"/>
-		<img src="./images/gato.png" class="elem" id="f" name="a6"/>
+		<div id="tres" onclick="comprobar(this.id)">
+			<img src="./images/sero.png" class="elem" id="a" name="a1"/>
+			<img src="./images/sero.png" class="elem" id="b" name="a2"/>
+			<img src="./images/sero.png" class="elem" id="c" name="a3"/>
+		</div>
+		<div id="dos" onclick="comprobar(this.id)">
+			<img src="./images/gato.png" class="elem" id="d" name="a4"/>
+			<img src="./images/gato.png" class="elem" id="e" name="a5"/>
+		</div>
+		<div id="uno" onclick="comprobar(this.id)">
+			<img src="./images/gato.png" class="elem" id="f" name="a6"/>
+		</div>
      </div>
  </body>
 </html>
