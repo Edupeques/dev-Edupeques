@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>2</title>
+        <style type="text/css">
+            area
+            {
+                cursor:crosshair;
+                display:block;
+            }
+            
+            .arbol
+            {
+                width:484;
+                height:550;
+                border:none;
+                position:absolute;
+            }
+            
+            .colorSelector
+            {
+                position:absolute;
+                top:10px;
+                right:10px;
+                background-color:#B8B8B8;
+            }
+            
+            .circle
+            {
+                border-radius:50%;
+                width:100px;
+                height:100px;
+                margin:10px 10px 10px 10px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-size:20px;
+            }
+            
+            .ctype1 { background-color:#b70000; }
+            .ctype2 { background-color:#089a08; }
+            .ctype3 { background-color:#a06220; }
+            
+        </style>
+        <script type="text/javascript">
+            var curColor = 0;
+            function pintar(id, color)
+            {
+                if (isGameCompleted()) { alert("Juego terminado"); return; }
+                if (color == curColor)
+                    document.getElementById(id).style.display = "";
+                else
+                    alert("No, no!");
+                if (isGameCompleted())
+                    alert("Bien!");
+            }
+            
+            function isGameCompleted()
+            {
+                return (isShown('manzana1') && isShown('manzana2') && isShown('manzana3') &&
+                        isShown('manzana4') && isShown('manzana5') && isShown('tronco')   && 
+                        isShown('hojas'));
+            }
+            
+            function setColor(num) { curColor = num; }
+            
+            function isShown(id) { return document.getElementById(id).style.display == ''; }
+            
+        </script>
+    </head>
+    <body>
+        <DIV CLASS="colorSelector">
+            <DIV CLASS="circle ctype1" onClick="setColor(1);">ROJO</DIV>
+            <DIV CLASS="circle ctype2" onClick="setColor(2);">VERDE</DIV>
+            <DIV CLASS="circle ctype3" onClick="setColor(3);">MARRON</DIV>
+        </DIV>
+        <IMG CLASS="arbol" USEMAP="#arbolMap" SRC="./images/arbol.png">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="manzana1" SRC="./images/manzana-1.png" STYLE="display:none">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="manzana2" SRC="./images/manzana-2.png" STYLE="display:none">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="manzana3" SRC="./images/manzana-3.png" STYLE="display:none">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="manzana4" SRC="./images/manzana-4.png" STYLE="display:none">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="manzana5" SRC="./images/manzana-5.png" STYLE="display:none">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="tronco"   SRC="images/tronco.png"      STYLE="display:none">
+        <IMG CLASS="arbol" USEMAP="#arbolMap" ID="hojas"    SRC="images/hojas.png"       STYLE="display:none">
+        <MAP NAME="arbolMap">
+            <AREA SHAPE=POLY COORDS="52,197,46,181,51,177,61,183,65,196,76,194,92,195,104,212,104,227,99,244,79,249,53,249,43,240,33,217,37,201,47,197" OnClick="pintar('manzana1', 1);">
+            <AREA SHAPE=POLY COORDS="118,123,117,137,121,155,132,162,151,168,168,168,183,154,185,130,176,117,166,116,158,116,155,106,146,93,137,93,137,101,139,108,139,112,130,111,122,117,120,124" OnClick="pintar('manzana2', 1);">
+            <AREA SHAPE=POLY COORDS="238,86,225,91,220,103,218,123,226,138,244,143,264,145,277,135,288,113,285,99,273,94,261,94,272,86,276,77,269,75,262,80,259,88,255,93,250,87" OnClick="pintar('manzana3', 1);">
+            <AREA SHAPE=POLY COORDS="277,173,265,175,256,188,254,206,261,221,273,228,291,228,311,222,318,209,323,189,317,175,304,169,293,171,301,157,297,151,289,158,284,169,275,172" OnClick="pintar('manzana4', 1);">
+            <AREA SHAPE=POLY COORDS="394,210,382,212,373,222,369,235,370,251,375,261,388,268,411,271,430,267,442,248,444,227,438,217,426,212,436,204,433,193,422,195,414,204,409,213,398,209" OnClick="pintar('manzana5', 1);">
+            <AREA SHAPE=POLY COORDS="163,206,144,225,136,227,129,216,114,233,139,270,156,297,158,308,154,312,127,308,114,301,112,308,112,326,149,336,155,350,168,416,171,480,146,482,136,490,128,514,127,524,110,530,112,539,132,545,160,542,160,523,173,511,215,506,233,507,240,512,238,529,243,532,261,534,282,532,286,525,272,519,264,514,269,498,268,487,278,492,316,499,326,501,335,494,325,484,315,482,318,472,308,465,290,464,280,464,276,458,270,388,280,360,304,335,328,326,324,300,305,305,297,302,302,290,322,264,355,258,358,244,340,243,340,233,360,198,346,190,284,286,276,288,274,280,276,263,281,240,260,240,251,298,234,327,216,333,198,326,198,302,210,276,218,265,203,252,196,252,177,285,169,283,157,256,153,243,178,218,166,204" OnClick="pintar('tronco', 3);">
+            <AREA SHAPE=POLY COORDS="154,377,118,352,108,368,91,362,91,340,73,351,56,340,69,314,55,314,42,299,46,286,24,286,10,272,30,255,13,252,8,235,12,214,26,199,12,193,16,173,42,160,17,144,10,121,24,121,47,131,44,101,43,72,60,69,73,86,88,48,102,50,109,60,127,36,146,39,152,17,170,12,180,32,194,19,204,32,223,16,234,31,260,16,278,16,283,31,279,46,304,37,311,48,294,59,318,59,322,70,336,72,349,84,354,95,376,74,400,70,419,87,420,104,410,123,434,120,438,128,434,146,460,165,454,178,463,190,462,208,479,214,472,230,462,238,467,254,462,267,454,274,456,293,434,304,435,320,430,339,420,343,403,334,392,348,378,342,365,372,354,373,346,360,337,374,326,378,308,364,302,380,299,388,282,385,276,378,294,348,325,330,334,323,327,295,302,300,325,266,360,260,366,253,380,271,406,272,430,268,442,253,446,232,444,215,433,212,442,201,440,189,428,187,405,204,397,203,375,212,366,226,364,242,368,250,362,254,361,241,343,240,366,197,346,185,336,197,282,281,278,277,289,232,312,224,324,208,327,186,318,168,304,164,307,156,303,144,291,145,282,163,272,169,252,184,249,203,254,218,273,230,290,230,286,237,258,238,254,268,243,308,226,326,211,328,200,320,202,299,214,275,220,262,212,256,200,245,176,281,158,245,181,218,167,201,140,222,128,212,110,232,124,253,102,242,107,232,110,210,97,192,129,164,140,166,154,171,172,168,185,152,187,134,182,118,214,116,217,133,228,140,235,142,245,145,258,148,271,144,280,136,287,126,291,111,290,98,282,89,272,91,277,84,279,78,274,70,264,69,258,83,252,84,243,81,230,82,223,88,216,98,213,106,212,114,180,117,168,112,160,111,160,100,154,91,142,86,132,88,132,100,131,108,122,110,116,115,114,121,112,128,112,138,112,145,116,154,120,160,122,162,126,165,97,192,85,188,76,189,81,178,71,178,70,185,62,181,56,172,49,172,44,175,40,182,43,190,43,192,33,194,43,194,34,200,30,213,33,229,41,241,53,249,73,252,90,249,101,242,124,251,126,256,133,268,140,282,145,287,150,295,152,306,148,308,140,308,127,303,118,300,107,300,108,310,110,318,109,327,122,332,136,337,144,339,150,342,151,349,157,367,157,378" OnClick="pintar('hojas', 2);">
+        </MAP>
+    
+    </body>
+</html>
