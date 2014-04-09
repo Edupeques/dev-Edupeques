@@ -1,93 +1,92 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
  <head>
- <!--DESCONOZCO POR QUÉ NO ME VA EL PROGRAMA EN CHOROME, ME DICE QUE NO IDENTIFICA LA ID (no se si solamente pasa en mi chorome)-->
  <title> Contorno</title>
  </head>
  <style>
-	@font-face
-	{
-	font-family: pipomayu;
-	src: url(./images/pipomayu.TTF);
-	}
-	.principal
-	{
-		  margin-left:30%;
-		  margin-top:5%;
-		  background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
-		  background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
-		  background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
-		  background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
-		  border-radius:30px;
-		  width: 40%;
-		  height:400px;
-	}
-	.contenedor
-	{
-		width:	111px;
-		padding-left:35%;
-		padding-top:8%;
-	}
- 	.invisible
-	{
-		left: 44%;
-		position: absolute;
-		visibility: hidden;
-		cursor: url(./images/paloma.ani);
-	}
-	body
-	{	   
-		font-family:pipomayu;
-		background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
-		background-repeat:repeat-y;
-		background-position:5%,95%;
-	}
+    @font-face
+    {
+    font-family: pipomayu;
+    src: url(./images/pipomayu.TTF);
+    }
+    .principal
+    {
+          margin-left:30%;
+          margin-top:5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width: 40%;
+          height:400px;
+    }
+    .contenedor
+    {
+        width:111px;
+        padding-left:35%;
+        padding-top:8%;
+    }
+     .invisible
+    {
+        left: 44%;
+        position: absolute;
+        visibility: hidden;
+        cursor: url(./images/paloma.ani);
+    }
+    body
+    {       
+        font-family:pipomayu;
+        background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
+        background-repeat:repeat-y;
+        background-position:5%,95%;
+    }
  </style>
  <script>
  var acierto=0, cont=1;
  //rellenamos poco a poco la matriz
  function rellenar(part)
-{		  
-		if(cont==part.substr(3))
-			{
-					document.getElementById(part).style.visibility='visible';
-					cont=cont+1;
-					acierto=acierto+1;
-			}
-		if(acierto==9)
-		{
-			window.alert("muy bien");
-			acierto=0;
-			return;
-		}
+{          
+        if(cont==part.substr(3))
+        {
+            document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+        if(acierto==9)
+        {
+            window.alert("muy bien");
+            acierto=0;
+            return;
+        }
 }
  </script>
  <body>
   <div class="principal">
-	<p style="text-align:center;font-size:30px;padding-top:10px">rellena el recorrido</p>
+    <p style="text-align:center;font-size:30px;padding-top:10px">rellena el recorrido</p>
      <div class="contenedor">
      <!-- imagenes del recorrido -->
-     <IMG SRC="./images/uno.png" USEMAP="#uno.png" WIDTH=111 HEIGHT=227 BORDER=0 style="position:asolute;">
-            <IMG SRC="./images/uno01.png" ID="ele1" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno02.png" ID="ele2" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno03.png" ID="ele3" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno04.png" ID="ele4" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno05.png" ID="ele5" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno06.png" ID="ele6" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno07.png" ID="ele7" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno08.png" ID="ele8" USEMAP="#uno.png" class="invisible">
-            <IMG SRC="./images/uno09.png" ID="ele9" USEMAP="#uno.png" class="invisible">
-        <MAP NAME="uno.png" style="position:absolute;cursor:url(./images/paloma.ani);">
-                <AREA SHAPE=CIRCLE COORDS="18,76,17" OnMouseOver="rellenar(ele1.id)" >
-                <AREA SHAPE=CIRCLE COORDS="40,59,11" OnMouseOver="rellenar(ele2.id)" >
-                <AREA SHAPE=CIRCLE COORDS="59,43,15" OnMouseOver="rellenar(ele3.id)">
-                <AREA SHAPE=CIRCLE COORDS="89,31,26" OnMouseOver="rellenar(ele4.id)">
-                <AREA SHAPE=CIRCLE COORDS="90,112,24" OnMouseOver="rellenar(ele5.id)" >
-                <AREA SHAPE=CIRCLE COORDS="89,75,23" OnMouseOver="rellenar(ele6.id)">
-                <AREA SHAPE=CIRCLE COORDS="90,149,23" OnMouseOver="rellenar(ele7.id)">
-                <AREA SHAPE=CIRCLE COORDS="89,184,21" OnMouseOver="rellenar(ele8.id)">
-                <AREA SHAPE=CIRCLE COORDS="90,207,18" OnMouseOver="rellenar(ele9.id)" >
-       </MAP>
+         <IMG SRC="./images/uno.png" USEMAP="#uno.png" WIDTH=111 HEIGHT=227 BORDER=0 style="position:absolute;">
+         <IMG SRC="./images/uno01.png" ID="ele1" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno02.png" ID="ele2" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno03.png" ID="ele3" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno04.png" ID="ele4" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno05.png" ID="ele5" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno06.png" ID="ele6" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno07.png" ID="ele7" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno08.png" ID="ele8" USEMAP="#uno.png" class="invisible">
+         <IMG SRC="./images/uno09.png" ID="ele9" USEMAP="#uno.png" class="invisible">
+             <MAP NAME="uno.png" style="position:absolute;cursor:url(./images/paloma.ani);">
+                 <AREA SHAPE=CIRCLE COORDS="18,76,17" OnMouseOver="rellenar('ele1')" >
+                 <AREA SHAPE=CIRCLE COORDS="40,59,11" OnMouseOver="rellenar('ele2')" >
+                 <AREA SHAPE=CIRCLE COORDS="59,43,15" OnMouseOver="rellenar('ele3')">
+                 <AREA SHAPE=CIRCLE COORDS="89,31,26" OnMouseOver="rellenar('ele4')">
+                 <AREA SHAPE=CIRCLE COORDS="90,112,24" OnMouseOver="rellenar('ele5')" >
+                 <AREA SHAPE=CIRCLE COORDS="89,75,23" OnMouseOver="rellenar('ele6')">
+                 <AREA SHAPE=CIRCLE COORDS="90,149,23" OnMouseOver="rellenar('ele7')">
+                 <AREA SHAPE=CIRCLE COORDS="89,184,21" OnMouseOver="rellenar('ele8')">
+                 <AREA SHAPE=CIRCLE COORDS="90,207,18" OnMouseOver="rellenar('ele9')" >
+            </MAP>
      </div>
 </div>
  </body>
