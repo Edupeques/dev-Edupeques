@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> laCara.html </title>
+
+  <meta name="David bernia" content="">
+  <meta name="Aprender las partes de la cara" content="">
+
+<script type="text/javascript">
+function pintar(obj)
+{
+   document.getElementById(obj).style.display = '';
+}
+</script>
+
+<style type="text/css">
+
+.titulo
+{
+	padding:1px;
+	float:left;
+}
+ .imagen
+{
+ position:absolute;
+ top:50px;
+ left:500px;
+ width:416;
+ height:512;
+ padding:40;
+
+ 
+                
+} 
+/*.cabezera
+{
+	background-color:#990000;
+	height:85px;
+	text-align:center;
+}*/
+</style>
+
+
+    </HEAD>
+<body bgcolor="#cccc00">
+
+ <div class="cabezera">
+		<div class="titulo"><img src="imagenes/La Cara.gif" img></div>
+
+ </div>
+
+<IMG SRC="./imagenes/caraCompleta.png" class="imagen" USEMAP="#caraCompleta.png" >
+
+<IMG SRC="./imagenes/pelo.gif" class="imagen" USEMAP="#caraCompleta.png" id="pelo" style="display:none" >
+<IMG SRC="./imagenes/ojos.gif" class="imagen" USEMAP="#caraCompleta.png" id="ojos" style="display:none" >
+<IMG SRC="./imagenes/dientes.gif" class="imagen" USEMAP="#caraCompleta.png" id="dientes" style="display:none" >
+<IMG SRC="./imagenes/boca.gif" class="imagen" USEMAP="#caraCompleta.png" id="boca" style="display:none" >
+<IMG SRC="./imagenes/orejas.gif" class="imagen" USEMAP="#caraCompleta.png" id="orejas" style="display:none" >
+<IMG SRC="./imagenes/nariz.gif" class="imagen" USEMAP="#caraCompleta.png" id="nariz" style="display:none" >
+<IMG SRC="./imagenes/lengua.gif" class="imagen" USEMAP="#caraCompleta.png" id="lengua" style="display:none" >
+
+<MAP NAME="caraCompleta.png">
+<!-- pelo-->
+<AREA SHAPE=POLY COORDS="60,306,55,302,52,292,45,286,40,279,20,262,13,251,5,233,2,219,0,214,1,194,2,180,12,162,22,150,25,143,22,129,18,122,21,110,21,106,29,91,44,68,63,52,75,46,90,46,99,48,102,50,105,40,122,33,130,28,164,14,197,3,213,0,238,0,256,2,273,8,296,22,308,36,311,39,331,32,354,33,378,42,374,40,385,50,397,61,410,80,422,102,427,128,426,140,424,152,416,171,410,188,408,216,406,234,398,252,388,269,376,286,366,296,364,293,363,252,361,210,360,182,348,182,332,174,318,158,308,146,312,160,302,156,286,143,270,131,272,134,274,142,279,146,276,149,234,146,183,131,137,107,132,120,124,132,115,142,96,151,62,162,54,171,46,185,53,256,61,304" OnClick="pintar('pelo')">
+
+ <!-- ojos -->
+<AREA SHAPE=POLY COORDS="115,214,102,218,92,223,91,230,97,237,116,245,126,245,139,244,147,243,160,234,166,227,156,218,146,213,130,211,117,212,108,215,98,219,92,223" OnClick="pintar('ojos')">
+<AREA SHAPE=POLY COORDS="257,216,251,220,244,226,246,231,252,237,262,243,271,245,285,246,298,243,310,237,317,229,316,223,302,216,291,212,269,212,256,215,257,216" OnClick="pintar('ojos')">
+<!-- dientes -->
+<AREA SHAPE=POLY COORDS="121,348,119,357,122,365,132,372,150,379,168,381,193,384,210,382,238,378,260,370,279,361,290,353,302,341,304,331,301,332,296,336,284,343,264,352,245,358,230,361,217,364,198,365,174,363,151,358,121,348,121,349" OnClick="pintar('dientes')">
+<!-- boca -->
+<AREA SHAPE=POLY COORDS="118,347,115,346,110,354,122,379,132,399,147,418,150,421,156,418,171,410,187,407,202,411,206,415,206,419,219,413,235,410,244,413,259,422,266,418,285,398,294,382,304,349,307,331,299,345,288,357,266,369,236,379,202,386,173,384,138,377,121,366,117,350,115,346" OnClick="pintar('boca')">
+<!-- orejas -->
+<AREA SHAPE=POLY COORDS="37,281,27,289,25,306,31,316,38,332,39,347,46,367,54,376,67,376,71,376,65,346,60,308,54,300,43,286,36,281,27,288"OnClick="pintar('orejas')">
+<AREA SHAPE=POLY COORDS="385,273,378,285,370,292,364,295,364,325,363,358,362,371,368,371,385,357,389,345,387,326,390,311,388,292,385,273"OnClick="pintar('orejas')">
+<!-- nariz -->
+<AREA SHAPE=POLY COORDS="191,232,191,255,188,301,179,326,187,335,213,331,231,322,243,320,244,310,217,232,191,231"OnClick="pintar('nariz')">
+<!-- lengua -->
+<AREA SHAPE=POLY COORDS="153,421,158,426,173,435,186,440,202,444,225,441,253,429,260,424,241,411,226,411,203,421,201,421,208,414,199,410,179,409,161,414,153,420" OnClick="pintar('lengua')">
+</MAP>
+
+ </body>
+</HTML>
+
