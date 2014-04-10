@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+    <HEAD>
+        <TITLE>Los transportes</TITLE>
+		 <meta name="David Bernia">
+		 <meta name="Aprende los distintos transportes">
+
+<script type="text/javascript">
+function pintar(obj)
+{
+   document.getElementById(obj).style.display = '';
+}
+</script>
+
+<style type="text/css">
+
+.titulo
+{
+	padding:1px;
+	float:left;
+}
+ .imagen
+{
+ position:absolute;
+ top:50px;
+ left:350px;
+ width:416;
+ height:512;
+ padding:40;
+
+ 
+                
+} 
+/*.cabezera
+{
+	background-color:#990000;
+	height:85px;
+	text-align:center;;
+}*/
+</style>
+
+
+    </HEAD>
+<body bgcolor="#ff9900">
+
+ <div class="cabezera">
+		 <div class="titulo"><img src="imagenes/losTransportes.gif" img></div> 
+
+ </div>
+
+<IMG SRC="./imagenes/transportesCompleto.png" class="imagen" USEMAP="#transportesCompleto.png" >
+
+<IMG SRC="./imagenes/barco2.gif" class="imagen" USEMAP="#transportesCompleto.png" id="barco2" style="display:none" >
+<IMG SRC="./imagenes/coche.gif" class="imagen" USEMAP="#transportesCompleto.png" id="coche" style="display:none">
+<IMG SRC="./imagenes/autobus.gif" class="imagen" USEMAP="#transportesCompleto.png" id="autobus" style="display:none">
+<IMG SRC="./imagenes/helicoptero.gif" class="imagen" USEMAP="#transportesCompleto.png" id="helicoptero" style="display:none">
+<IMG SRC="./imagenes/avion.gif" class="imagen" USEMAP="#transportesCompleto.png" id="avion" style="display:none">
+<IMG SRC="./imagenes/tren.gif" class="imagen" USEMAP="#transportesCompleto.png" id="tren" style="display:none">
+
+
+<MAP NAME="transportesCompleto.png">
+<!-- barco2 -->
+<AREA SHAPE=RECT COORDS="28,12,311,237" OnClick="pintar('barco2')">
+<!-- coche -->
+<AREA SHAPE=RECT COORDS="312,9,608,251" Onclick="pintar('coche')">
+<!-- autobus -->
+<AREA SHAPE=RECT COORDS="13,242,302,449" Onclick="pintar('autobus')">
+<!-- helicoptero-->   
+<AREA SHAPE=RECT COORDS="300,250,573,458" Onclick="pintar('helicoptero')">
+<!-- avion -->
+<AREA SHAPE=RECT COORDS="605,11,941,228" Onclick="pintar('avion')">
+<!-- tren -->
+
+<AREA SHAPE=RECT COORDS="565,247,958,457" Onclick="pintar('tren')">
+
+
+</MAP>
+
+ </body>
+</HTML>
