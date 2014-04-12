@@ -11,26 +11,28 @@
     }
     .principal
     {
-          margin-left:30%;
+          margin-left:17.5%;
           background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
           background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
           background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
           background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
           border-radius:30px;
-          width: 40%;
-          height:400px;
+          width:65%;
+          height:450px;
     }
     .contenedor
     {
-        width:111px;
-        padding-left:35%;
-        padding-top:15%;
+        height:432px;
+        margin-left:32%;
+		margin-bottom:50%;
+		padding-top:1%;
     }
      .invisible
     {
-        left: 44.1%;
+        left: 38.5%;
         position: absolute;
         visibility: hidden;
+		cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;
     }
     body
     {       
@@ -65,7 +67,7 @@
   <div class="principal"> 
      <div class="contenedor">
      <!-- imagenes del recorrido -->
-         <IMG SRC="./images/uno.png" USEMAP="#uno.png" WIDTH=111 BORDER=0 style="position:absolute;">
+         <IMG SRC="./images/uno.png" USEMAP="#uno.png" height=432 BORDER=0 style="position:absolute;cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;">
          <IMG SRC="./images/uno01.png" ID="ele1" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno02.png" ID="ele2" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno03.png" ID="ele3" USEMAP="#uno.png" class="invisible">
@@ -75,17 +77,17 @@
          <IMG SRC="./images/uno07.png" ID="ele7" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno08.png" ID="ele8" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno09.png" ID="ele9" USEMAP="#uno.png" class="invisible">
-             <MAP NAME="uno.png" style="position:absolute;cursor:url(./images/paloma.ani);">
-                 <AREA SHAPE=POLY COORDS="17,53,37,82,23,92,9,93,3,88,1,81,0,69,6,64,15,55" OnMouseOver="rellenar('ele1')" >         
-                 <AREA SHAPE=POLY COORDS="40,82,61,65,36,38,18,54" OnMouseOver="rellenar('ele2')" >
-                 <AREA SHAPE=POLY COORDS="69,64,39,38,72,10" OnMouseOver="rellenar('ele3')">
-                 <AREA SHAPE=POLY COORDS="71,59,69,4,81,2,95,1,105,10,107,59" OnMouseOver="rellenar('ele4')">                      
-                 <AREA SHAPE=POLY COORDS="72,63,110,59,106,100,70,98,66,100,65,100" OnMouseOver="rellenar('ele5')" >                 
-				 <AREA SHAPE=POLY COORDS="67,100,108,101,109,131,69,131" OnMouseOver="rellenar('ele6')">
-                 <AREA SHAPE=POLY COORDS="69,136,107,133,110,165,68,166" OnMouseOver="rellenar('ele7')">
-                 <AREA SHAPE=POLY COORDS="69,171,109,168,110,190,66,191" OnMouseOver="rellenar('ele8')">
-                 <AREA SHAPE=POLY COORDS="66,191,106,192,107,214,92,222,70,221,67,207" OnMouseOver="rellenar('ele9')" >
-            </MAP>
+             <MAP NAME="uno.png" style="position:absolute;cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;;">
+<AREA SHAPE=POLY COORDS="40,97,81,151,49,171,27,178,12,170,1,152,4,130,29,108,38,99" OnMouseOver="rellenar('ele1')" >         
+<AREA SHAPE=POLY COORDS="81,150,127,112,76,68,42,98" OnMouseOver="rellenar('ele2')" >
+<AREA SHAPE=POLY COORDS="127,113,76,69,129,31" OnMouseOver="rellenar('ele3')">
+<AREA SHAPE=POLY COORDS="128,112,129,24,165,3,190,8,204,27,208,112" OnMouseOver="rellenar('ele4')">                      
+<AREA SHAPE=POLY COORDS="131,113,207,111,206,183,135,181,129,186,130,149" OnMouseOver="rellenar('ele5')" >                 
+<AREA SHAPE=POLY COORDS="129,183,206,184,206,243,128,242" OnMouseOver="rellenar('ele6')">
+<AREA SHAPE=POLY COORDS="130,244,205,243,210,313,130,312" OnMouseOver="rellenar('ele7')">
+<AREA SHAPE=POLY COORDS="129,315,206,314,207,359,128,362" OnMouseOver="rellenar('ele8')">
+<AREA SHAPE=POLY COORDS="129,361,207,360,203,397,182,422,144,416,131,393" OnMouseOver="rellenar('ele9')" >            
+</MAP>
      </div>
 </div>
  </body>
