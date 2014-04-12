@@ -12,7 +12,6 @@
     .principal
     {
           margin-left:30%;
-          margin-top:5%;
           background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
           background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
           background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
@@ -25,14 +24,13 @@
     {
         width:111px;
         padding-left:35%;
-        padding-top:8%;
+        padding-top:15%;
     }
      .invisible
     {
-        left: 44%;
+        left: 44.1%;
         position: absolute;
         visibility: hidden;
-        cursor: url(./images/paloma.ani);
     }
     body
     {       
@@ -40,6 +38,7 @@
         background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
         background-repeat:repeat-y;
         background-position:5%,95%;
+		cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;
     }
  </style>
  <script>
@@ -62,11 +61,11 @@
 }
  </script>
  <body>
-  <div class="principal">
-    <p style="text-align:center;font-size:30px;padding-top:10px">rellena el recorrido</p>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el recorrido</p>
+  <div class="principal"> 
      <div class="contenedor">
      <!-- imagenes del recorrido -->
-         <IMG SRC="./images/uno.png" USEMAP="#uno.png" WIDTH=111 HEIGHT=227 BORDER=0 style="position:absolute;">
+         <IMG SRC="./images/uno.png" USEMAP="#uno.png" WIDTH=111 BORDER=0 style="position:absolute;">
          <IMG SRC="./images/uno01.png" ID="ele1" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno02.png" ID="ele2" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno03.png" ID="ele3" USEMAP="#uno.png" class="invisible">
@@ -77,15 +76,15 @@
          <IMG SRC="./images/uno08.png" ID="ele8" USEMAP="#uno.png" class="invisible">
          <IMG SRC="./images/uno09.png" ID="ele9" USEMAP="#uno.png" class="invisible">
              <MAP NAME="uno.png" style="position:absolute;cursor:url(./images/paloma.ani);">
-                 <AREA SHAPE=CIRCLE COORDS="18,76,17" OnMouseOver="rellenar('ele1')" >
-                 <AREA SHAPE=CIRCLE COORDS="40,59,11" OnMouseOver="rellenar('ele2')" >
-                 <AREA SHAPE=CIRCLE COORDS="59,43,15" OnMouseOver="rellenar('ele3')">
-                 <AREA SHAPE=CIRCLE COORDS="89,31,26" OnMouseOver="rellenar('ele4')">
-                 <AREA SHAPE=CIRCLE COORDS="90,112,24" OnMouseOver="rellenar('ele5')" >
-                 <AREA SHAPE=CIRCLE COORDS="89,75,23" OnMouseOver="rellenar('ele6')">
-                 <AREA SHAPE=CIRCLE COORDS="90,149,23" OnMouseOver="rellenar('ele7')">
-                 <AREA SHAPE=CIRCLE COORDS="89,184,21" OnMouseOver="rellenar('ele8')">
-                 <AREA SHAPE=CIRCLE COORDS="90,207,18" OnMouseOver="rellenar('ele9')" >
+                 <AREA SHAPE=POLY COORDS="17,53,37,82,23,92,9,93,3,88,1,81,0,69,6,64,15,55" OnMouseOver="rellenar('ele1')" >         
+                 <AREA SHAPE=POLY COORDS="40,82,61,65,36,38,18,54" OnMouseOver="rellenar('ele2')" >
+                 <AREA SHAPE=POLY COORDS="69,64,39,38,72,10" OnMouseOver="rellenar('ele3')">
+                 <AREA SHAPE=POLY COORDS="71,59,69,4,81,2,95,1,105,10,107,59" OnMouseOver="rellenar('ele4')">                      
+                 <AREA SHAPE=POLY COORDS="72,63,110,59,106,100,70,98,66,100,65,100" OnMouseOver="rellenar('ele5')" >                 
+				 <AREA SHAPE=POLY COORDS="67,100,108,101,109,131,69,131" OnMouseOver="rellenar('ele6')">
+                 <AREA SHAPE=POLY COORDS="69,136,107,133,110,165,68,166" OnMouseOver="rellenar('ele7')">
+                 <AREA SHAPE=POLY COORDS="69,171,109,168,110,190,66,191" OnMouseOver="rellenar('ele8')">
+                 <AREA SHAPE=POLY COORDS="66,191,106,192,107,214,92,222,70,221,67,207" OnMouseOver="rellenar('ele9')" >
             </MAP>
      </div>
 </div>

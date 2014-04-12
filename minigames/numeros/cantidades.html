@@ -25,7 +25,32 @@
             border:double;
         }
         /*contenedores*/
-        .opciones{background-color:#ccffff;}
+        .opciones{
+			background: #84bfff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #84bfff 1%, #96b9ff 50%, #c7d8e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#84bfff), color-stop(50%,#96b9ff), color-stop(100%,#c7d8e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bfff', endColorstr='#c7d8e5',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			}
+		.elementos{
+			background: #fcecfc; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			height:300px;
+			padding-top:6%;
+			}
         div
         {
             position:relative;
@@ -34,15 +59,21 @@
             width:60%;
             padding:20px;
         }
+		body
+		{       
+			background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
+			background-repeat:repeat-y;
+			background-position:5%,95%;
+		}
 </style>
 <script>
 	var ran1,ran2,ran3;
      imagenes=new Array();
-	 imagenes[0]="./images/gato.png";
-	 imagenes[1]="./images/canguro.png";
-	 imagenes[2]="./images/conejo.png";
-	 imagenes[3]="./images/leon.png";
-	 imagenes[4]="./images/perro.png";
+	 imagenes[0]="./images/gatocolor.png";
+	 imagenes[1]="./images/cangurocolor.png";
+	 imagenes[2]="./images/conejocolor.png";
+	 imagenes[3]="./images/leoncolor.png";
+	 imagenes[4]="./images/perrocolor.png";
 	 imagenes[5]="./images/pollito.png";
 	 //mostramos las imagenes seleccionadas aleatoriamente
 	 function vista()

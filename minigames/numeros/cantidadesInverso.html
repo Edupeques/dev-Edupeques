@@ -6,43 +6,59 @@
         /*imagenes*/
         .elem
         {     
-            height:75px;
+            height:100px;
             margin:auto;
 			position:absolute;
         }
-        #a, #d{left:20%;}
-        #b, #e {left: 50%;}
-        #c,#f {left:35%;}
+        #a, #d{left:22%;}
+        #b, #e {left: 52%;}
+        #c,#f {left:37%;}
 	    #d, #e{top:10%;} 
 		#f{top:10%;}
 		.opcion
 		{
 			margin:auto;
 			position:absolute;
-			left:25%;
-			top:15%;
+			left:26%;
+			top:20%;
 			height:250px;
 		}
         /*contenedores*/
         .opciones
 		{
 			background-color:#ccffff;
+			margin-left:20%;
 			float:left;
-			margin-left:25%;
+			background: #84bfff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #84bfff 1%, #96b9ff 50%, #c7d8e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#84bfff), color-stop(50%,#96b9ff), color-stop(100%,#c7d8e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bfff', endColorstr='#c7d8e5',GradientType=0 ); /* IE6-9 */
 		}
 		.elementos
 		{
 			background-color:#ffcccc;
-			float:left;
-			
+			margin-left:50%;
+			margin-top:5%;
+			background: #fcecfc; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
 		}
         .elementos, .opciones
         {
             position:relative;
-            margin:auto;
-            width:20%;
-			height:300px;
+            width:25%;
+			height:400px;
             padding:20px;
+			border-radius:30px;
         }
 		#tres,#dos, #uno
 		{
@@ -50,18 +66,23 @@
 			margin:auto;
 			width:100%;
 			height:30%;
-			padding-top:10px;
-			float:left;
+			padding-top:15px;
+		}
+		 body
+		{       
+			background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
+			background-repeat:repeat-y;
+			background-position:5%,95%;
 		}
 </style>
 <script>
 	var ran1,ran2,ran3, elemento;
      imagenes=new Array();
-	 imagenes[0]="./images/gato.png";
-	 imagenes[1]="./images/canguro.png";
-	 imagenes[2]="./images/conejo.png";
-	 imagenes[3]="./images/leon.png";
-	 imagenes[4]="./images/perro.png";
+	 imagenes[0]="./images/gatocolor.png";
+	 imagenes[1]="./images/cangurocolor.png";
+	 imagenes[2]="./images/conejocolor.png";
+	 imagenes[3]="./images/leoncolor.png";
+	 imagenes[4]="./images/perrocolor.png";
 	 imagenes[5]="./images/pollito.png";	
 	 numeros=new Array();
 	 numeros[0]="./images/uno.png";
