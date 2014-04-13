@@ -2,13 +2,8 @@
 <html>
  <head>
  <title> Contorno</title>
- </head>
- <style>
-    @font-face
-    {
-    font-family: pipomayu;
-    src: url(./images/pipomayu.TTF);
-    }
+ <script type="text/javascript" src="./scripts/script.js"></script>
+ <style type="text/css">
     .principal
     {
           margin-left:17.5%;
@@ -27,58 +22,26 @@
 		margin-bottom:50%;
 		padding-top:1%;
     }
-     .invisible
-    {
-        left: 38.5%;
-        position: absolute;
-        visibility: hidden;	
-		cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;
-    }
-    body
-    {       
-        font-family:pipomayu;
-        background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
-        background-repeat:repeat-y;
-        background-position:5%,95%;
-		cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;
-    }
  </style>
- <script>
- var acierto=0, cont=1;
- //rellenamos poco a poco la matriz
- function rellenar(part)
-{          
-        if(cont==part.substr(3))
-        {
-            document.getElementById(part).style.visibility = "visible";
-            cont=cont+1;
-            acierto=acierto+1;
-        }
-        if(acierto==11)
-        {
-            window.alert("muy bien");
-            acierto=0;
-            return;
-        }
-}
- </script>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+  </head>
  <body>
  <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el recorrido</p>
   <div class="principal"> 
      <div class="contenedor">
      <!-- imagenes del recorrido -->
-	 <IMG SRC="./images/dos.png" USEMAP="#dos.png" WIDTH=295 HEIGHT=432 BORDER=0 style="position:absolute;cursor: url(./images/paloma.gif),url(./images/paloma.ani),auto;">
-         <IMG SRC="./images/dos01.png" ID="ele1" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos02.png" ID="ele2" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos03.png" ID="ele3" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos04.png" ID="ele4" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos05.png" ID="ele5" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos06.png" ID="ele6" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos07.png" ID="ele7" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos08.png" ID="ele8" USEMAP="#dos.png" class="invisible">
-         <IMG SRC="./images/dos09.png" ID="ele9" USEMAP="#dos.png" class="invisible">
-		 <IMG SRC="./images/dos10.png" ID="ele10" USEMAP="#dos.png" class="invisible">
-		 <IMG SRC="./images/dos11.png" ID="ele11" USEMAP="#dos.png" class="invisible">
+	 <IMG SRC="./images/dos.png" USEMAP="#dos.png" WIDTH=295 HEIGHT=432 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/dos01.png" ID="ele1" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos02.png" ID="ele2" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos03.png" ID="ele3" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos04.png" ID="ele4" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos05.png" ID="ele5" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos06.png" ID="ele6" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos07.png" ID="ele7" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos08.png" ID="ele8" USEMAP="#dos.png" class="invisible">
+         <IMG SRC="./images/contornos/dos09.png" ID="ele9" USEMAP="#dos.png" class="invisible">
+		 <IMG SRC="./images/contornos/dos10.png" ID="ele10" USEMAP="#dos.png" class="invisible">
+		 <IMG SRC="./images/contornos/dos11.png" ID="ele11" USEMAP="#dos.png" class="invisible">
 		<MAP NAME="dos.png">
 			<AREA SHAPE=POLY COORDS="74,24,119,100,98,119,87,140,61,158,30,157,12,141,5,111,15,78,38,47" OnMouseOver="rellenar('ele1')">
 			<AREA SHAPE=POLY COORDS="197,14,158,97,120,99,73,21,104,9,151,4" OnMouseOver="rellenar('ele2')">

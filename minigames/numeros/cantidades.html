@@ -2,28 +2,19 @@
 <html>
  <head>
   <title> Reconocer cantidades </title>
+  <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
 <style>
         /*imagenes*/
         .elem
         {     
             position:absolute;
-            width:200px;
+            height:200px;
             margin:auto;
         }
         #a{left:20%;}
         #b {left: 50%;}
         #c {left:35%;}
-        /*botones*/
-        .boton
-        {
-            font-size:50px;
-            margin:10px;
-            width:100px;
-            background-color:#ccccff;
-            color:#6600ff;
-            font-family:"calibri";
-            border:double;
-        }
+        
         /*contenedores*/
         .opciones{
 			background: #84bfff; /* Old browsers */
@@ -59,77 +50,14 @@
             width:60%;
             padding:20px;
         }
-		body
-		{       
-			background-image:url(./images/numbers.jpg),url(./images/numbers.jpg);
-			background-repeat:repeat-y;
-			background-position:5%,95%;
-		}
 </style>
-<script>
-	var ran1,ran2,ran3;
-     imagenes=new Array();
-	 imagenes[0]="./images/gatocolor.png";
-	 imagenes[1]="./images/cangurocolor.png";
-	 imagenes[2]="./images/conejocolor.png";
-	 imagenes[3]="./images/leoncolor.png";
-	 imagenes[4]="./images/perrocolor.png";
-	 imagenes[5]="./images/pollito.png";
-	 //mostramos las imagenes seleccionadas aleatoriamente
-	 function vista()
-	 {
-		 ran1 = Math.round(Math.random()*5);
-		 //decidimos si vamos a mostrar o no
-		 mostrar=new Array();
-		 mostrar[0]=imagenes[ran1];
-		 mostrar[1]="./images/sero.png";
-		 //generar 2º y 3º random
-		 ran2 = Math.round(Math.random()*1);
-		 ran3 = Math.round(Math.random()*1);
-		 //asignamos a las imagenes sus valores aleatorios
-		 aimg.src=imagenes[ran1];
-		 bimg.src=mostrar[ran2];
-		 if(ran2==1)
-		 {
-			ran3=1;
-		 }
-		 cimg.src=mostrar[ran3];
-	 }
-    function comprobar(NUM)
-    {
-            //comprobar num 1
-           if(document.getElementById("b").getAttribute("src") == "./images/sero.png" && 
-              document.getElementById("c").getAttribute("src") == "./images/sero.png" && 
-              NUM=="1")
-           {
-               window.alert("CORRECTO!");
-           }
-           else if( document.getElementById("b").getAttribute("src") != "./images/sero.png" && 
-                   document.getElementById("c").getAttribute("src") == "./images/sero.png" && 
-                   NUM=="2")       //comprobar num 2
-           {
-               window.alert("CORRECTO!");
-           }
-           else if(document.getElementById("b").getAttribute("src") != "./images/sero.png" && 
-                   document.getElementById("c").getAttribute("src") != "./images/sero.png" && 
-                    NUM=="3")  //comprobar num 3
-           {
-               window.alert("CORRECTO!");
-           }
-           else
-           {
-                  window.alert("ERROR!");
-           }
-    }
-
-</script>
+<script type="text/javascript" src="./scripts/script.js"></script>
  </head>
-
- <body onload="vista()">
+ <body onload="vista2()">
     <div class="opciones" >
-        <input type="button" value="1" class="boton" onclick="comprobar(this.value)">
-        <input type="button" value="2" class="boton" onclick="comprobar(this.value)">
-        <input type="button" value="3" class="boton" onclick="comprobar(this.value)">
+        <input type="button" value="1" class="boton" onclick="comprobar2(this.value)">
+        <input type="button" value="2" class="boton" onclick="comprobar2(this.value)">
+        <input type="button" value="3" class="boton" onclick="comprobar2(this.value)">
     </div>
     <div class="elementos">
         <img src="./images/sero.png" class="elem" id="a" name="aimg"/>
