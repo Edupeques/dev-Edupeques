@@ -1,0 +1,27 @@
+.draw
+{
+	position:absolute;
+	top:10px;
+	left:10px;
+	border:none;
+}
+
+.colorSelector
+{
+	position:absolute;
+	top:10px;
+	right:10px;
+	background-color:#B8B8B8;
+}
+
+.circle
+{
+	border-radius:50%;
+	width:100px;
+	height:100px;
+	margin:10px 10px 10px 10px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:20px;
+}
