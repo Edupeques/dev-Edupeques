@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Explota los globos  </TITLE>
+<link rel="stylesheet" type="text/css" href="css/parque.css" />
+
+ 
+             <style>
+.opciones{
+			font-size:10px;
+			font-family:"pipomayu";
+			background: #84bfff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #84bfff 1%, #96b9ff 50%, #c7d8e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#84bfff), color-stop(50%,#96b9ff), color-stop(100%,#c7d8e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bfff', endColorstr='#c7d8e5',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			}
+		.elementos{
+		font-family:"pipomayu"
+			background: #fcecfc; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			height:300px;
+			padding-top:6%;
+			}
+</style>
+       
+<script type="text/javascript">
+ function empezar()
+ {
+	window.alert('NO explotes los amarillos');
+ }
+var CronoID = null
+var CronoEjecutandose = false
+var decimas, segundos, minutos
+
+function DetenerCrono (){
+   	if(CronoEjecutandose)
+   		clearTimeout(CronoID)
+   	CronoEjecutandose = false
+}
+
+function InicializarCrono () {
+	//inicializa contadores globales
+	decimas = 0
+	segundos = 0
+	minutos = 0
+	
+	//pone a cero los marcadores
+	document.crono.display.value = '00:00:0'
+	
+}
+
+function MostrarCrono () {
+	       
+   	//incrementa el crono
+   	decimas++
+	if ( decimas > 9 ) {
+		decimas = 0
+		segundos++
+		if ( segundos > 30 ) {
+			alert('Fin del juego')
+				DetenerCrono()
+				return true
+			
+		}
+	}
+
+	//configura la salida
+	var ValorCrono = ""
+	ValorCrono = (minutos < 10) ? "0" + minutos : minutos
+	ValorCrono += (segundos < 10) ? ":0" + segundos : ":" + segundos
+	ValorCrono += ":" + decimas	
+			
+  	document.crono.display.value = ValorCrono
+
+  	CronoID = setTimeout("MostrarCrono()", 100)
+	CronoEjecutandose = true
+	return true
+}
+
+function IniciarCrono () {
+ 	DetenerCrono()
+ 	InicializarCrono()
+	MostrarCrono()
+}
+
+
+
+
+
+
+//--------------------------------------------------
+ 
+
+            var color=0;
+            
+            function explotar(obj, num) 
+            { 
+                if(isGameCompleted())
+                {
+                   alert("Fin del juego");
+                   return;
+                }
+                
+                if (num == color)
+                    document.getElementById(obj).style.display = ''; 
+                else
+                    alert("Juego Terminado");
+                    
+                if(isGameCompleted())
+                    alert("Muy Bien!");
+            }
+            
+            function setColor(num) { color = num; }
+            
+            function isShown(id) { return document.getElementById(id).style.display == ''; }
+            
+            function isGameCompleted() 
+            { 
+                return (isShown("globo2") && isShown("globo3") && isShown("globo4") 
+				&& isShown("globo6") && isShown("globo7") && isShown("globo8") &&
+                   isShown("globo10")    && isShown("globo11") && isShown("globo12"));
+            }
+            
+      //------------------------------------------------------------------------------------
+izda = new Array();
+arriba = new Array();
+function mover()
+{
+for (c=1;c<=12;c++)
+	{
+	izda[c] = Math.floor(Math.random()*1000);
+	arriba[c] = Math.floor(Math.random()*400);
+	}
+for (a=1;a<=12;a++)
+	{
+	document.getElementById('globo'+a).style.posLeft=izda[a];
+  	document.getElementById('globo'+a).style.posTop=arriba[a];
+	}
+  setTimeout('mover()',1500);
+}
+
+
+</script>
+</HEAD>
+
+<BODY onload="mover()" bgcolor="#FFFFCC">
+<TABLE>
+<TR>
+	<TD>
+	
+	</TD>
+</TR>
+
+</TABLE>
+
+
+<img id="globo1" name="globo1" src="./images/gloamarillo.png" style="position:absolute;left:0;top:0;" OnClick="explotar('globo1', 1);DetenerCrono(); InicializarCrono()" width=90>
+<img id="globo2" name="globo2" src="./images/gloazul.png" style="position:absolute;left:200;top:300" onclick="globo2.style.display='none'" width=90>
+ <img id="globo3" name="globo3" src="./images/glorojo.png" style="position:absolute;left:34;top:200" onclick="globo3.style.display='none'" width=90>
+<img id="globo4" name="globo4" src="./images/gloverde.png" style="position:absolute;left:100;top:40" onclick="globo4.style.display='none'" width=90>
+
+<img id="globo5" name="globo5" src="./images/gloamarillo.png" style="position:absolute;left:242;top:0;" OnClick="explotar('globo5', 5);DetenerCrono(); InicializarCrono()" width=70>
+<img id="globo6" name="globo6" src="./images/gloazul.png" style="position:absolute;left:200;top:300" onclick="globo6.style.display='none'" width=80>
+ <img id="globo7" name="globo7" src="./images/glorojo.png" style="position:absolute;left:150;top:200" onclick="globo7.style.display='none'" width=80>
+<img id="globo8" name="globo8" src="./images/gloverde.png" style="position:absolute;left:100;top:40" onclick="globo8.style.display='none'" width=80>
+
+  <img id="globo9" name="globo9" src="./images/gloamarillo.png" style="position:absolute;left:0;top:0;" OnClick="explotar('globo9', 9);DetenerCrono(); InicializarCrono()" width=100>
+<img id="globo10" name="globo10" src="./images/glorojo.png" style="position:absolute;left:170;top:20" onclick="globo10.style.display='none'" width=80>
+ <img id="globo11" name="globo11" src="./images/glorojo.png" style="position:absolute;left:130;top:200" onclick="globo11.style.display='none'" width=100>
+<img id="globo12" name="globo12" src="./images/gloazul.png" style="position:absolute;left:100;top:40" onclick="globo12.style.display='none'" width=80>
+<TR>
+	<TD></TD>
+</TR><!-- Quiero poner al payaso abajo a la derecha pero no me deja... -->
+ <div class="payaso"><img src="./images/payaa1.png" width=200 ></div>
+<!-- <TABLE>
+<TR>
+	<TD bgcolor="#FFFF00" height=100 width=100> Amarillo: </TD>
+	<TD bgcolor="#0000FF" height=100 width=100>Azul:</TD>
+	<TD bgcolor="#FF0000" height=100 width=100>Rojo:</TD>
+	<TD bgcolor="#336600" height=100 width=100>Verde:</TD>
+</TR>
+</TABLE> Prototipo de en los cuadrados me salga el recuento total de los globos explotados y si te equivocas te reste uno. -->
+
+ <p>Dale a Iniciar para empezar a jugar</p>
+<!-- Para visualizar el cronómetro -->
+<div class="recuadro3">
+<form name="crono">
+<p><input type="text" size="8" name="display" value="00:00:0"> <input type="button" name="Iniciar" value=" Iniciar " onClick="IniciarCrono();empezar()"></p>
+
+<!-- <p><input type="button" name="Parar" value=" Parar " onClick="DetenerCrono()"> <input type="button" name="Cero" value="  Cero  " onClick="DetenerCrono(); InicializarCrono()"></p> Por si queremos hacer un boton en otro juego -->
+</form>
+</div>
+
+ </BODY>
+</HTML>
