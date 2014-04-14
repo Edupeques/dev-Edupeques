@@ -54,13 +54,11 @@
                 if (++decimas > 9) 
                 {
                     decimas = 0;
-                    segundos++;
-                    /*if (segundos >= 30) // El juego terminara cuando pasen 30 segundos
+                    if(++segundos > 59)
                     {
-                        alert('Fin del juego');
-                        DetenerCrono();
-                        return;
-                    }*/
+                        segundos = 0;
+                        minutos++;
+                    }
                 }
             
                 //configura la salida
@@ -99,7 +97,7 @@
             function startGame()
             {
                 isGameStarted = true;
-				puntuacion = 0;
+                puntuacion = 0;
                 gameInfo();
                 DetenerCrono();
                 InicializarCrono();
@@ -230,6 +228,6 @@
         <button onClick="startGame()">Iniciar</button>
         <button onClick="endGame()">Parar</button><br />
         <input type="text" id="puntuacion" value="0" size="3"/> Puntuacion
-	</body>
+    </body>
 </html>
  

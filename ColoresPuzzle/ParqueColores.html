@@ -1,8 +1,8 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
-	<HEAD>
-		<TITLE> Explota los globos  </TITLE>
-		<link rel="stylesheet" type="text/css" href="css/parque.css" />
+    <HEAD>
+        <TITLE> Explota los globos  </TITLE>
+        <link rel="stylesheet" type="text/css" href="css/parque.css" />
         <style type="text/css">
             .globo
             {
@@ -17,8 +17,8 @@
             }
         </style>
        
-		<script type="text/javascript">
-			function gameInfo() { window.alert('NO explotes los amarillos'); }
+        <script type="text/javascript">
+            function gameInfo() { window.alert('NO explotes los amarillos'); }
             var CronoID = null
             var CronoEjecutandose = false, isGameStarted = false;
             var decimas, segundos, minutos;
@@ -55,13 +55,11 @@
                 if (++decimas > 9) 
                 {
                     decimas = 0;
-                    segundos++;
-                    /*if (segundos >= 30) // El juego terminara cuando pasen 30 segundos
+                    if(++segundos > 59)
                     {
-                        alert('Fin del juego');
-                        DetenerCrono();
-                        return;
-                    }*/
+                        segundos = 0;
+                        minutos++;
+                    }
                 }
             
                 //configura la salida
@@ -100,7 +98,7 @@
             function startGame()
             {
                 isGameStarted = true;
-				puntuacion = 0;
+                puntuacion = 0;
                 gameInfo();
                 DetenerCrono();
                 InicializarCrono();
@@ -231,5 +229,5 @@
         <button onClick="startGame()">Iniciar</button>
         <button onClick="endGame()">Parar</button><br />
         <input type="text" id="puntuacion" value="0" size="3"/> Puntuacion
-	</body>
+    </body>
 </HTML>
