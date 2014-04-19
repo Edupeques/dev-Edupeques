@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Animales de la granja </title>
+  
+<script type="text/javascript">
+function pintar(obj)
+{
+   document.getElementById(obj).style.display = '';
+}
+</script>
+
+<style type="text/css">
+
+.titulo
+{
+	padding:1px;
+	float:left;
+}
+ .imagen
+{
+ position:absolute;
+ top:50px;
+ left:400px;
+ width:416;
+ height:512;
+ padding:40;
+               
+} 
+/*.cabezera
+{
+	background-color:#990000;
+	height:85px;
+	text-align:center;;
+}*/
+</style>
+
+
+    </HEAD>
+<body bgcolor="#990000">
+
+ <div class="cabezera">
+		<div class="titulo"><img src="imagenes/La Granja.gif" ></div>
+
+ </div>
+
+<IMG SRC="./imagenes/animalesGranjaCompleto.png" class="imagen" USEMAP="#animalesGranja.png" >
+
+
+<IMG SRC="./imagenes/avispa.gif" class="imagen"  USEMAP="#animalesGranja.png" id="avispa" style="display:none" >
+<IMG SRC="./imagenes/gato.gif" class="imagen"  USEMAP="#animalesGranja.png" id="gato" style="display:none" >
+<IMG SRC="./imagenes/vaca.gif" class="imagen"  USEMAP="#animalesGranja.png" id="vaca" style="display:none" >
+<IMG SRC="./imagenes/gallina.gif" class="imagen"  USEMAP="#animalesGranja.png" id="gallina" style="display:none" >
+<IMG SRC="./imagenes/saltamontes.gif" class="imagen"  USEMAP="#animalesGranja.png" id="saltamontes" style="display:none" >
+<IMG SRC="./imagenes/perro.gif" class="imagen"  USEMAP="#animalesGranja.png" id="perro" style="display:none" >
+<IMG SRC="./imagenes/pato.gif" class="imagen"  USEMAP="#animalesGranja.png" id="pato" style="display:none" >
+<IMG SRC="./imagenes/rana.gif" class="imagen"  USEMAP="#animalesGranja.png" id="rana" style="display:none" >
+<IMG SRC="./imagenes/cabra.gif" class="imagen"  USEMAP="#animalesGranja.png" id="cabra" style="display:none" >
+<IMG SRC="./imagenes/caballo.gif" class="imagen"  USEMAP="#animalesGranja.png" id="caballo" style="display:none" >
+<IMG SRC="./imagenes/cerdo.gif" class="imagen"  USEMAP="#animalesGranja.png" id="cerdo" style="display:none" >
+<IMG SRC="./imagenes/oveja.gif" class="imagen"  USEMAP="#animalesGranja.png" id="oveja" style="display:none" >
+
+<MAP NAME="animalesGranja.png">
+<!-- avispa-->
+<AREA SHAPE=RECT COORDS="16,128,103,212" OnClick="pintar('avispa')">
+<!-- gato-->
+<AREA SHAPE=RECT COORDS="118,129,204,209" OnClick="pintar('gato')">
+<!-- vaca-->
+<AREA SHAPE=RECT COORDS="221,128,305,207" OnClick="pintar('vaca')">
+<!-- gallina-->
+<AREA SHAPE=RECT COORDS="20,229,96,314" OnClick="pintar('gallina')">
+<!-- saltamontes-->
+<AREA SHAPE=RECT COORDS="121,232,203,306" OnClick="pintar('saltamontes')">
+<!-- perro-->
+<AREA SHAPE=RECT COORDS="221,234,306,308" OnClick="pintar('perro')">
+<!-- pato-->
+<AREA SHAPE=RECT COORDS="16,333,95,413" OnClick="pintar('pato')">
+<!-- rana-->
+<AREA SHAPE=RECT COORDS="123,333,204,414" OnClick="pintar('rana')">
+<!-- cabra-->
+<AREA SHAPE=RECT COORDS="224,331,307,415" OnClick="pintar('cabra')">
+<!-- cabra-->
+<AREA SHAPE=RECT COORDS="17,434,103,515" OnClick="pintar('caballo')">
+<!-- cerdo-->
+<AREA SHAPE=RECT COORDS="118,437,204,516" OnClick="pintar('cerdo')">
+<!-- oveja-->
+<AREA SHAPE=RECT COORDS="222,435,308,513" OnClick="pintar('oveja')">
+
+</MAP>
+
+ </body>
+</HTML>

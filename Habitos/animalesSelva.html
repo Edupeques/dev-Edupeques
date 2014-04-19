@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title>Animales de la selva </title>
+ 
+<script type="text/javascript">
+function pintar(obj)
+{
+   document.getElementById(obj).style.display = '';
+}
+</script>
+
+<style type="text/css">
+
+.titulo
+{
+	padding:1px;
+	float:left;
+}
+ .imagen
+{
+ position:absolute;
+ top:50px;
+ left:400px;
+ width:416;
+ height:512;
+ padding:40;
+               
+} 
+/*.cabezera
+{
+	background-color:#990000;
+	height:85px;
+	text-align:center;;
+}*/
+</style>
+
+
+    </HEAD>
+<body bgcolor="#990000">
+
+ <div class="cabezera">
+		<div class="titulo"><img src="imagenes/La Selva.gif" ></div>
+
+ </div>
+
+<IMG SRC="./imagenes/animalesSelvaCompleto.png" class="imagen" USEMAP="#animalesSelva.png" >
+
+
+<IMG SRC="./imagenes/cocodrilo.gif" class="imagen"  USEMAP="#animalesSelva.png" id="cocodrilo" style="display:none" >
+<IMG SRC="./imagenes/oso.gif" class="imagen"  USEMAP="#animalesSelva.png" id="oso" style="display:none" >
+<IMG SRC="./imagenes/elefante.gif" class="imagen"  USEMAP="#animalesSelva.png" id="elefante" style="display:none" >
+<IMG SRC="./imagenes/pez.gif" class="imagen"  USEMAP="#animalesSelva.png" id="pez" style="display:none" >
+<IMG SRC="./imagenes/hipopotamo.gif" class="imagen"  USEMAP="#animalesSelva.png" id="hipopotamo" style="display:none" >
+<IMG SRC="./imagenes/leon.gif" class="imagen"  USEMAP="#animalesSelva.png" id="leon" style="display:none" >
+<IMG SRC="./imagenes/mono.gif" class="imagen"  USEMAP="#animalesSelva.png" id="mono" style="display:none" >
+<IMG SRC="./imagenes/loro.gif" class="imagen"  USEMAP="#animalesSelva.png" id="loro" style="display:none" >
+<IMG SRC="./imagenes/mapache.gif" class="imagen"  USEMAP="#animalesSelva.png" id="mapache" style="display:none" >
+<IMG SRC="./imagenes/rinoceronte.gif" class="imagen"  USEMAP="#animalesSelva.png" id="rinoceronte" style="display:none" >
+<IMG SRC="./imagenes/serpiente.gif" class="imagen"  USEMAP="#animalesSelva.png" id="serpiente" style="display:none" >
+<IMG SRC="./imagenes/cebra.gif" class="imagen"  USEMAP="#animalesSelva.png" id="cebra" style="display:none" >
+
+<MAP NAME="animalesSelva.png">
+<!-- cocodrilo-->
+<AREA SHAPE=RECT COORDS="11,129,99,210" OnClick="pintar('cocodrilo')">
+<!-- oso-->
+<AREA SHAPE=RECT COORDS="116,128,201,211" OnClick="pintar('oso')">
+<!-- elefante-->
+<AREA SHAPE=RECT COORDS="219,128,303,210" OnClick="pintar('elefante')">
+<!-- pez-->
+<AREA SHAPE=RECT COORDS="13,230,99,314" OnClick="pintar('pez')">
+<!--hipopotamo-->
+<AREA SHAPE=RECT COORDS="116,230,201,316" OnClick="pintar('hipopotamo')">
+<!--leon-->
+<AREA SHAPE=RECT COORDS="219,230,302,314" OnClick="pintar('leon')">
+<!--mono-->
+<AREA SHAPE=RECT COORDS="15,331,99,418" OnClick="pintar('mono')">
+<!--loro-->
+<AREA SHAPE=RECT COORDS="119,331,199,416" OnClick="pintar('loro')">
+<!--mapache-->
+<AREA SHAPE=RECT COORDS="219,333,304,416" OnClick="pintar('mapache')">
+<!--rinoceronte-->
+<AREA SHAPE=RECT COORDS="16,435,95,516" OnClick="pintar('rinoceronte')">
+<!--serpiente-->
+<AREA SHAPE=RECT COORDS="120,432,201,517" OnClick="pintar('serpiente')">
+<!--cebra-->
+<AREA SHAPE=RECT COORDS="219,434,302,516" OnClick="pintar('cebra')">
+
+</MAP>
+
+ </body>
+</HTML>
