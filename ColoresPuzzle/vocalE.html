@@ -1,0 +1,39 @@
+<html >
+
+<head>
+	
+	<title>Puzzle para aprender colores</title>
+	<script type="text/javascript""></script>	
+	<link rel="stylesheet" type="text/css" href="css/estiloE.css" />
+	<script type="text/javascript" src="js/puzzle.js"></script>
+
+</head>
+<body >
+
+
+	<div class="opciones"> Las vocales</div>
+	<section id="contenedorPuzzle">
+
+		
+
+
+		<div id="contenedorPiezas" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)" style="cursor: pointer">
+			<img id="3" src="./images/E1.jpg" alt="3" draggable="true" ondragstart="start(event)" ondragend="end(event)"  >
+			<img id="2" src="./images/E2.jpg" alt="2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
+			<img id="4" src="./images/E3.jpg" alt="4" draggable="true" ondragstart="start(event)" ondragend="end(event)" >
+			<img id="1" src="./images/E4.jpg" alt="1" draggable="true" ondragstart="start(event)" ondragend="end(event)" >
+		</div>
+		<div id="puzzle" style="cursor: pointer">
+			<div class="contenedorPieza" id="uno" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="dos" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="tres" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			<div class="contenedorPieza" id="cuatro" ondragenter="return enter(event)" ondragover="return over(event)" ondrop="return drop(event)"></div>
+			
+		
+	</section>
+	
+	
+
+	
+</body>
+</html>

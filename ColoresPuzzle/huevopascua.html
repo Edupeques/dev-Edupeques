@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> Diferencias </TITLE>
+<script type="text/javascript">
+
+
+function pintar(obj)
+{
+   document.getElementById(obj).style.display = '';
+}
+</script>
+
+<style>
+.imagen
+{
+ position:absolute;
+ top:0px;
+ left:620px;
+ width:500;
+ height:500;
+ padding:40;
+
+ 
+                
+} 
+.imagen2
+{
+ position:absolute;
+ top:200px;
+ left:30px;
+ width:500;
+ height:500;
+ padding:40;
+
+ 
+                
+} 
+.opciones{
+			font-size:70px;
+			text-align: center;
+
+			font-family:"pipomayu";
+			background: #84bfff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #84bfff 1%, #96b9ff 50%, #c7d8e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#84bfff), color-stop(50%,#96b9ff), color-stop(100%,#c7d8e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bfff', endColorstr='#c7d8e5',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			}
+		.elementos{
+		font-family:"pipomayu"
+			background: #fcecfc; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			height:600px;
+			padding-top:6%;
+			}
+		.letra{
+		font-size:30px;
+		text-align: right;
+		font-family:"pipomayu";
+
+		}
+</style>
+
+ </HEAD>
+
+ <BODY>
+<div class="opciones" >Pascua</div>
+ <div class="elementos" >
+<div class="imagen2" >
+
+
+	<IMG SRC="./images/pascua11.jpg">
+	
+
+
+	<IMG SRC="./images/pascua2.jpg" class="imagen"  USEMAP="#pascua2.jpg" WIDTH=500 HEIGHT=500 BORDER=0>
+
+
+<IMG SRC="./images/pas2.png"   class="imagen" USEMAP="#pascua2.jpg" id="bien" style="display:none" > <!-- sol -->
+<IMG SRC="./images/pas1.png" class="imagen" USEMAP="#pascua2.jpg"  id="bien2" style="display:none" WIDTH=500 HEIGHT=500>  
+<IMG SRC="./images/pas3.png" class="imagen" USEMAP="#pascua2.jpg"  id="bien3" style="display:none" WIDTH=500 HEIGHT=500>  <!-- 2huevos -->
+<IMG SRC="./images/pas4.png" class="imagen" USEMAP="#pascua2.jpg"  id="bien4" style="display:none" WIDTH=500 HEIGHT=500>  <!-- huevon -->
+<IMG SRC="./images/pas5.png" class="imagen" USEMAP="#pascua2.jpg"  id="bien5" style="display:none" WIDTH=500 HEIGHT=500> <!-- nube -->
+
+
+<MAP NAME="pascua2.jpg">
+<!-- sun -->
+<AREA SHAPE=CIRCLE COORDS="469,86,34" OnClick="pintar('bien')">
+
+<AREA SHAPE=CIRCLE COORDS="33,307,31" OnClick="pintar('bien5')"><!-- florecita -->
+
+<AREA SHAPE=POLY COORDS="316,284,341,284,363,287,383,294,400,304,409,313,419,325,427,337,436,351,441,364,443,376,439,379,431,385,422,394,415,397,408,405,391,390,379,389,366,396,359,410,357,413,352,416,343,416,332,412,320,408,309,403,302,400,326,397,337,397,333,393,322,391,317,390,329,383,340,373,340,368,333,360,328,358,323,357,320,349,314,343,313,337,323,332,329,325,331,319,330,306,326,296,323,291,320,285,320,283,318,283,319,284,325,283,336,283" OnClick="pintar('bien4')" > <!-- huevon -->
+<AREA SHAPE=POLY COORDS="350,424,349,438,348,453,355,471,362,483,376,491,397,492,419,490,430,478,440,459,443,442,432,421,423,421,412,416,405,413,398,404,393,397,388,395,379,393,372,403,367,410,363,416,358,424,356,427,353,430,350,431,350,433,350,440,350,440,348,446,354,449,352,449,351,449,351,449" OnClick="pintar('bien3')"> <!-- 2huevos -->
+<AREA SHAPE=CIRCLE COORDS="91,41,33" OnClick="pintar('bien2')"> 
+</MAP>
+<br>
+<div class="letra" > 5 diferencias</div>
+
+ </div>
+
+ </BODY>
+</HTML>

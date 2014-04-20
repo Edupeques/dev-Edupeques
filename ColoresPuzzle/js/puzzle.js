@@ -43,6 +43,16 @@ function drop(e){
 	
 }
 
+function comprobarPuzzle(){
+	if((document.getElementById('1').parentNode.id=='uno') &&
+		(document.getElementById('2').parentNode.id=='dos') &&
+		(document.getElementById('3').parentNode.id=='tres') &&
+		(document.getElementById('4').parentNode.id=='cuatro'))
+	{
+		alert('Felicidades, has hecho el puzzle.');
+	}
+}
+
 
 function comprobarnavegador() {
 	if( 
