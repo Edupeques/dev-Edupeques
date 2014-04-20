@@ -22,10 +22,9 @@
     }
  </style>
  <script>
-	
+var acierto=0, cont=1;	
  function rellenar(part)
 {
-	 var acierto=0, cont=1;
 	//rellenamos poco a poco la matriz   
 		if(cont==part.substr(3))
         {
@@ -33,7 +32,6 @@
             cont=cont+1;
             acierto=acierto+1;
         }
-		valor.value="part: "+part.substr(3)+" cont: "+cont;
 	   if (acierto==9)
 		{
 			document.getElementById('gato').innerHTML="Gato";
@@ -59,7 +57,7 @@
  </head>
 
  <body>
- <p style="text-align:center;font-size:40px;margin-top:1%">Repasa el contorno de uno, dos y tres <input type="text" id="valor" value=""></p>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Repasa el contorno de uno, dos y tres</p>
  <!-- imagenes del 1 recorrido -->
   <div class="principal" id="primer">
      <div class="contenedor">
@@ -86,7 +84,7 @@
             </MAP>
      </div>
 	 <img src="./images/gato.png" class="animal" id="gatoimg"/>
-	  <font id="gato" size="5" style="left:11%;top:58%;position:absolute"></font>
+	  <font id="gato" size="5" style="left:11%;top:62%;position:absolute"></font>
 </div> 
  <!-- imagenes del 2 recorrido -->
   <div class="principal" id="segundo">
@@ -119,7 +117,7 @@
      </div>
 	 <img src="./images/perro.png" class="animal" id="perroimg1"/>
 	 <img src="./images/perro.png" class="animal" id="perroimg2" style="left:45%"/>
-	  <font id="perro" size="5" style="left:45%;top:58%;position:absolute"></font>
+	  <font id="perro" size="5" style="left:45%;top:62%;position:absolute"></font>
 </div>
  <!-- imagenes del 3 recorrido -->
   <div class="principal" id="tercero">
@@ -153,7 +151,7 @@
 	 <img src="./images/conejo.png" class="animal" id="conejoimg1"/>
 	 <img src="./images/conejo.png" class="animal" id="conejoimg2" style="left:75%"/>
 	 <img src="./images/conejo.png" class="animal" id="conejoimg3" style="left:80%"/>
-	  <font id="conejo" size="5" style="left:76%;top:58%;position:absolute"></font>
+	  <font id="conejo" size="5" style="left:76%;top:62%;position:absolute"></font>
 </div>
  </body>
 </html>
