@@ -18,6 +18,23 @@ function isGameCompleted()
 	return res;
 }
 
-function setColor(num) { curColor = num; }
+function setColor(num) { curColor = num; constructCursor(num); }
 
 function isShown(id) { return document.getElementById(id).style.display == ''; }
+
+function constructCursor(num)
+{
+    var cursor = document.createElement("canvas");
+    var ptr = cursor.getContext("2d");
+    cursor.width=16;
+    cursor.height=16;
+    ptr.strokeStyle = document.defaultView.getComputedStyle(document.getElementsByClassName("ctype"+num)[0],null).getPropertyValue('background-color');
+    ptr.lineWidth=3;
+    ptr.moveTo(2,10);
+    ptr.lineTo(2,2);
+    ptr.lineTo(10,2);
+    ptr.moveTo(2,2);
+    ptr.lineTo(30,30);
+    ptr.stroke();
+    document.body.style.cursor = "url(" + cursor.toDataURL() + "), auto";
+}
