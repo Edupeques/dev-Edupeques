@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+  <script type="text/javascript" src="./scripts/script.js"></script>
+<style type="text/css">
+    .principal
+    {
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:65%;
+          height:710px;
+    }
+    .contenedor
+    {
+        height:432px;
+        margin-left:32%;
+		margin-bottom:50%;
+		padding-top:1%;
+    }
+ </style>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+  </head>
+ <body>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el recorrido</p>
+  <div class="principal"> 
+     <div class="contenedor">
+     <!-- imagenes del recorrido      -->
+	 <IMG SRC="./images/1L.png" USEMAP="#L.png" WIDTH=528 HEIGHT=790 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/L1.png" ID="ele1" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L2.png" ID="ele2" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L3.png" ID="ele3" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L4.png" ID="ele4" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L5.png" ID="ele5" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L6.png" ID="ele6" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L7.png" ID="ele7" USEMAP="#L.png" class="invisible">
+         <IMG SRC="./images/contornos/L8.png" ID="ele8" USEMAP="#L.png" class="invisible">
+
+
+
+  
+<MAP NAME="L.png">
+<AREA SHAPE=RECT COORDS="71,179,150,253" OnMouseOver="rellenar2('ele1')">
+<AREA SHAPE=RECT COORDS="73,254,148,322" OnMouseOver="rellenar2('ele2')">
+<AREA SHAPE=RECT COORDS="73,325,147,390" OnMouseOver="rellenar2('ele3')">
+<AREA SHAPE=RECT COORDS="71,391,149,461" OnMouseOver="rellenar2('ele4')">
+<AREA SHAPE=RECT COORDS="73,462,148,514" OnMouseOver="rellenar2('ele5')">
+<AREA SHAPE=RECT COORDS="71,516,150,586" OnMouseOver="rellenar2('ele6')">
+<AREA SHAPE=RECT COORDS="152,514,201,586" OnMouseOver="rellenar2('ele7')">
+<AREA SHAPE=RECT COORDS="203,514,262,585" OnMouseOver="rellenar2('ele8')">
+</MAP>
+ </BODY>
+</HTML>
