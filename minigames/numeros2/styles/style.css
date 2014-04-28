@@ -41,13 +41,13 @@
 		margin-left:1%;
 		position:absolute;
 	}
-   .invisible
+ /*  .invisible
     {
         left: 38.5%;
         position: absolute;
         visibility: hidden;
 		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
-    }
+    }		*/
 	/*botones*/
         .boton
         {

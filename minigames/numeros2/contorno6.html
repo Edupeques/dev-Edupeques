@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <title> Contorno</title>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+    .principal
+    {
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:65%;
+          height:450px;
+    }
+    .contenedor
+    {
+        height:432px;
+        margin-left:28%;
+		margin-bottom:50%;
+		padding-top:1%;
+    }
+	.invisible
+    {
+        left: 35.85%;
+        position: absolute;
+        visibility: hidden;
+		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+    }
+ </style>
+ <script> 
+	 var acierto=0, cont=1;
+	 function rellenar(part)
+	{  
+		  if(cont==part.substr(3))
+        {
+			document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+		if(acierto==10)
+		{
+			window.alert("muy bien");
+			acierto=0;
+			return;
+		}
+	}
+</script>
+ </head>
+ <body>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el contorno de seis</p>
+  <div class="principal"> 
+     <div class="contenedor">
+     <!-- imagenes del recorrido -->
+         <IMG SRC="./images/seis.png" USEMAP="#seis.png" height=432 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/seis01.png" ID="ele1" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis02.png" ID="ele2" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis03.png" ID="ele3" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis04.png" ID="ele4" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis05.png" ID="ele5" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis06.png" ID="ele6" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis07.png" ID="ele7" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis08.png" ID="ele8" USEMAP="#seis.png" class="invisible">
+         <IMG SRC="./images/contornos/seis09.png" ID="ele9" USEMAP="#seis.png" class="invisible">
+		 <IMG SRC="./images/contornos/seis10.png" ID="ele10" USEMAP="#seis.png" class="invisible">
+             <MAP NAME="seis.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">    
+		<AREA SHAPE=POLY COORDS="142,48,222,99,239,54,223,19,186,10,159,20" OnMouseOver="rellenar('ele1')">
+		<AREA SHAPE=POLY COORDS="138,54,221,99,189,131,106,94" OnMouseOver="rellenar('ele2')">
+		<AREA SHAPE=POLY COORDS="109,96,79,139,105,179,189,126" OnMouseOver="rellenar('ele3')">
+		<AREA SHAPE=POLY COORDS="76,136,130,215,108,232,101,256,14,236,40,175" OnMouseOver="rellenar('ele4')">
+		<AREA SHAPE=POLY COORDS="92,257,96,289,108,312,116,320,63,387,30,344,13,304,18,239" OnMouseOver="rellenar('ele5')">
+		<AREA SHAPE=POLY COORDS="118,322,142,335,176,339,187,334,220,413,171,422,117,415,62,389" OnMouseOver="rellenar('ele6')">
+		<AREA SHAPE=POLY COORDS="191,333,207,324,224,307,233,291,316,298,303,337,270,380,220,412" OnMouseOver="rellenar('ele7')">
+		<AREA SHAPE=POLY COORDS="230,290,237,268,231,244,224,226,282,162,307,204,320,247,319,295" OnMouseOver="rellenar('ele8')">
+		<AREA SHAPE=POLY COORDS="176,199,202,207,226,229,279,163,246,141,193,130" OnMouseOver="rellenar('ele9')">
+		<AREA SHAPE=POLY COORDS="172,199,147,202,133,213,107,171,194,127" OnMouseOver="rellenar('ele10')">
+</MAP>
+</MAP>
+     </div>
+</div>		
+ </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <title> Contorno</title>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+    .principal
+    {
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:65%;
+          height:450px;
+    }
+    .contenedor
+    {
+        height:432px;
+        margin-left:28%;
+		margin-bottom:50%;
+		padding-top:1%;
+    }
+	.invisible
+    {
+        left: 35.85%;
+        position: absolute;
+        visibility: hidden;
+		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+    }
+ </style>
+ <script> 
+	 var acierto=0, cont=1;
+	 function rellenar(part)
+	{  
+		  if(cont==part.substr(3))
+        {
+			document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+		if(acierto==10)
+		{
+			window.alert("muy bien");
+			acierto=0;
+			return;
+		}
+	}
+</script>
+ </head>
+ <body>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el contorno de cuatro</p>
+  <div class="principal"> 
+     <div class="contenedor">
+     <!-- imagenes del recorrido -->
+         <IMG SRC="./images/cuatro.png" USEMAP="#cuatro.png" height=432 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/cuatro01.png" ID="ele1" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro02.png" ID="ele2" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro03.png" ID="ele3" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro04.png" ID="ele4" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro05.png" ID="ele5" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro06.png" ID="ele6" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro07.png" ID="ele7" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro08.png" ID="ele8" USEMAP="#cuatro.png" class="invisible">
+         <IMG SRC="./images/contornos/cuatro09.png" ID="ele9" USEMAP="#cuatro.png" class="invisible">
+		 <IMG SRC="./images/contornos/cuatro10.png" ID="ele10" USEMAP="#cuatro.png" class="invisible">
+             <MAP NAME="cuatro.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">    
+		<AREA SHAPE=POLY COORDS="123,61,195,100,211,53,195,18,160,11,135,34" OnMouseOver="rellenar('ele1')" >
+		<AREA SHAPE=POLY COORDS="120,64,193,99,161,157,94,115" OnMouseOver="rellenar('ele2')" >
+		<AREA SHAPE=POLY COORDS="95,116,165,159,126,227,58,193" OnMouseOver="rellenar('ele3')" >
+		<AREA SHAPE=POLY COORDS="126,227,126,248,70,329,25,319,15,294,17,258,57,197" OnMouseOver="rellenar('ele4')" >
+		<AREA SHAPE=POLY COORDS="129,244,214,245,215,321,74,327" OnMouseOver="rellenar('ele5')" >
+		<AREA SHAPE=POLY COORDS="221,239,311,241,306,330,214,325" OnMouseOver="rellenar('ele6')" >
+		<AREA SHAPE=POLY COORDS="311,246,359,254,374,288,358,321,309,328" OnMouseOver="rellenar('ele7')" >
+		<AREA SHAPE=POLY COORDS="218,164,308,162,303,96,262,76,219,100" OnMouseOver="rellenar('ele8')" >
+		<AREA SHAPE=POLY COORDS="215,166,309,167,306,238,219,239" OnMouseOver="rellenar('ele9')" >
+		<AREA SHAPE=POLY COORDS="219,335,308,337,307,401,270,424,233,418,223,400" OnMouseOver="rellenar('ele10')" >
+</MAP>
+</MAP>
+     </div>
+</div>
+ </body>
+</html>

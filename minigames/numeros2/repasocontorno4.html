@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Repaso 1 2 y3 </title>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+ <style>
+ .principal
+    {   
+          background: -webkit-linear-gradient(#9CF, #cc99ff); 
+          background: -o-linear-gradient(#9CF, #cc99ff); 
+          background: -moz-linear-gradient(#9CF, #cc99ff); 
+          background: linear-gradient(#9CF, #cc99ff); 
+          border-radius:30px;
+          width: 20%;
+          height:450px;
+    }
+	.contenedor
+    {
+        height:227px;
+        padding-left:23%;
+        padding-top:8%;
+    }
+ </style>
+ <script>
+var acierto=0, cont=1;	
+ function rellenar(part)
+{
+	//rellenamos poco a poco la matriz   
+		if(cont==part.substr(3))
+        {
+            document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+	   if (acierto==10)
+		{
+			document.getElementById('gato').innerHTML="Gatos";
+			gatoimg1.src="./images/gatocolor.png";
+			gatoimg2.src="./images/gatocolor.png";
+			gatoimg3.src="./images/gatocolor.png";
+			gatoimg4.src="./images/gatocolor.png";
+		}
+		if (acierto==20)
+		{
+			document.getElementById('perro').innerHTML="Perros";
+			perroimg1.src="./images/perrocolor.png";
+			perroimg2.src="./images/perrocolor.png";
+			perroimg3.src="./images/perrocolor.png";
+			perroimg4.src="./images/perrocolor.png";
+		}
+        if(acierto==30)
+        {
+			document.getElementById('conejo').innerHTML="Conejos";
+			conejoimg1.src="./images/conejocolor.png";
+			conejoimg2.src="./images/conejocolor.png";
+			conejoimg3.src="./images/conejocolor.png";
+			conejoimg4.src="./images/conejocolor.png";
+			window.alert("muy bien");
+			acierto=0;
+        }
+}
+ </script>
+ </head>
+
+ <body>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Repasa el contorno de cuatro</p>
+ <!-- imagenes del 1 recorrido -->
+  <div class="principal" id="primer">
+     <div class="contenedor">
+         <IMG SRC="./images/cuatro.png" USEMAP="#cuatro.png" HEIGHT=227 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/cuatro01.png" ID="ele1" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro02.png" ID="ele2" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro03.png" ID="ele3" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro04.png" ID="ele4" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro05.png" ID="ele5" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro06.png" ID="ele6" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro07.png" ID="ele7" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro08.png" ID="ele8" USEMAP="#cuatro.png" class="invisible1">
+         <IMG SRC="./images/contornos/cuatro09.png" ID="ele9" USEMAP="#cuatro.png" class="invisible1">
+		 <IMG SRC="./images/contornos/cuatro10.png" ID="ele10" USEMAP="#cuatro.png" class="invisible1">
+             <MAP NAME="cuatro.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+                 <AREA SHAPE=POLY COORDS="64,33,98,52,109,33,108,17,91,8,76,9" OnMouseOver="rellenar('ele1')">
+				<AREA SHAPE=POLY COORDS="61,32,100,53,83,82,49,61" OnMouseOver="rellenar('ele2')">
+				<AREA SHAPE=POLY COORDS="84,82,49,64,27,103,65,118" OnMouseOver="rellenar('ele3')">
+				<AREA SHAPE=POLY COORDS="64,119,30,102,5,148,17,167,44,170,69,126" OnMouseOver="rellenar('ele4')">
+				<AREA SHAPE=POLY COORDS="63,129,115,129,114,172,43,173" OnMouseOver="rellenar('ele5')">
+				<AREA SHAPE=POLY COORDS="116,173,119,178,160,175,162,172,161,131,152,130,120,128,114,142" OnMouseOver="rellenar('ele6')">
+				<AREA SHAPE=POLY COORDS="163,131,163,172,188,167,197,149,189,132" OnMouseOver="rellenar('ele7')">
+				<AREA SHAPE=POLY COORDS="116,88,157,88,156,48,139,42,119,53" OnMouseOver="rellenar('ele8')">
+				<AREA SHAPE=POLY COORDS="117,87,157,88,158,132,117,123" OnMouseOver="rellenar('ele9')">
+				<AREA SHAPE=POLY COORDS="116,176,158,179,156,206,137,220,122,212" OnMouseOver="rellenar('ele10')">
+            </MAP>
+     </div>
+	 <img src="./images/gato.png" class="animal" id="gatoimg1"/>
+	 <img src="./images/gato.png" class="animal" id="gatoimg2" style="left:8%"/>
+	 <img src="./images/gato.png" class="animal" id="gatoimg3" style="left:10%;top:65%"/>
+	 <img src="./images/gato.png" class="animal" id="gatoimg4" style="left:14%;top:65%"/>
+	  <font id="gato" size="5" style="left:11%;top:62%;position:absolute"></font>
+</div> 
+ <!-- imagenes del 2 recorrido -->
+  <div class="principal" id="segundo">
+     <div class="contenedor">
+         <IMG SRC="./images/cuatro.png" USEMAP="#cuatro2.png"HEIGHT=227 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/estilo/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/cuatro01.png" ID="ele11" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro02.png" ID="ele12" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro03.png" ID="ele13" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro04.png" ID="ele14" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro05.png" ID="ele15" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro06.png" ID="ele16" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro07.png" ID="ele17" USEMAP="#cuatro2.png" class="invisible2"  >
+         <IMG SRC="./images/contornos/cuatro08.png" ID="ele18" USEMAP="#cuatro2.png" class="invisible2"  >
+		 <IMG SRC="./images/contornos/cuatro09.png" ID="ele19" USEMAP="#cuatro2.png" class="invisible2"  >
+		  <IMG SRC="./images/contornos/cuatro10.png" ID="ele20" USEMAP="#cuatro2.png" class="invisible2"  >
+             <MAP NAME="cuatro2.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/estilo/paloma.ani),auto;">
+                 <AREA SHAPE=POLY COORDS="64,33,98,52,109,33,108,17,91,8,76,9" OnMouseOver="rellenar('ele11')">
+				<AREA SHAPE=POLY COORDS="61,32,100,53,83,82,49,61" OnMouseOver="rellenar('ele12')">
+				<AREA SHAPE=POLY COORDS="84,82,49,64,27,103,65,118" OnMouseOver="rellenar('ele13')">
+				<AREA SHAPE=POLY COORDS="64,119,30,102,5,148,17,167,44,170,69,126" OnMouseOver="rellenar('ele14')">
+				<AREA SHAPE=POLY COORDS="63,129,115,129,114,172,43,173" OnMouseOver="rellenar('ele15')">
+				<AREA SHAPE=POLY COORDS="116,173,119,178,160,175,162,172,161,131,152,130,120,128,114,142" OnMouseOver="rellenar('ele16')">
+				<AREA SHAPE=POLY COORDS="163,131,163,172,188,167,197,149,189,132" OnMouseOver="rellenar('ele17')">
+				<AREA SHAPE=POLY COORDS="116,88,157,88,156,48,139,42,119,53" OnMouseOver="rellenar('ele18')">
+				<AREA SHAPE=POLY COORDS="117,87,157,88,158,132,117,123" OnMouseOver="rellenar('ele19')">
+				<AREA SHAPE=POLY COORDS="116,176,158,179,156,206,137,220,122,212" OnMouseOver="rellenar('ele20')">
+            </MAP>
+     </div>
+	 <img src="./images/perro.png" class="animal" id="perroimg1"/>
+	 <img src="./images/perro.png" class="animal" id="perroimg2" style="left:42%"/>
+	 <img src="./images/perro.png" class="animal" id="perroimg3" style="left:45%;top:65%"/>
+	 <img src="./images/perro.png" class="animal" id="perroimg4" style="left:49%;top:65%"/>
+	  <font id="perro" size="5" style="left:45%;top:62%;position:absolute"></font>
+</div>
+ <!-- imagenes del 3 recorrido -->
+  <div class="principal" id="tercero">
+     <div class="contenedor">
+         <IMG SRC="./images/cuatro.png" USEMAP="#cuatro3.png" HEIGHT=227 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/estilo/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/cuatro01.png" ID="ele21" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro02.png" ID="ele22" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro03.png" ID="ele23" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro04.png" ID="ele24" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro05.png" ID="ele25" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro06.png" ID="ele26" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro07.png" ID="ele27" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro08.png" ID="ele28" USEMAP="#cuatro3.png" class="invisible3" >
+         <IMG SRC="./images/contornos/cuatro09.png" ID="ele29" USEMAP="#cuatro3.png" class="invisible3" >
+		 <IMG SRC="./images/contornos/cuatro10.png" ID="ele30" USEMAP="#cuatro3.png" class="invisible3"  >
+             <MAP NAME="cuatro3.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/estilo/paloma.ani),auto;">
+                 <AREA SHAPE=POLY COORDS="64,33,98,52,109,33,108,17,91,8,76,9" OnMouseOver="rellenar('ele21')">
+				<AREA SHAPE=POLY COORDS="61,32,100,53,83,82,49,61" OnMouseOver="rellenar('ele22')">
+				<AREA SHAPE=POLY COORDS="84,82,49,64,27,103,65,118" OnMouseOver="rellenar('ele23')">
+				<AREA SHAPE=POLY COORDS="64,119,30,102,5,148,17,167,44,170,69,126" OnMouseOver="rellenar('ele24')">
+				<AREA SHAPE=POLY COORDS="63,129,115,129,114,172,43,173" OnMouseOver="rellenar('ele25')">
+				<AREA SHAPE=POLY COORDS="116,173,119,178,160,175,162,172,161,131,152,130,120,128,114,142" OnMouseOver="rellenar('ele26')">
+				<AREA SHAPE=POLY COORDS="163,131,163,172,188,167,197,149,189,132" OnMouseOver="rellenar('ele27')">
+				<AREA SHAPE=POLY COORDS="116,88,157,88,156,48,139,42,119,53" OnMouseOver="rellenar('ele28')">
+				<AREA SHAPE=POLY COORDS="117,87,157,88,158,132,117,123" OnMouseOver="rellenar('ele29')">
+				<AREA SHAPE=POLY COORDS="116,176,158,179,156,206,137,220,122,212" OnMouseOver="rellenar('ele30')">
+            </MAP>
+     </div>
+	 <img src="./images/conejo.png" class="animal" id="conejoimg1"/>
+	 <img src="./images/conejo.png" class="animal" id="conejoimg2" style="left:74%"/>
+	 <img src="./images/conejo.png" class="animal" id="conejoimg3" style="left:78%"/>
+	 <img src="./images/conejo.png" class="animal" id="conejoimg4" style="left:82%"/>
+	  <font id="conejo" size="5" style="left:76%;top:62%;position:absolute"></font>
+</div>
+ </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <title> Contorno</title>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+    .principal
+    {
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:65%;
+          height:450px;
+    }
+    .contenedor
+    {
+        height:432px;
+        margin-left:29%;
+		margin-bottom:50%;
+		padding-top:1%;
+    }
+	.invisible
+    {
+        left: 36.5%;
+        position: absolute;
+        visibility: hidden;
+		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+    }
+ </style>
+ <script> 
+	 var acierto=0, cont=1;
+	 function rellenar(part)
+	{  
+		  if(cont==part.substr(3))
+        {
+			document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+		if(acierto==11)
+		{
+			window.alert("muy bien");
+			acierto=0;
+			return;
+		}
+	}
+</script>
+ </head>
+ <body>
+ <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el contorno de cinco</p>
+  <div class="principal"> 
+     <div class="contenedor">
+     <!-- imagenes del recorrido -->
+         <IMG SRC="./images/cinco.png" USEMAP="#cinco.png" height=432 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+         <IMG SRC="./images/contornos/cinco01.png" ID="ele1" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco02.png" ID="ele2" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco03.png" ID="ele3" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco04.png" ID="ele4" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco05.png" ID="ele5" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco06.png" ID="ele6" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco07.png" ID="ele7" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco08.png" ID="ele8" USEMAP="#cinco.png" class="invisible">
+         <IMG SRC="./images/contornos/cinco09.png" ID="ele9" USEMAP="#cinco.png" class="invisible">
+		 <IMG SRC="./images/contornos/cinco10.png" ID="ele10" USEMAP="#cinco.png" class="invisible">
+		 <IMG SRC="./images/contornos/cinco11.png" ID="ele11" USEMAP="#cinco.png" class="invisible">
+             <MAP NAME="cinco.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">    
+		<AREA SHAPE=POLY COORDS="275,25,254,11,211,16,211,96,274,88,292,55" onmouseover="rellenar('ele1')">
+		<AREA SHAPE=POLY COORDS="204,12,135,12,136,94,211,96" onmouseover="rellenar('ele2')">
+		<AREA SHAPE=POLY COORDS="33,90,124,97,130,16,71,11,42,38" onmouseover="rellenar('ele3')">
+		<AREA SHAPE=POLY COORDS="118,94,114,132,25,165,33,97" onmouseover="rellenar('ele4')">
+		<AREA SHAPE=POLY COORDS="28,166,32,188,48,203,149,203,154,122,118,126" onmouseover="rellenar('ele5')">
+		<AREA SHAPE=POLY COORDS="159,124,197,129,235,149,243,159,178,223,145,204" onmouseover="rellenar('ele6')">
+		<AREA SHAPE=POLY COORDS="250,162,281,197,297,251,208,249,198,230,183,219" onmouseover="rellenar('ele7')">
+		<AREA SHAPE=POLY COORDS="299,252,292,316,262,365,210,300,216,283,218,267,214,249" onmouseover="rellenar('ele8')">
+		<AREA SHAPE=POLY COORDS="210,303,195,322,171,337,171,425,204,416,229,404,247,388,264,371" onmouseover="rellenar('ele9')">
+		<AREA SHAPE=POLY COORDS="171,335,144,340,128,335,107,329,49,383,74,404,106,414,141,418,173,418" onmouseover="rellenar('ele10')">
+		<AREA SHAPE=POLY COORDS="107,328,94,309,74,287,47,278,21,287,15,320,32,363,55,385" onmouseover="rellenar('ele11')">
+</MAP>
+</MAP>
+     </div>																																					   
+</div>
+ </body>
+</html>
