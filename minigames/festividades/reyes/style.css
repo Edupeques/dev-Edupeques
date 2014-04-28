@@ -1,0 +1,111 @@
+#imageSelector
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    max-width: 400px;
+    border: 10px 10px 10px 10px;
+}
+
+.baseImg
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.imageDraggable
+{
+    max-width: 100px;
+    max-height:100px;
+}
+
+#accept_Baltasar
+{
+    width: 137px;
+    height: 88px;
+    position: absolute;
+    left: 391px;
+    top: 157px;
+    z-index: 1;
+}
+
+#accept_BaltasarCorona
+{
+    position: absolute;
+    z-index: 1;
+    left: 400px;
+    top: 97px;
+    width: 100px;
+    height: 59px;
+}
+
+#accept_Gaspar
+{
+    position: absolute;
+    z-index: 1;
+    left: 605px;
+    top: 182px;
+    width: 149px;
+    height: 100px;
+}
+
+#accept_GasparCorona
+{
+    position: absolute;
+    z-index: 1;
+    left: 629px;
+    top: 113px;
+    width: 97px;
+    height: 65px;
+}
+
+#accept_Melchor
+{
+    position: absolute;
+    z-index: 1;
+    left: 183px;
+    top: 154px;
+    width: 146px;
+    height: 114px;
+}    
+
+#accept_MelchorCorona
+{
+    position: absolute;
+    z-index: 1;
+    left: 216px;
+    top: 103px;
+    width: 80px;
+    height: 49px;
+}
+
+#accept_Oro
+{
+    position: absolute;
+    z-index: 1;
+    left: 237px;
+    top: 269px;
+    width: 76px;
+    height: 107px;
+}
+
+#accept_Incienso
+{
+    position: absolute;
+    z-index: 1;
+    left: 637px;
+    top: 284px;
+    width: 99px;
+    height: 62px;
+}
+
+#accept_Mirra
+{
+    position: absolute;
+    z-index: 1;
+    left: 442px;
+    top: 244px;
+    width: 65px;
+    height: 88px;
+}
