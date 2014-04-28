@@ -1,0 +1,80 @@
+#imageSelector
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    max-width: 400px;
+    border: 10px 10px 10px 10px;
+}
+
+.baseImg
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.imageDraggable
+{
+    max-width: 100px;
+}
+
+#accept_oveja1
+{
+    width: 137px;
+    height: 120px;
+    position: absolute;
+    left: 71px;
+    top: 400px;
+    z-index: 1;
+}
+
+#accept_oveja2
+{
+    position: absolute;
+    left: 369px;
+    width: 100px;
+    top: 403px;
+    height: 119px;
+    z-index: 1;
+}
+
+#accept_maria
+{
+    position: absolute;
+    left: 268px;
+    width: 158px;
+    top: 172px;
+    height: 151px;
+    z-index: 1;
+}
+
+#accept_jose 
+{        
+    position: absolute;
+    left: 104px;
+    width: 158px;
+    top: 137px;
+    height: 185px;
+    z-index: 1;
+}
+
+#accept_jesus 
+{
+    position: absolute;
+    left: 211px;
+    width: 154px;
+    top: 323px;
+    height: 185px;
+    z-index: 1;
+}    
+
+#accept_estrella 
+{
+    position: absolute;
+    left: 201px;
+    width: 195px;
+    top: 23px;
+    height: 98px;
+    z-index: 1;
+}

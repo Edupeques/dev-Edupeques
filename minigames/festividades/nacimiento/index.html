@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Documento sin título</title>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.min.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <img src="images/base.png"      class="baseImg"/>
+        <img src="images/jesus.png"     class="baseImg" style="display:none;" id="img_jesus" />
+        <img src="images/jose.png"      class="baseImg" style="display:none;" id="img_jose"/>
+        <img src="images/maria.png"     class="baseImg" style="display:none;" id="img_maria"/>
+        <img src="images/sheep1.png"    class="baseImg" style="display:none;" id="img_oveja1"/>
+        <img src="images/sheep2.png"    class="baseImg" style="display:none;" id="img_oveja2" />
+        <img src="images/star.png"      class="baseImg" style="display:none;" id="img_estrella"/>
+        
+        <div id="mainDraw">
+            <div id="accept_oveja1"></div>
+            <div id="accept_oveja2"></div>
+            <div id="accept_maria"></div>
+            <div id="accept_jose"></div>
+            <div id="accept_jesus"></div>
+            <div id="accept_estrella"></div>
+        </div>
+        
+        <div id="imageSelector">
+            <img src="images/min_maria.png"     class="imageDraggable"  id="maria"/>
+            <img src="images/min_sheep1.png"    class="imageDraggable"  id="oveja1"/>
+            <img src="images/min_sheep2.png"    class="imageDraggable"  id="oveja2"/>
+            <img src="images/min_star.png"      class="imageDraggable"  id="estrella"/>
+            <img src="images/min_jesus.png"     class="imageDraggable"  id="jesus"/>
+            <img src="images/min_jose.png"      class="imageDraggable"  id="jose"/>
+        </div>
+    </body>
+</html>
