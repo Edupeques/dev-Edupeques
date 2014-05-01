@@ -1,0 +1,54 @@
+#imageSelector
+{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    max-width: 400px;
+    border: 10px 10px 10px 10px;
+}
+
+.baseImg
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 500px;
+}
+
+.imageDraggable
+{
+    max-width: 100px;
+    max-height:100px;
+}
+
+
+#accept_botas 
+{
+    position: absolute;
+    z-index: 1;
+    left: 40px;
+    top: 400px;
+    width: 180px;
+    height: 125px;
+}
+
+#accept_gorro 
+{
+    position: absolute;
+    z-index: 1;
+    left: 100px;
+    top: 5px;
+    width: 170px;
+    height: 100px;
+    
+}
+
+#accept_saco 
+{
+     position: absolute;
+    z-index: 1;
+    left: 250px;
+    top: 290px;
+    width: 230px;
+    height: 220px;
+}
