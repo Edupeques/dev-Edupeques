@@ -1,105 +1,107 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
- <head>
-  <title> Operaciones suma 1 </title>
-  <script src="../../js/jquery-1.11.0.min.js"></script>
-  <script src="../../js/jquery-ui-1.10.4.min.js"></script>
-   <script>
-	$(function() {
-		var resultado1=1,resultado2=1,resultado3=1; 
-		var inicio="./images/relleno0", final=".png", nombre1="#h1", nombre2="#h2", nombre3="#h3";
-		function isGameCompleted()
-		{
-			if(resultado1==4 && resultado2==5 && resultado3==4)
-				{
-					alert("Bien hecho!");  
-					$("#ima03").attr('src',"./images/resultado4.png")
-				}
-		}
-	    $(".contenedorPieza").draggable({ revert: true });
-		$("#ima01").droppable({
-			drop: function(event, ui)
-			{
-				ui.draggable.fadeOut(500, isGameCompleted);
-				if(resultado1==4)
-				{
-					$(this).attr('src',"./images/resultado4.png");
-					$(this).droppable("destroy");
-				}
-				else
-				{
-					$(this).attr('src',inicio+resultado1+final);
-            		resultado1++;
-				}	
-			}
-		});
-		$("#ima02").droppable({
-			drop: function(event, ui)
-			{
-				ui.draggable.fadeOut(500, isGameCompleted);
-				if(resultado2==5)
-				{
-					$(this).attr('src',"./images/resultado5.png");
-					$(this).droppable("destroy");
-				}
-				else
-				{
-					$(this).attr('src',inicio+resultado2+final);
-            		resultado2++;
-				}
-			}
-		});
-		$("#ima03").droppable({
-			
-			drop: function(event, ui)
-			{
-				ui.draggable.fadeOut(500, isGameCompleted);
-				if(resultado3==4)
-				{
-					$(this).attr('src',"./images/resultado4.png");
-					$(this).droppable("destroy");
-				}
-				else
-				{
-					$(this).attr('src',inicio+resultado3+final);
-            		resultado3++;
-				}
-			}
-		});
-	});
-	
-   </script>
- </head>
+    <head>
+        <title> Operaciones suma 1 </title>
+        <script src="../../js/jquery-1.11.0.min.js"></script>
+        <script src="../../js/jquery-ui-1.10.4.min.js"></script>
+        <script>
+            $(function() {
+                var resultado1=1,resultado2=1,resultado3=1; 
+                var inicio="./images/relleno0", final=".png", nombre1="#h1", nombre2="#h2", nombre3="#h3";
 
- <body>
-<table cellspacing="50">
-  <tr>
-	<td><img src="./images/op01.png" height="100"></td>
-	<td><img src="./images/inicial01.png" width="206"  id="ima01"></td>
-  </tr>
-  <tr>
-	<td><img src="./images/op02.png" height="100"></td>
-	<td><img src="./images/inicial01.png" width="206" id="ima02"></td>
-  </tr>
-  <tr>
-	<td><img src="./images/op03.png" height="100"></td>
-	<td><img src="./images/inicial01.png" width="206" id="ima03"></td>
-  </tr>
-  </table>  
-  <div name="objetos">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" class="contenedorPieza">
-  </div>
- </body>
+                function isGameCompleted()
+                {
+                    if(resultado1==4 && resultado2==5 && resultado3==4)
+                    {
+                        alert("Bien hecho!");
+                        $("#ima03").attr('src',"./images/resultado4.png")
+                    }
+                }
+
+                $(".contenedorPieza").draggable({ revert: true });
+                $("#ima01").droppable({
+                    drop: function(event, ui)
+                    {
+                        ui.draggable.fadeOut(500, isGameCompleted);
+                        if(resultado1==4)
+                        {
+                            $(this).attr('src',"./images/resultado4.png");
+                            $(this).droppable("destroy");
+                        }
+                        else
+                        {
+                            $(this).attr('src',inicio+resultado1+final);
+                            resultado1++;
+                        }    
+                    }
+                });
+                $("#ima02").droppable({
+                    drop: function(event, ui)
+                    {
+                        ui.draggable.fadeOut(500, isGameCompleted);
+                        if(resultado2==5)
+                        {
+                            $(this).attr('src',"./images/resultado5.png");
+                            $(this).droppable("destroy");
+                        }
+                        else
+                        {
+                            $(this).attr('src',inicio+resultado2+final);
+                            resultado2++;
+                        }
+                    }
+                });
+                $("#ima03").droppable({
+
+                    drop: function(event, ui)
+                    {
+                        ui.draggable.fadeOut(500, isGameCompleted);
+                        if(resultado3==4)
+                        {
+                            $(this).attr('src',"./images/resultado4.png");
+                            $(this).droppable("destroy");
+                        }
+                        else
+                        {
+                            $(this).attr('src',inicio+resultado3+final);
+                            resultado3++;
+                        }
+                    }
+                });
+            });
+
+        </script>
+    </head>
+
+    <body>
+        <table cellspacing="50">
+            <tr>
+                <td><img src="./images/op01.png" height="100"></td>
+                <td><img src="./images/inicial01.png" width="206"  id="ima01"></td>
+            </tr>
+            <tr>
+                <td><img src="./images/op02.png" height="100"></td>
+                <td><img src="./images/inicial01.png" width="206" id="ima02"></td>
+            </tr>
+            <tr>
+                <td><img src="./images/op03.png" height="100"></td>
+                <td><img src="./images/inicial01.png" width="206" id="ima03"></td>
+            </tr>
+        </table>  
+        <div name="objetos">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+            <img src="./images/huevo.png" height="50" class="contenedorPieza">
+        </div>
+    </body>
 </html>
