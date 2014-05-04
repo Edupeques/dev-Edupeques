@@ -16,51 +16,54 @@
 					$("#ima03").attr('src',"./images/resultado4.png")
 				}
 		}
-	    $("#h11, #h12, #h13, #h14, #h21, #h22, #h23, #h24, #h25, #h31, #h32, #h33, #h34").draggable({ revert: true });
+	    $(".contenedorPieza").draggable({ revert: true });
 		$("#ima01").droppable({
-			accept:nombre1+resultado1, 
 			drop: function(event, ui)
 			{
-				$(nombre1+resultado1).fadeOut(500, isGameCompleted);
+				ui.draggable.fadeOut(500, isGameCompleted);
 				if(resultado1==4)
-					$("#ima01").attr('src',"./images/resultado4.png");
+				{
+					$(this).attr('src',"./images/resultado4.png");
+					$(this).droppable("destroy");
+				}
 				else
 				{
-					$("#ima01").attr('src',inicio+resultado1+final);
+					$(this).attr('src',inicio+resultado1+final);
             		resultado1++;
 				}	
-				$(nombre1+resultado1).fadeIn(500);
 			}
 		});
 		$("#ima02").droppable({
-			accept:nombre2+resultado2, 
 			drop: function(event, ui)
 			{
-				$(nombre2+resultado2).fadeOut(500, isGameCompleted);
+				ui.draggable.fadeOut(500, isGameCompleted);
 				if(resultado2==5)
-					$("#ima02").attr('src',"./images/resultado5.png");
+				{
+					$(this).attr('src',"./images/resultado5.png");
+					$(this).droppable("destroy");
+				}
 				else
 				{
-					$("#ima01").attr('src',inicio+resultado1+final);
+					$(this).attr('src',inicio+resultado2+final);
             		resultado2++;
 				}
-				$(nombre2+resultado2).fadeIn(500);	
 			}
 		});
 		$("#ima03").droppable({
 			
-			accept:nombre3+resultado3, 
 			drop: function(event, ui)
 			{
-				$(nombre3+resultado3).fadeOut(500, isGameCompleted);
+				ui.draggable.fadeOut(500, isGameCompleted);
 				if(resultado3==4)
-					$("#ima03").attr('src',"./images/resultado4.png");
+				{
+					$(this).attr('src',"./images/resultado4.png");
+					$(this).droppable("destroy");
+				}
 				else
 				{
-					$("#ima01").attr('src',inicio+resultado1+final);
+					$(this).attr('src',inicio+resultado3+final);
             		resultado3++;
 				}
-				$(nombre3+resultado3).fadeIn(500);	
 			}
 		});
 	});
@@ -84,19 +87,19 @@
   </tr>
   </table>  
   <div name="objetos">
-	<img src="./images/huevo.png" height="50" id="h11" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h12" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h13" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h14" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h21" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h22" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h23" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h24" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h25" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h31" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h32" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h33" class="contenedorPieza">
-	<img src="./images/huevo.png" height="50" id="h34" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
+	<img src="./images/huevo.png" height="50" class="contenedorPieza">
   </div>
  </body>
 </html>
