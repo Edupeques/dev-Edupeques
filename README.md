@@ -23,7 +23,8 @@ Fecha | Desarrollo | Fecha Inicio | Plazo Final | Completado
 
 ###Division de tareas
 
-* Fede: _dibujos y festividades_
+* Fede: _dibujos_
 * Luisa: _colores_
 * David: _habitos (miscelanea)_
 * Desiree: _numeros_
+* **Todos:** _festividades_
