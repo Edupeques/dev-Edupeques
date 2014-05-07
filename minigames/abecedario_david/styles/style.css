@@ -1,0 +1,69 @@
+ @font-face
+ {
+    font-family: pipomayu;
+    src: url(../images/estilo/pipomayu.TTF);
+   }
+ body
+    {       
+        font-family:pipomayu;
+        background-image:url(../images/numbers.jpg),url(../images/numbers.jpg);
+        background-repeat:repeat-y;
+        background-position:5%,95%;
+    }
+	#primer
+	{
+		   margin-left:3%;
+		   float:left;
+	}
+	#segundo
+	{
+		  margin-left:15%;
+		  float:left;
+	}
+	#tercero
+	{
+		 margin-left:70%;
+	}
+     .invisible1, .invisible2, .invisible3
+    {
+	position: absolute;
+	visibility: hidden;
+	height:227px;
+	cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+	}
+	.invisible1{left: 8.1%;}
+	.invisible2{left: 42.7%;}
+	.invisible3{left: 74.4%;}
+	.animal
+	{
+		height:100px;
+		margin-top:5%;
+		margin-left:1%;
+		position:absolute;
+	}
+   .invisible
+    {
+        left: 38.5%;
+        position: absolute;
+        visibility: hidden;
+		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+    }
+	/*botones*/
+        .boton
+        {
+            font-size:50px;
+            margin:10px;
+            width:100px;
+            background-color:#ccccff;
+            color:#6600ff;
+            font-family:"calibri";
+            border:double;
+        }
+		.opcion
+		{
+			margin:auto;
+			position:absolute;
+			left:26%;
+			top:20%;
+			height:250px;
+		}
