@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Inicio </TITLE>
+</HEAD>
+<style>
+body
+{
+	background:#99ff00; 
+	
+}
+
+input, textarea
+{
+	border-radius:5px;
+}
+</style>
+<BODY>
+	<div name="cabecera" id="cabecera"><H1 align="center">Area de profes</H1></div>
+	<div name="cuerpo" id="cuerpo">
+
+		<form  name="datos" method="post" action="login.php">
+			<TABLE align="center" width="20%">
+				<TR>
+					<TD>Usuario:</TD>
+					<TD><input type="text" name="name" id="name" size="10" maxlength="10"/></TD>
+				</TR>
+				<TR>
+					<TD>Clave:</TD>
+					
+					<td><input type="password" name="pwd" id="pwd" size="10" maxlength="10">
+					</td>
+					</tr>
+					<td colspan="2">
+					<input type="submit" value="entrar"  >
+					 Si pones un nombre erroneo o contraseña te lo dice(nombre:Antonio,contraseña:Antonio)(de aqui iria a pg2.php y ella iria a alumnos.php en construccion...)
+					</TD>
+					</TR>
+				
+				
+			</TABLE>
+		</form>
+	</div>
+</BODY>
+</HTML>
