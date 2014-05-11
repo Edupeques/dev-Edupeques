@@ -2,9 +2,8 @@
 
 	
 	 numeros=new Array();
-	 numeros[0]="./images/N.png";
-	 numeros[1]="./images/R.png";
-	
+	 numeros[0]="./images/c.png";
+	 numeros[1]="./images/L.png";
 
 /*REPASO DE CONTORNOS DE LOS NUMEROS*/
 
@@ -18,8 +17,8 @@
             acierto=acierto+1;
         }
 		//condicionales del numero 1
-		if (acierto==20 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/N1.png")
+		if (acierto==12 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/c1.png")
 		{
 			if(document.getElementById("ele1").getAttribute("class")==	"invisible")
 			{
@@ -29,22 +28,19 @@
 			}
 		
 }
-if (acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/P1.png")
+if (acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/D1.png")
 		{
 			
 		}
-        if(acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/P1.png")
+        if(acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/D1.png")
         {
 		
 			window.alert("muy bien");
 			acierto=0;
         }
 }
-
-
-
 
  function rellenar2(part)
 {      
@@ -56,8 +52,8 @@ if (acierto==10 &&
             acierto=acierto+1;
         }
 		//condicionales del numero 1
-		if (acierto==11 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/Q1.png")
+		if (acierto==8 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/L1.png")
 		{
 			if(document.getElementById("ele1").getAttribute("class")==	"invisible")
 			{
@@ -67,13 +63,13 @@ if (acierto==10 &&
 			}
 		
 }
-if (acierto==13 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/R1.png")
+if (acierto==10 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/F1.png")
 		{
 			
 		}
-        if(acierto==13 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/R1.png")
+        if(acierto==10 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/F1.png")
         {
 		
 			window.alert("muy bien");
@@ -90,8 +86,8 @@ function rellenar4(part)
             acierto=acierto+1;
         }
 		//condicionales del numero 1
-		if (acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/S1.png")
+		if (acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/G1.png")
 		{
 			if(document.getElementById("ele1").getAttribute("class")==	"invisible")
 			{
@@ -99,17 +95,17 @@ function rellenar4(part)
 				acierto=0;
 				return;
 			}
-
+		
 }
-if (acierto==8 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/T1.png")
+if (acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/H1.png")
 		{
-
+			
 		}
-        if(acierto==8 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/T1.png")
+        if(acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/H1.png")
         {
-
+		
 			window.alert("muy bien");
 			acierto=0;
         }
@@ -125,7 +121,7 @@ function rellenar5(part)
         }
 		//condicionales del numero 1
 		if (acierto==11 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/V1.png")
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/J1.png")
 		{
 			if(document.getElementById("ele1").getAttribute("class")==	"invisible")
 			{
@@ -133,17 +129,17 @@ function rellenar5(part)
 				acierto=0;
 				return;
 			}
-
+		
 }
-if (acierto==21 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/W1.png")
+if (acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/K1.png")
 		{
-
+			
 		}
-        if(acierto==21 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/W1.png")
+        if(acierto==14 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/K1.png")
         {
-
+		
 			window.alert("muy bien");
 			acierto=0;
         }
@@ -158,8 +154,8 @@ function rellenar6(part)
             acierto=acierto+1;
         }
 		//condicionales del numero 1
-		if (acierto==11 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/X1.png")
+		if (acierto==20 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/M1.png")
 		{
 			if(document.getElementById("ele1").getAttribute("class")==	"invisible")
 			{
@@ -167,51 +163,17 @@ function rellenar6(part)
 				acierto=0;
 				return;
 			}
-
+		
 }
-if (acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/Y1.png")
+if (acierto==18 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/B1.png")
 		{
-
+			
 		}
-        if(acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/Y1.png")
+        if(acierto==18 &&
+			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/B1.png")
         {
-
-			window.alert("muy bien");
-			acierto=0;
-        }
-}
-function rellenar7(part)
-{      
-		//rellenamos poco a poco la matriz    
-		if(cont==part.substr(3))
-        {
-            document.getElementById(part).style.visibility = "visible";
-            cont=cont+1;
-            acierto=acierto+1;
-        }
-		//condicionales del numero 1
-		if (acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/Z1.png")
-		{
-			if(document.getElementById("ele1").getAttribute("class")==	"invisible")
-			{
-				 window.alert("muy bien");
-				acierto=0;
-				return;
-			}
-
-}
-if (acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/Z1.png")
-		{
-
-		}
-        if(acierto==10 &&
-			document.getElementById("ele1").getAttribute("src")==	"./images/contornos/Z1.png")
-        {
-
+		
 			window.alert("muy bien");
 			acierto=0;
         }
