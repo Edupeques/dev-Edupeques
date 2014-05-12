@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <title> Contorno</title>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+    .principal
+    {
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:65%;
+          height:450px;
+    }
+    .contenedor
+    {
+        height:432px;
+        margin-left:28%;
+		margin-bottom:50%;
+		padding-top:1%;
+    }
+	.invisible
+    {
+        left: 35.85%;
+        position: absolute;
+        visibility: hidden;
+		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+    }
+ </style>
+ <script> 
+	 var acierto=0, cont=1;
+	 function rellenar(part)
+	{  
+		  if(cont==part.substr(3))
+        {
+			document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+		if(acierto==10)
+		{
+			window.alert("muy bien");
+			acierto=0;
+			return;
+		}
+	}
+</script>
+</head>
+<body>
+    <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el contorno de siete</p>
+    <div class="principal"> 
+        <div class="contenedor">
+            <!-- imagenes del recorrido -->
+            <IMG SRC="./images/siete.png" USEMAP="#siete.png" height=432 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+            <IMG SRC="./images/contornos/siete01.png" ID="ele1" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete02.png" ID="ele2" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete03.png" ID="ele3" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete04.png" ID="ele4" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete05.png" ID="ele5" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete06.png" ID="ele6" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete07.png" ID="ele7" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete08.png" ID="ele8" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete09.png" ID="ele9" USEMAP="#siete.png" class="invisible">
+            <IMG SRC="./images/contornos/siete10.png" ID="ele10" USEMAP="#siete.png" class="invisible">
+            <MAP NAME="siete.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">    
+                <AREA SHAPE=POLY COORDS="75,3,75,87,24,82,0,56,15,10,53,2"OnMouseOver="rellenar('ele1')">
+                <AREA SHAPE=POLY COORDS="75,3,146,3,139,94,71,87" OnMouseOver="rellenar('ele2')">
+                <AREA SHAPE=POLY COORDS="141,95,235,84,235,25,215,1,145,0" OnMouseOver="rellenar('ele3')">
+                <AREA SHAPE=POLY COORDS="141,99,236,83,203,183,122,175" OnMouseOver="rellenar('ele4')">
+                <AREA SHAPE=POLY COORDS="202,179,186,246,97,234,122,171" OnMouseOver="rellenar('ele5')">
+                <AREA SHAPE=POLY COORDS="185,245,99,240,84,305,165,310" OnMouseOver="rellenar('ele6')">
+                <AREA SHAPE=POLY COORDS="85,303,170,311,153,363,66,352" OnMouseOver="rellenar('ele7')">
+                <AREA SHAPE=POLY COORDS="150,359,68,355,65,382,72,420,106,431,137,411" OnMouseOver="rellenar('ele8')">
+                <AREA SHAPE=POLY COORDS="120,179,87,181,65,195,70,228,98,241" OnMouseOver="rellenar('ele9')">
+                <AREA SHAPE=POLY COORDS="204,179,235,178,256,202,243,240,186,240" OnMouseOver="rellenar('ele10')">
+            </MAP>
+        </div>
+    </div>
+</body>
+</html>
