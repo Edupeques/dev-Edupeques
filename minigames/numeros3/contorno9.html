@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <title> Contorno</title>
+ <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+ <style type="text/css">
+    .principal
+    {
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#9CF, #cc99ff); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:65%;
+          height:450px;
+    }
+    .contenedor
+    {
+        height:432px;
+        margin-left:36%;
+		margin-bottom:50%;
+		padding-top:1%;
+    }
+	.invisible
+    {
+        left: 39.%;
+        position: absolute;
+        visibility: hidden;
+		cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+    }
+ </style>
+ <script> 
+	 var acierto=0, cont=1;
+	 function rellenar(part)
+	{  
+		  if(cont==part.substr(3))
+        {
+			document.getElementById(part).style.visibility = "visible";
+            cont=cont+1;
+            acierto=acierto+1;
+        }
+		if(acierto==11)
+		{
+			window.alert("muy bien");
+			acierto=0;
+			return;
+		}
+	}
+</script>
+ </head>
+<body>
+    <p style="text-align:center;font-size:40px;margin-top:1%">Rellena el contorno de nueve</p>
+    <div class="principal"> 
+        <div class="contenedor">
+            <!-- imagenes del recorrido -->
+            <IMG SRC="./images/nueve.png" USEMAP="#nueve.png" height=432 BORDER=0 style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">
+            <IMG SRC="./images/contornos/nueve01.png" ID="ele1" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve02.png" ID="ele2" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve03.png" ID="ele3" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve04.png" ID="ele4" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve05.png" ID="ele5" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve06.png" ID="ele6" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve07.png" ID="ele7" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve08.png" ID="ele8" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve09.png" ID="ele9" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve10.png" ID="ele10" USEMAP="#nueve.png" class="invisible">
+            <IMG SRC="./images/contornos/nueve11.png" ID="ele11" USEMAP="#nueve.png" class="invisible">
+            <MAP NAME="nueve.png" style="position:absolute;cursor: url(./images/estilo/paloma.gif),url(./images/paloma.ani),auto;">    
+                <AREA SHAPE=POLY COORDS="150,119,199,118,196,77,174,33,136,75,149,97" OnMouseOver="rellenar('ele1')">
+                <AREA SHAPE=POLY COORDS="173,34,134,4,88,5,48,24,81,76,110,63,138,72" OnMouseOver="rellenar('ele2')">
+                <AREA SHAPE=POLY COORDS="79,75,45,21,13,71,3,114,2,147,58,121,65,98" OnMouseOver="rellenar('ele3')">
+                <AREA SHAPE=POLY COORDS="56,124,62,162,70,172,34,222,9,177,2,146" OnMouseOver="rellenar('ele4')">
+                <AREA SHAPE=POLY COORDS="66,174,96,185,105,182,107,240,63,237,36,214" OnMouseOver="rellenar('ele5')">
+                <AREA SHAPE=POLY COORDS="110,232,167,159,143,146,124,167,99,187" OnMouseOver="rellenar('ele6')">
+                <AREA SHAPE=POLY COORDS="149,120,202,120,200,165,197,181,145,153,148,134" OnMouseOver="rellenar('ele7')">
+                <AREA SHAPE=POLY COORDS="168,163,196,177,191,219,178,251,109,235" OnMouseOver="rellenar('ele8')">
+                <AREA SHAPE=POLY COORDS="109,233,178,250,149,327,85,299" OnMouseOver="rellenar('ele9')">
+                <AREA SHAPE=POLY COORDS="85,300,150,330,119,394,61,348"  OnMouseOver="rellenar('ele10')">
+                <AREA SHAPE=POLY COORDS="62,350,124,388,103,418,82,431,59,425,47,404,50,375" OnMouseOver="rellenar('ele11')">
+            </MAP>
+        </div>
+    </div>
+</body>
+</html>
+</html>
