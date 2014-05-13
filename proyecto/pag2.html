@@ -6,7 +6,13 @@
 
 function Seleccion(numero,ctrl){
 
-	document.location.href='alumnos.php?ref='+numero+((ctrl[0].checked)?'A':'B');
+
+if(ctrl[0].checked==false && ctrl[1].checked==false){
+	alert('Debe seleccionar una letra');
+	return;
+	}
+
+	document.location.href='alumnos.php?ref='+numero+((ctrl[0].checked)?'1':'2');
 }
 
 </script>

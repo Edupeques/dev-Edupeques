@@ -28,16 +28,15 @@ mysql_select_db("edupeques",$conexion)  or die ("Error al seleccionar la base de
 
 
 		$SQL="SELECT * FROM alumns WHERE class='".$indice."'";
-		echo $SQL;
-
-
 		$registros=mysql_query($SQL,$conexion);
-			
-
-
-		while(mysql_num_rows($registros)){
-
-				echo "<img src='".$row['photo']."'>";
+	$Contador=0;		
+while ($row = mysql_fetch_assoc($registros)) {
+    echo "<a href='password.php?Codigo=".$row['entry']."&Pos=1'><img src='img/".$row['photo']."' width=100></a>";
+		if($Contador==1){
+				echo "<br>";
+				$Contador=0;
+		}
+		$Contador=$Contador+1;
 
 		}
 
