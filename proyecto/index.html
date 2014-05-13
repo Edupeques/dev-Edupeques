@@ -4,27 +4,39 @@
   <TITLE> Edupeques </TITLE>
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#logo").animate({
+      left:'30.5%',
+        top:'0',
+      opacity:'1',
+      width:'500px'
+    }, 2000);
+    $("#title").fadeIn(4000);
+    $("#boton").fadeIn(2000);
+});
+</script>
   <!-- localhost/php/01-Basico.php -->
  </HEAD>
 
 
  <BODY id="index"> 
-<img src="../images/logosz.png" style="position:absolute;margin:2%;height:50px;"/>
-<center>   <img src="./img/logo.png" align=center width=500px height=500px></center>
- <form name="datos" method="post" action="pag2.html">
-<TABLE align="center" id="boton">
-<TR>
-	<TD><input TYPE="submit" name="ninos" id="nino"  value="Ni&ntilde;os" class="selec"></TD>
-	<TD><input TYPE="submit" name="porfes" id="profes"  value="Profesores" class="selec"></TD>
-</TR>
-</TABLE>
-<div  id="title">
-    <p align="center" style="font-size:75px">EDUPEQUES</p>
-    <p align="center">Educacion Infantil</p>
-</div>
-</form>
-
-	
-
+<img src="../images/logosz.png" style="position:fixed;margin:2%;height:50px;"/>
+<img src="./img/logo.png" width="50" style="position:absolute;left:7%;top:14%;opacity:0.5;" id="logo">
+     <div id="contindex">
+         <div  id="title" style="left:34%;display:none;">
+            <p align="center" style="font-size:75px">EDUPEQUES</p>
+            <p align="center">Educacion Infantil</p>
+        </div>
+         <form name="datos" method="post" action="pag2.html">
+        <TABLE align="center" id="boton" style="width:50%;position:absolute;top:75%;left:29%;display:none;">
+        <TR>
+            <TD><input TYPE="submit" name="ninos" id="nino"  value="Ni&ntilde;os" class="selec"></TD>
+            <TD><input TYPE="submit" name="porfes" id="profes"  value="Profesores" class="selec"></TD>
+        </TR>
+        </TABLE>
+        </form>
+     </div>
  </BODY>
 </HTML>

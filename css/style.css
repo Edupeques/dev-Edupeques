@@ -28,21 +28,20 @@ body
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1afb2', endColorstr='#c7d8db',GradientType=0 ); /* IE6-9 */
 
 }
-#boton
+#contindex
 {
     width:50%;
     margin-left:25%;
-    padding-left:5%;
 }
 #title
 {
+   position:absolute;
     font-family:calibri;
     font-weight:bold;
     font-size:40px;
     color:#fff;
+    top:30%;
     text-align:center;
-    margin-top:-25%;
-    margin-left:-1.5%;
     text-shadow: 1px 1px 20px #FFA352;
 }
 .selec
