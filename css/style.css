@@ -1,0 +1,121 @@
+@font-face
+ {
+    font-family: pipomayu;
+    src: url(../images/estilo/pipomayu.TTF);
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+{ 
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+body
+{
+    font-family: Arial, Helvetica, Verdana;
+}
+/*ESTILOS DEL MENU PRINCIPAL*/
+#index
+{
+    background: #a1afb2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a1afb2 0%, #8b9699 43%, #889193 62%, #c7d8db 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a1afb2), color-stop(43%,#8b9699), color-stop(62%,#889193), color-stop(100%,#c7d8db)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a1afb2 0%,#8b9699 43%,#889193 62%,#c7d8db 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a1afb2 0%,#8b9699 43%,#889193 62%,#c7d8db 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a1afb2 0%,#8b9699 43%,#889193 62%,#c7d8db 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a1afb2 0%,#8b9699 43%,#889193 62%,#c7d8db 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1afb2', endColorstr='#c7d8db',GradientType=0 ); /* IE6-9 */
+
+}
+#boton
+{
+    width:50%;
+    margin-left:25%;
+    padding-left:5%;
+}
+#title
+{
+    font-family:calibri;
+    font-weight:bold;
+    font-size:40px;
+    color:#fff;
+    text-align:center;
+    margin-top:-25%;
+    margin-left:-1.5%;
+    text-shadow: 1px 1px 20px #FFA352;
+}
+.selec
+{
+    width:200px;
+    height:50px;
+    border-radius:30px;
+    border-color:#f08003;
+    color:#fff;
+    font-size:25px;
+    background: #e6b22a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e6b22a 1%, #e55b2b 50%, #f08003 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e6b22a), color-stop(50%,#e55b2b), color-stop(100%,#f08003)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b22a', endColorstr='#f08003',GradientType=0 ); /* IE6-9 */
+
+}
+.selec:hover
+{
+    -webkit-box-shadow: 1px 1px 50px 1px #FF8000;
+    box-shadow: 1px 1px 50px 1px #FF8000;
+}
+/*ESTILOS DE LOS RECORRIDOS */
+	#primer
+	{
+		   margin-left:3%;
+		   float:left;
+	}
+	#segundo
+	{
+		  margin-left:15%;
+		  float:left;
+	}
+	#tercero
+	{
+		 margin-left:70%;
+	}
+     .invisible1, .invisible2, .invisible3
+    {
+	position: absolute;
+	visibility: hidden;
+	height:227px;
+	cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
+	}
+	.invisible1{left: 8.1%;}
+	.invisible2{left: 42.7%;}
+	.invisible3{left: 74.4%;}
+	.animal
+	{
+		height:100px;
+		margin-top:5%;
+		margin-left:1%;
+		position:absolute;
+	}
+	/*botones*/
+        .boton
+        {
+            font-size:50px;
+            margin:10px;
+            width:100px;
+            background-color:#ccccff;
+            color:#6600ff;
+            font-family:"calibri";
+            border:double;
+        }
+		.opcion
+		{
+			margin:auto;
+			position:absolute;
+			left:26%;
+			top:20%;
+			height:250px;
+		}
