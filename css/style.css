@@ -15,6 +15,28 @@ body
 {
     font-family: Arial, Helvetica, Verdana;
 }
+#cabecera
+{
+    position:fixed;
+    font-family:calibri;
+    font-weight:bold;
+    font-size:20px;
+    color:#fff;
+    top:30%;
+    text-shadow: 1px 1px 20px #FFA35F;
+    width:100%;
+    height:5%;
+    padding:2%;
+    margin-top:-15%;;
+    background: #e6b22a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e6b22a 1%, #e55b2b 50%, #f08003 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e6b22a), color-stop(50%,#e55b2b), color-stop(100%,#f08003)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #e6b22a 1%,#e55b2b 50%,#f08003 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b22a', endColorstr='#f08003',GradientType=0 ); /* IE6-9 */
+}
 /*ESTILOS DEL MENU PRINCIPAL*/
 #index
 {
@@ -66,6 +88,34 @@ body
 {
     -webkit-box-shadow: 1px 1px 50px 1px #FF8000;
     box-shadow: 1px 1px 50px 1px #FF8000;
+    font-size:30px;
+}
+.grupo
+{
+    position:absolute;
+    width:50%;
+    left:25%;
+    top:60%;
+}
+/*ESTILOS DEL MENU DE LOS ALMNOS*/
+#loginninos
+{ 
+    background: #fefcea; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fefcea 0%, #f2e98d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(100%,#f2e98d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #fefcea 0%,#f2e98d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #fefcea 0%,#f2e98d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #fefcea 0%,#f2e98d 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #fefcea 0%,#f2e98d 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f2e98d',GradientType=0 ); /* IE6-9 */
+}
+img.edad
+{
+    padding:3%;
+}
+img.edad:hover
+{
+    width:210px;
 }
 /*ESTILOS DE LOS RECORRIDOS */
 	#primer

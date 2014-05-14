@@ -1,9 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
  <HEAD>
-
+     <TITLE> Login Alumnos </TITLE>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="../css/style.css">
 <script type="text/javascript">
-
 function Seleccion(numero,ctrl){
 
 
@@ -16,36 +17,25 @@ if(ctrl[0].checked==false && ctrl[1].checked==false){
 }
 
 </script>
-
-  <TITLE> New Document </TITLE>
-
-<TABLE align="center" width=40%>
-<TR>
-	<td>
-	<form name=formulario>
-	<TABLE align="center">
-	<TR>
-		<TD><img src="img/3.jpg" width="75" onClick="Seleccion(3,document.formulario.selector)"></TD>
-		<TD><img src="img/4.jpg" width="75" onClick="Seleccion(4,document.formulario.selector)"></TD>
-		<TD><img src="img/5.jpg" width="75" onClick="Seleccion(5,document.formulario.selector)" ></TD>
-	</TR>
-	</table>
-	</td>
-</tr>
-<TR>
-	<td>
-	<TABLE align="center">
-	<TR>
-		<td><INPUT TYPE="radio" NAME="selector">A</td>
-		<td><INPUT TYPE="radio" NAME="selector">B</td>
-
-	</TR>
-	</TABLE>
-	</form>
-	</td>
-</tr>
-</table>
- <BODY>
-  
+</HEAD>
+ <BODY id="loginninos">
+    <div id="cabecera">
+        <p>EDUPEQUES Educación Infantil</p>
+    </div>
+    <div style="position:absolute;position:absolute;width:50%;left:23%;top:25%;">
+        <form name=formulario>
+            <TABLE width=40% align=center>
+                <TR class="edad">
+                    <TD><img src="img/3.jpg" width="200" onClick="Seleccion(3,document.formulario.selector)" class="edad"></TD>
+                    <TD><img src="img/4.jpg" width="200" onClick="Seleccion(4,document.formulario.selector)" class="edad"></TD>
+                    <TD><img src="img/5.jpg" width="200" onClick="Seleccion(5,document.formulario.selector)" class="edad"></TD>
+                </TR>
+                <TR class="grupo">
+                    <td><INPUT TYPE="radio" NAME="selector">A</td>
+                    <td><INPUT TYPE="radio" NAME="selector">B</td>
+                </TR>
+            </TABLE>
+        </form>  
+    </div>
  </BODY>
 </HTML>
