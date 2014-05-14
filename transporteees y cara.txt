@@ -1,0 +1,29 @@
+Los tranportes
+The transports
+
+Pulsa sobre los transpotres para saber su nombre
+Click on the transports to know his name
+
+barco-boat
+coche-car
+avion-plane
+autobus-bus
+helicoptero-helicopter
+tren-train
+
+
+
+La cara
+The face
+
+Pulsa sobre las partes de la cara para saber su nombre
+Click on the parts of the face to know his name
+Pulsa sobre las partes de la cara para saber su nombre
+
+Pelo-hair
+orejas-hears
+ojos-eyes
+nariz-nose
+dientes-teth
+boca-mouth
+lengua-tongue
