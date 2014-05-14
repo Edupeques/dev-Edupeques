@@ -7,11 +7,12 @@
         <script>
             $(function() {
                 var resultado1=1,resultado2=1,resultado3=1; 
+                var dibujo1Completed = false, dibujo2Completed = false, dibujo3Completed = false;
                 var inicio="./images/relleno0", final=".png", nombre1="#h1", nombre2="#h2", nombre3="#h3";
 
                 function isGameCompleted()
                 {
-                    if(resultado1==4 && resultado2==5 && resultado3==4)
+                    if(dibujo1Completed && dibujo2Completed && dibujo3Completed)
                     {
                         alert("Bien hecho!");
                         $("#ima03").attr('src',"./images/resultado4.png")
@@ -27,6 +28,7 @@
                         {
                             $(this).attr('src',"./images/resultado4.png");
                             $(this).droppable("destroy");
+                            dibujo1Completed = true;
                         }
                         else
                         {
@@ -43,6 +45,7 @@
                         {
                             $(this).attr('src',"./images/resultado5.png");
                             $(this).droppable("destroy");
+                            dibujo2Completed = true;
                         }
                         else
                         {
@@ -60,6 +63,7 @@
                         {
                             $(this).attr('src',"./images/resultado4.png");
                             $(this).droppable("destroy");
+                            dibujo3Completed = true;
                         }
                         else
                         {
