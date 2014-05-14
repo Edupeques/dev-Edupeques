@@ -11,40 +11,79 @@ function pintar(obj)
 </script>
 
 <style type="text/css">
+    .principal
+    {
+		
+          margin-left:20%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#6699ff,#99ff66); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:75%;
+          height:620px;
+    }
+    .contenedor
+    {
+		font-family: Homer Simpson, cursive; 
+		font-size: 16pt; 
+        height:43px;
+        margin-left:3%;
+		margin-bottom:50%;
+		padding-top:1%;
+		color:#000000;
 
-.titulo
-{
-	padding:1px;
-	float:left;
-}
+    }
+ 
+
+
  .imagen
 {
  position:absolute;
- top:50px;
- left:400px;
+ top:10px;
+ left:200px;
  width:416;
  height:512;
  padding:40;
                
 } 
-/*.cabezera
+
+
+.titulo
 {
-	background-color:#990000;
-	height:85px;
-	text-align:center;;
-}*/
+	padding:50px;
+	float:left;
+	height:512;
+
+}
+ .imagen
+{
+ position:absolute;
+ top:50px;
+ left:600px;
+ width:416;
+ height:512;
+ padding:40;
+
+ 
+                
+} 
+
 </style>
 
 
+
     </HEAD>
-<body bgcolor="#ffffff">
+<body bgcolor="#cc33cc">
 
- <div class="cabezera">
-		<div class="titulo"><img src="imagenes/La Granja.gif" ></div>
-
- </div>
+ 
 
 <IMG SRC="./imagenes/animalesGranjaCompleto.png" class="imagen" USEMAP="#animalesGranja.png" >
+<div class="principal"> 
+	<div class="titulo"> 
+		<p style="text-align:center;font-size:50px;margin-top:-5%"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animales de la Granja </b></p>
+	</div>
+     <div class="contenedor" > 
 
 
 <IMG SRC="./imagenes/avispa.gif" class="imagen"  USEMAP="#animalesGranja.png" id="avispa" style="display:none" >
@@ -62,31 +101,33 @@ function pintar(obj)
 
 <MAP NAME="animalesGranja.png">
 <!-- avispa-->
-<AREA SHAPE=RECT COORDS="16,128,103,212" OnClick="pintar('avispa')">
+<AREA SHAPE=RECT COORDS="16,128,103,212" OnClick="pintar('avispa')"style="cursor: pointer">
 <!-- gato-->
-<AREA SHAPE=RECT COORDS="118,129,204,209" OnClick="pintar('gato')">
+<AREA SHAPE=RECT COORDS="118,129,204,209" OnClick="pintar('gato')"style="cursor: pointer">
 <!-- vaca-->
-<AREA SHAPE=RECT COORDS="221,128,305,207" OnClick="pintar('vaca')">
+<AREA SHAPE=RECT COORDS="221,128,305,207" OnClick="pintar('vaca')"style="cursor: pointer">
 <!-- gallina-->
-<AREA SHAPE=RECT COORDS="20,229,96,314" OnClick="pintar('gallina')">
+<AREA SHAPE=RECT COORDS="20,229,96,314" OnClick="pintar('gallina')"style="cursor: pointer">
 <!-- saltamontes-->
-<AREA SHAPE=RECT COORDS="121,232,203,306" OnClick="pintar('saltamontes')">
+<AREA SHAPE=RECT COORDS="121,232,203,306" OnClick="pintar('saltamontes')"style="cursor: pointer">
 <!-- perro-->
-<AREA SHAPE=RECT COORDS="221,234,306,308" OnClick="pintar('perro')">
+<AREA SHAPE=RECT COORDS="221,234,306,308" OnClick="pintar('perro')"style="cursor: pointer">
 <!-- pato-->
-<AREA SHAPE=RECT COORDS="16,333,95,413" OnClick="pintar('pato')">
+<AREA SHAPE=RECT COORDS="16,333,95,413" OnClick="pintar('pato')"style="cursor: pointer">
 <!-- rana-->
-<AREA SHAPE=RECT COORDS="123,333,204,414" OnClick="pintar('rana')">
+<AREA SHAPE=RECT COORDS="123,333,204,414" OnClick="pintar('rana')"style="cursor: pointer">
 <!-- cabra-->
-<AREA SHAPE=RECT COORDS="224,331,307,415" OnClick="pintar('cabra')">
+<AREA SHAPE=RECT COORDS="224,331,307,415" OnClick="pintar('cabra')"style="cursor: pointer">
 <!-- cabra-->
-<AREA SHAPE=RECT COORDS="17,434,103,515" OnClick="pintar('caballo')">
+<AREA SHAPE=RECT COORDS="17,434,103,515" OnClick="pintar('caballo')"style="cursor: pointer">
 <!-- cerdo-->
-<AREA SHAPE=RECT COORDS="118,437,204,516" OnClick="pintar('cerdo')">
+<AREA SHAPE=RECT COORDS="118,437,204,516" OnClick="pintar('cerdo')"style="cursor: pointer">
 <!-- oveja-->
-<AREA SHAPE=RECT COORDS="222,435,308,513" OnClick="pintar('oveja')">
+<AREA SHAPE=RECT COORDS="222,435,308,513" OnClick="pintar('oveja')"style="cursor: pointer">
 
 </MAP>
+ </div>
 
+</div>
  </body>
 </HTML>

@@ -9,14 +9,33 @@ function pintar(obj)
    document.getElementById(obj).style.display = '';
 }
 </script>
-
 <style type="text/css">
+    .principal
+    {
+		
+          margin-left:17.5%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#00ff66,#cc0066); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:70%;
+          height:620px;
+    }
+    .contenedor
+    {
+		font-family: Homer Simpson, cursive; 
+		font-size: 16pt; 
+        height:43px;
+        margin-left:3%;
+		margin-bottom:50%;
+		padding-top:1%;
+		color:#000000;
 
-.titulo
-{
-	padding:1px;
-	float:left;
-}
+    }
+ 
+
+
  .imagen
 {
  position:absolute;
@@ -27,61 +46,59 @@ function pintar(obj)
  padding:40;
                
 } 
-/*.cabezera
-{
-	background-color:#990000;
-	height:85px;
-	text-align:center;;
-}*/
+
 </style>
 
 
     </HEAD>
-<body bgcolor="#ffffff">
+<body bgcolor="#ff9900">
 
  
 
  </div>
 
-<IMG SRC="./imagenes/disenoNumerosCompleto.png" class="imagen" USEMAP="#diseno-numeros.jpg" >
+<IMG SRC="./imagenes/disenoNumerosCompleto2.png" class="imagen" USEMAP="#diseno-numeros2.jpg" >
 
+ <div class="principal"> 
+     <div class="contenedor" > 
+<IMG SRC="./imagenes/uno.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="uno" style="display:none" >
+<IMG SRC="./imagenes/dos.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="dos" style="display:none" >
+<IMG SRC="./imagenes/tres.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="tres" style="display:none" >
+<IMG SRC="./imagenes/cuatro.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="cuatro" style="display:none" >
+<IMG SRC="./imagenes/cinco.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="cinco" style="display:none" >
+<IMG SRC="./imagenes/seis.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="seis" style="display:none" >
+<IMG SRC="./imagenes/siete.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="siete" style="display:none" >
+<IMG SRC="./imagenes/ocho.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="ocho" style="display:none" >
+<IMG SRC="./imagenes/nueve.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="nueve" style="display:none" >
+<IMG SRC="./imagenes/diez.gif" class="imagen"  USEMAP="#diseno-numeros2.jpg" id="diez" style="display:none" >
 
-<IMG SRC="./imagenes/uno.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="uno" style="display:none" >
-<IMG SRC="./imagenes/dos.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="dos" style="display:none" >
-<IMG SRC="./imagenes/tres.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="tres" style="display:none" >
-<IMG SRC="./imagenes/cuatro.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="cuatro" style="display:none" >
-<IMG SRC="./imagenes/cinco.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="cinco" style="display:none" >
-<IMG SRC="./imagenes/seis.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="seis" style="display:none" >
-<IMG SRC="./imagenes/siete.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="siete" style="display:none" >
-<IMG SRC="./imagenes/ocho.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="ocho" style="display:none" >
-<IMG SRC="./imagenes/nueve.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="nueve" style="display:none" >
-<IMG SRC="./imagenes/diez.gif" class="imagen"  USEMAP="#diseno-numeros.jpg" id="diez" style="display:none" >
-
-<MAP NAME="diseno-numeros.jpg">
+<MAP NAME="diseno-numeros2.jpg">
 <!-- uno-->
-<AREA SHAPE=RECT COORDS="72,117,211,348" OnClick="pintar('uno')" >
+<AREA SHAPE=RECT COORDS="72,117,211,348" OnClick="pintar('uno')" style="cursor: pointer">
 <!-- dos-->
-<AREA SHAPE=RECT COORDS="226,135,395,340" OnClick="pintar('dos')">
+<AREA SHAPE=RECT COORDS="226,135,395,340" OnClick="pintar('dos')"style="cursor: pointer">
 <!-- tres-->
-<AREA SHAPE=RECT COORDS="422,108,573,334" OnClick="pintar('tres')">
+<AREA SHAPE=RECT COORDS="422,108,573,334" OnClick="pintar('tres')"style="cursor: pointer">
 <!--cuatro-->
-<AREA SHAPE=RECT COORDS="593,119,769,337" OnClick="pintar('cuatro')">
+<AREA SHAPE=RECT COORDS="593,119,769,337" OnClick="pintar('cuatro')"style="cursor: pointer">
 <!--cinco-->
-<AREA SHAPE=RECT COORDS="802,119,958,311" OnClick="pintar('cinco')">
+<AREA SHAPE=RECT COORDS="802,119,958,311" OnClick="pintar('cinco')"style="cursor: pointer">
 <!--seis-->
-<AREA SHAPE=RECT COORDS="67,383,233,583" OnClick="pintar('seis')">
+<AREA SHAPE=RECT COORDS="67,383,233,583" OnClick="pintar('seis')"style="cursor: pointer">
 <!--siete-->
-<AREA SHAPE=RECT COORDS="254,392,380,573" OnClick="pintar('siete')">
+<AREA SHAPE=RECT COORDS="254,392,380,573" OnClick="pintar('siete')"style="cursor: pointer">
 <!--ocho-->
-<AREA SHAPE=RECT COORDS="424,395,543,567" OnClick="pintar('ocho')">
+<AREA SHAPE=RECT COORDS="424,395,543,567" OnClick="pintar('ocho')"style="cursor: pointer">
 <!--nueve-->
-<AREA SHAPE=RECT COORDS="576,394,729,572" OnClick="pintar('nueve')">
+<AREA SHAPE=RECT COORDS="576,394,729,572" OnClick="pintar('nueve')"style="cursor: pointer">
 <!--diez-->
-<AREA SHAPE=RECT COORDS="743,397,972,569" OnClick="pintar('diez')">
+<AREA SHAPE=RECT COORDS="743,397,972,569" OnClick="pintar('diez')"style="cursor: pointer">
 
 
 
 </MAP>
+ </div>
 
+</div>
  </body>
 </HTML>

@@ -11,13 +11,39 @@ function pintar(obj)
    document.getElementById(obj).style.display = '';
 }
 </script>
-
 <style type="text/css">
+    .principal
+    {
+		
+          margin-left:23.5%;
+		
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#ffcc33,#cc0033); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:75%;
+          height:400px;
+    }
+    .contenedor
+    {
+		font-family: Homer Simpson, cursive; 
+		font-size: 16pt; 
+        height:43px;
+        margin-left:3%;
+		margin-bottom:50%;
+		padding-top:1%;
+		color:#000000;
+
+    }
+ 
+
+
 
 .titulo
 {
 	padding:1px;
-	float:left;
+	float:center;
 }
  .imagen
 {
@@ -31,24 +57,21 @@ function pintar(obj)
  
                 
 } 
-/*.cabezera
-{
-	background-color:#990000;
-	height:85px;
-	text-align:center;;
-}*/
+
 </style>
 
 
     </HEAD>
-<body bgcolor="#ffffff">
+<body bgcolor="#ccff66">
 
- <div class="cabezera">
-		 <div class="titulo"><img src="imagenes/losTransportes.gif" img></div> 
 
+
+<IMG SRC="./imagenes/transportesCompleto2.png" class="imagen" USEMAP="#transportesCompleto.png" >
+<div class="titulo"> 
+ <p   style="text-align:center;font-size:50px;margin-top:0%"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Los Transportes </b></p>
  </div>
-
-<IMG SRC="./imagenes/transportesCompleto.png" class="imagen" USEMAP="#transportesCompleto.png" >
+<div class="principal"> 
+     <div class="contenedor" > 
 
 <IMG SRC="./imagenes/barco2.gif" class="imagen" USEMAP="#transportesCompleto.png" id="barco2" style="display:none" >
 <IMG SRC="./imagenes/coche.gif" class="imagen" USEMAP="#transportesCompleto.png" id="coche" style="display:none">
@@ -60,21 +83,23 @@ function pintar(obj)
 
 <MAP NAME="transportesCompleto.png">
 <!-- barco2 -->
-<AREA SHAPE=RECT COORDS="28,12,311,237" OnClick="pintar('barco2')">
+<AREA SHAPE=RECT COORDS="28,12,311,237" OnClick="pintar('barco2')"style="cursor: pointer">
 <!-- coche -->
-<AREA SHAPE=RECT COORDS="312,9,608,251" Onclick="pintar('coche')">
+<AREA SHAPE=RECT COORDS="312,9,608,251" Onclick="pintar('coche')"style="cursor: pointer">
 <!-- autobus -->
-<AREA SHAPE=RECT COORDS="13,242,302,449" Onclick="pintar('autobus')">
+<AREA SHAPE=RECT COORDS="13,242,302,449" Onclick="pintar('autobus')"style="cursor: pointer">
 <!-- helicoptero-->   
-<AREA SHAPE=RECT COORDS="300,250,573,458" Onclick="pintar('helicoptero')">
+<AREA SHAPE=RECT COORDS="300,250,573,458" Onclick="pintar('helicoptero')"style="cursor: pointer">
 <!-- avion -->
-<AREA SHAPE=RECT COORDS="605,11,941,228" Onclick="pintar('avion')">
+<AREA SHAPE=RECT COORDS="605,11,941,228" Onclick="pintar('avion')"style="cursor: pointer">
 <!-- tren -->
 
-<AREA SHAPE=RECT COORDS="565,247,958,457" Onclick="pintar('tren')">
+<AREA SHAPE=RECT COORDS="565,247,958,457" Onclick="pintar('tren')"style="cursor: pointer">
 
 
 </MAP>
+</div>
 
+</div>
  </body>
 </HTML>

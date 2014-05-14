@@ -9,42 +9,78 @@ function pintar(obj)
    document.getElementById(obj).style.display = '';
 }
 </script>
-
 <style type="text/css">
+    .principal
+    {
+		
+          margin-left:20%;
+          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+          background: linear-gradient(#6699ff,#996633); /* Standard syntax (must be last) */
+          border-radius:30px;
+          width:75%;
+          height:620px;
+    }
+    .contenedor
+    {
+		font-family: Homer Simpson, cursive; 
+		font-size: 16pt; 
+        height:43px;
+        margin-left:3%;
+		margin-bottom:50%;
+		padding-top:1%;
+		color:#000000;
 
-.titulo
-{
-	padding:1px;
-	float:left;
-}
+    }
+ 
+
+
  .imagen
 {
  position:absolute;
- top:50px;
- left:400px;
+ top:10px;
+ left:200px;
  width:416;
  height:512;
  padding:40;
                
 } 
-/*.cabezera
+
+
+.titulo
 {
-	background-color:#990000;
-	height:85px;
-	text-align:center;;
-}*/
+	padding:50px;
+	float:left;
+	height:512;
+
+}
+ .imagen
+{
+ position:absolute;
+ top:50px;
+ left:600px;
+ width:416;
+ height:512;
+ padding:40;
+
+ 
+                
+} 
+
 </style>
 
 
     </HEAD>
-<body bgcolor="#ffffff">
+<body bgcolor="#99ff66">
 
- <div class="cabezera">
-		<div class="titulo"><img src="imagenes/La Selva.gif" ></div>
-
- </div>
 
 <IMG SRC="./imagenes/animalesSelvaCompleto.png" class="imagen" USEMAP="#animalesSelva.png" >
+<div class="principal"> 
+	<div class="titulo"> 
+		<p style="text-align:center;font-size:50px;margin-top:-5%"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Animales de la Selva </b></p>
+	</div>
+     <div class="contenedor" > 
 
 
 <IMG SRC="./imagenes/cocodrilo.gif" class="imagen"  USEMAP="#animalesSelva.png" id="cocodrilo" style="display:none" >
@@ -62,31 +98,33 @@ function pintar(obj)
 
 <MAP NAME="animalesSelva.png">
 <!-- cocodrilo-->
-<AREA SHAPE=RECT COORDS="11,129,99,210" OnClick="pintar('cocodrilo')">
+<AREA SHAPE=RECT COORDS="11,129,99,210" OnClick="pintar('cocodrilo')"style="cursor: pointer">
 <!-- oso-->
-<AREA SHAPE=RECT COORDS="116,128,201,211" OnClick="pintar('oso')">
+<AREA SHAPE=RECT COORDS="116,128,201,211" OnClick="pintar('oso')"style="cursor: pointer">
 <!-- elefante-->
-<AREA SHAPE=RECT COORDS="219,128,303,210" OnClick="pintar('elefante')">
+<AREA SHAPE=RECT COORDS="219,128,303,210" OnClick="pintar('elefante')"style="cursor: pointer">
 <!-- pez-->
-<AREA SHAPE=RECT COORDS="13,230,99,314" OnClick="pintar('pez')">
+<AREA SHAPE=RECT COORDS="13,230,99,314" OnClick="pintar('pez')"style="cursor: pointer">
 <!--hipopotamo-->
-<AREA SHAPE=RECT COORDS="116,230,201,316" OnClick="pintar('hipopotamo')">
+<AREA SHAPE=RECT COORDS="116,230,201,316" OnClick="pintar('hipopotamo')"style="cursor: pointer">
 <!--leon-->
-<AREA SHAPE=RECT COORDS="219,230,302,314" OnClick="pintar('leon')">
+<AREA SHAPE=RECT COORDS="219,230,302,314" OnClick="pintar('leon')"style="cursor: pointer">
 <!--mono-->
-<AREA SHAPE=RECT COORDS="15,331,99,418" OnClick="pintar('mono')">
+<AREA SHAPE=RECT COORDS="15,331,99,418" OnClick="pintar('mono')"style="cursor: pointer">
 <!--loro-->
-<AREA SHAPE=RECT COORDS="119,331,199,416" OnClick="pintar('loro')">
+<AREA SHAPE=RECT COORDS="119,331,199,416" OnClick="pintar('loro')"style="cursor: pointer">
 <!--mapache-->
-<AREA SHAPE=RECT COORDS="219,333,304,416" OnClick="pintar('mapache')">
+<AREA SHAPE=RECT COORDS="219,333,304,416" OnClick="pintar('mapache')"style="cursor: pointer">
 <!--rinoceronte-->
-<AREA SHAPE=RECT COORDS="16,435,95,516" OnClick="pintar('rinoceronte')">
+<AREA SHAPE=RECT COORDS="16,435,95,516" OnClick="pintar('rinoceronte')"style="cursor: pointer">
 <!--serpiente-->
-<AREA SHAPE=RECT COORDS="120,432,201,517" OnClick="pintar('serpiente')">
+<AREA SHAPE=RECT COORDS="120,432,201,517" OnClick="pintar('serpiente')"style="cursor: pointer">
 <!--cebra-->
-<AREA SHAPE=RECT COORDS="219,434,302,516" OnClick="pintar('cebra')">
+<AREA SHAPE=RECT COORDS="219,434,302,516" OnClick="pintar('cebra')"style="cursor: pointer">
 
 </MAP>
+ </div>
 
+</div>
  </body>
 </HTML>
