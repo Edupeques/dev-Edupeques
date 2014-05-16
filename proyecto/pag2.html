@@ -4,6 +4,7 @@
      <TITLE> Login Alumnos </TITLE>
 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript">
 function Seleccion(numero,ctrl){
 
@@ -15,24 +16,43 @@ if(ctrl[0].checked==false && ctrl[1].checked==false){
 
 	document.location.href='alumnos.php?ref='+numero+((ctrl[0].checked)?'1':'2');
 }
-
+$(document).ready(function(){
+		$("#tres").mouseenter(function(){
+			$("#tres").animate({height:120,width:120},200);
+		});
+		$("#cuatro").mouseenter(function(){
+			$("#cuatro").animate({height:120,width:120},200);
+		});
+		$("#cinco").mouseenter(function(){
+			$("#cinco").animate({height:120,width:120},200);
+		});
+		 $("#tres").mouseleave(function(){
+			 $("#tres").animate({height:100,width:100},200);
+		 });
+		 $("#cuatro").mouseleave(function(){
+			 $("#cuatro").animate({height:100,width:100},200);
+		 });
+		 $("#cinco").mouseleave(function(){
+			 $("#cinco").animate({height:100,width:100},200);
+		 });
+  });
 </script>
 </HEAD>
  <BODY id="loginninos">
     <div id="cabecera">
-        <p>EDUPEQUES Educación Infantil</p>
+        <p>EDUPEQUES Educaci&oacute;n Infantil</p>
     </div>
     <div style="position:absolute;position:absolute;width:50%;left:23%;top:25%;">
         <form name=formulario>
-            <TABLE width=40% align=center>
-                <TR class="edad">
-                    <TD><img src="img/3.jpg" width="200" onClick="Seleccion(3,document.formulario.selector)" class="edad"></TD>
-                    <TD><img src="img/4.jpg" width="200" onClick="Seleccion(4,document.formulario.selector)" class="edad"></TD>
-                    <TD><img src="img/5.jpg" width="200" onClick="Seleccion(5,document.formulario.selector)" class="edad"></TD>
+            <TABLE width="60%" align=center>
+				<TR class="grupo" style="position:absolute;top:0;left:42%;font-size:30px" cellspacing=20>
+                    <td colspan=2><INPUT TYPE="radio" NAME="selector" value="a">a</td>
+                    <td><INPUT TYPE="radio" NAME="selector" value="b">b</td>
                 </TR>
-                <TR class="grupo">
-                    <td><INPUT TYPE="radio" NAME="selector">A</td>
-                    <td><INPUT TYPE="radio" NAME="selector">B</td>
+                <TR class="edad">
+                    <TD><img src="img/3.png" width="100" onClick="Seleccion(3,document.formulario.selector)" class="edad" id="tres"></TD>
+                    <TD><img src="img/4.png" width="100" onClick="Seleccion(4,document.formulario.selector)" class="edad" id="cuatro"></TD>
+                    <TD><img src="img/5.png" width="100" onClick="Seleccion(5,document.formulario.selector)" class="edad" id="cinco"></TD>
                 </TR>
             </TABLE>
         </form>  
