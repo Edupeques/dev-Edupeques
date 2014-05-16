@@ -1,0 +1,52 @@
+
+
+
+
+h1{
+text-align:center;
+font-family:pipominu;
+	color: #000000;
+}
+h2, h3{
+text-align:center;
+font-family:pipominu;
+	color: #000000;
+}
+
+section { /* Marcamos como de separados están los dos cuadrados */
+	margin: auto;
+	width: 1000px;
+}
+/* Las piezas iniciales */
+#contenedorPiezas{
+	margin:auto;
+	background: #C41515;
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-left: 20px;
+
+	box-shadow: 0px 0px 10px  2px #FB0209;
+}
+
+#puzzle { /* Aqui es donde iran las piezas que colocaremos luego */
+	background: #EA3939;
+	width: 400px;
+	height: 400px;
+	float: right;
+	margin-right: 20px;
+	box-shadow: 0px 0px 10px  2px #FB0209;
+}
+.contenedorPieza {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+#contenedorPuzzle img {
+	float: left;
+	padding: 1px;
+	width: 198px;
+	height: 198px;
+}
+
