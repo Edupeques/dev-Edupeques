@@ -47,7 +47,7 @@ $(document).ready(function(){
 	  {
        header("location:index.html");
 	  }
-	  $name = $_SESSION['name'];
+	  $name = $_SESSION['login'];
 	  echo " <h4 align='center'>Bienvenid@: $name &nbsp;&nbsp;&nbsp;&nbsp;<a href='logout.php'> Desconectar</a> </h4>";
 	?> 
 	</div>

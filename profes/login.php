@@ -33,7 +33,7 @@ else
 	}
   else
     {
-	   $_SESSION['name']= $name;
+	   $_SESSION['login']= $name;
 	   header("location:pag2.php");
 	}
 	}
