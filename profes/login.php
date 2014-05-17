@@ -13,14 +13,9 @@
 $name=$_POST['name'];
 $pwd=$_POST['pwd'];
 
-
-
 include("conexion.php");
 
-
-
 $sql="SELECT * FROM teachers WHERE name='$name'";
-
 
 
 $registros = mysql_query($sql);
@@ -39,7 +34,7 @@ else
   else
     {
 	   $_SESSION['name']= $name;
-	   header("location:pg2.php");
+	   header("location:pag2.php");
 	}
 	}
 }
