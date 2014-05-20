@@ -2,43 +2,28 @@
 <HTML>
 <HEAD>
 <TITLE> Inicio </TITLE>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-1.11.0.min.js"></script>
 </HEAD>
-
-<style>
-body
-{
-	background:#99ff00; 
-	
-}
-
-input, textarea
-{
-	border-radius:5px;
-}
-</style>
-<BODY>
-	<div name="cabecera" id="cabecera"><H1 align="center">Area de profes</H1></div>
+<BODY id="profes">
+	<div id="cabecera">
+        <p>EDUPEQUES Educaci&oacute;n Infantil</p>
+        <h1 align="center" style="margin-top:-2%;margin-left:-5%;">Area de profesores</h1>
+    </div>
 	<div name="cuerpo" id="cuerpo">
-
 		<form  name="datos" method="post" action="login.php">
-			<TABLE align="center" width="20%">
+			<TABLE align="center" cellspacing="45" style="margin-left:25%">
 				<TR>
-					<TD>Usuario:</TD>
+					<TD id="label">Usuario:</TD>
 					<TD><input type="text" name="name" id="name" size="10" maxlength="10"/></TD>
 				</TR>
 				<TR>
-					<TD>Clave:</TD>
-					
-					<td><input type="password" name="pwd" id="pwd" size="10" maxlength="10">
-					</td>
-					</tr>
-					<td colspan="2">
-					<input type="submit" value="entrar"  >
-					
-					</TD>
-					</TR>
-				
-				
+					<TD id="label">Clave:</TD>
+					<td><input type="password" name="pwd" id="pwd" size="10" maxlength="10"></td>
+				</tr>
+					<td colspan="2"><input type="submit" value="ENTRAR" class="selec" style="margin-left:10%;"></TD>
+				</TR>	
 			</TABLE>
 		</form>
 	</div>

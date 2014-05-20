@@ -84,20 +84,40 @@ body
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6b22a', endColorstr='#f08003',GradientType=0 ); /* IE6-9 */
 
 }
+#name, #pwd
+{
+    font-size: 20px;
+    border-radius: 5px;
+}
+#label
+{
+    color: #fff;
+    font-weight: bold;
+}
 .selec:hover
 {
     -webkit-box-shadow: 1px 1px 50px 1px #FF8000;
-    box-shadow: 1px 1px 50px 1px #FF8000;
-    font-size:30px;
+    box-shadow: 1px 1px 25px 1px #FF8000;
+    font-size:27px;
 }
+
+/*ESTILOS DEL MENU DE LOS ALMNOS*/
 .grupo
 {
     position:absolute;
-    width:50%;
+    /*width:50%;
     left:25%;
-    top:60%;
+    top:60%;*/
+    font-size:30px;
+    left:34%;
 }
-/*ESTILOS DEL MENU DE LOS ALMNOS*/
+#ninos
+{
+    font-family:pipomayu;
+    background-image:url(../images/numbers.jpg),url(../images/numbers.jpg);
+    background-repeat:repeat-y;
+    background-position:5%,95%;
+}
 #loginninos
 { 
     font-family:pipomayu;
@@ -112,8 +132,40 @@ body
 }
 img.edad
 {
-    padding:3%;
+    left:20%;
 	margin-top:35%;
+}
+/*ESTILOS DEL MENU DE PROFESORES*/
+#profes
+{
+    background: #84999e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #84999e 0%, #a1afb2 40%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#84999e), color-stop(40%,#a1afb2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #84999e 0%,#a1afb2 40%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #84999e 0%,#a1afb2 40%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #84999e 0%,#a1afb2 40%); /* IE10+ */
+    background: linear-gradient(to bottom,  #84999e 0%,#a1afb2 40%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84999e', endColorstr='#a1afb2',GradientType=0 ); /* IE6-9 */
+}
+#cuerpo
+{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left:25%;
+    top:20%;
+    border-radius: 5px;
+    border:solid;
+    border-width: 1px;
+    background: #272926; /* Old browsers */
+    background: -moz-linear-gradient(left,  #272926 0%, #a1afb2 95%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#272926), color-stop(95%,#a1afb2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #272926 0%,#a1afb2 95%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #272926 0%,#a1afb2 95%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #272926 0%,#a1afb2 95%); /* IE10+ */
+    background: linear-gradient(to right,  #272926 0%,#a1afb2 95%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272926', endColorstr='#a1afb2',GradientType=1 ); /* IE6-9 */
+
 }
 /*ESTILOS DE LOS RECORRIDOS */
 	#primer
@@ -135,11 +187,10 @@ img.edad
 	position: absolute;
 	visibility: hidden;
 	height:227px;
-	cursor: url(../images/estilo/paloma.gif),url(../images/estilo/paloma.ani),auto;
 	}
-	.invisible1{left: 8.1%;}
-	.invisible2{left: 42.7%;}
-	.invisible3{left: 74.4%;}
+	.invisible1{left: 7.6%;}
+	.invisible2{left: 42.6%;}
+	.invisible3{left: 74.6%;}
 	.animal
 	{
 		height:100px;
@@ -147,6 +198,12 @@ img.edad
 		margin-left:1%;
 		position:absolute;
 	}
+    .invisible
+    {
+        left: 38.5%;
+        position: absolute;
+        visibility: hidden;
+    }
 	/*botones*/
         .boton
         {

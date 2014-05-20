@@ -2,7 +2,8 @@
 <html>
  <head>
   <title> Reconocer cantidades </title>
-  <link href="./styles/style.css" rel="stylesheet" type="text/css"/>
+  <link href="../../css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
   <style>
 	.respuesta
 	{
@@ -23,12 +24,12 @@
 		 var ident = obj.value;
 		if (respuesta[part]==ident && aciertos==part)
 		 {
-             document.getElementById("img"+part).setAttribute("src","./images/tiki.png");
+             document.getElementById("img"+part).setAttribute("src","../../images/tiki.png");
              aciertos++;
 		 }
 		 else if(respuesta[part]!=ident && aciertos==part)
 		 {
-		 	 document.getElementById("img"+part).setAttribute("src","./images/nono.png");
+		 	 document.getElementById("img"+part).setAttribute("src","../../images/nono.png");
 		 }
 		 if (aciertos==5)
 		 {
@@ -39,29 +40,29 @@
   </script>
  </head>
 
- <body>
+ <body id="ninos">
   <p style="text-align:center;font-size:30px;margin-top:1%">¿Cu&aacute;ntos hay de cada uno?</p>
-  <img src="./images/fondo01.png" style="margin:auto; width:650px;border:solid;border-radius:20px;border-color:#ccccff;float:left;position:relative"/>
+  <img src="../../images/fondo01.png" style="margin:auto; width:650px;border:solid;border-radius:20px;border-color:#ccccff;float:left;position:relative"/>
   <table style="position:relative; margin-left:55%;width:30%" cellspacing="20" >
   <tr>
-	<td><img src="./images/bandera.png"/></td>
-	<td><input type="text" class="respuesta" size="1"  maxlength="1" id="cam0" onblur="comprobar(this)" value="" /> <img src="./images/sero.png" id="img0" width="50"/></td>
+	<td><img src="../../images/bandera.png"/></td>
+	<td><input type="text" class="respuesta" size="1"  maxlength="1" id="cam0" onblur="comprobar(this)" value="" /> <img src="../../images/sero.png" id="img0" width="50"/></td>
   </tr>
   <tr>
-	<td><img src="./images/bici.png"/></td>
-	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam1"  onblur="comprobar(this)" value=""/> <img src="./images/sero.png" id="img1" width="50"/></td>
+	<td><img src="../../images/bici.png"/></td>
+	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam1"  onblur="comprobar(this)" value=""/> <img src="../../images/sero.png" id="img1" width="50"/></td>
   </tr>
   <tr>
-	<td><img src="./images/coche.png"/></td>
-	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam2"  onblur="comprobar(this)" value=""/> <img src="./images/sero.png" id="img2" width="50"/></td>
+	<td><img src="../../images/coche.png"/></td>
+	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam2"  onblur="comprobar(this)" value=""/> <img src="../../images/sero.png" id="img2" width="50"/></td>
   </tr>
   <tr>
-	<td><img src="./images/moto.png"/></td>
-	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam3" onblur="comprobar(this)" value=""/> <img src="./images/sero.png" id="img3" width="50"/></td>
+	<td><img src="../../images/moto (2).png"/></td>
+	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam3" onblur="comprobar(this)" value=""/> <img src="../../images/sero.png" id="img3" width="50"/></td>
   </tr>
    <tr>
-	<td><img src="./images/policia.png"/></td>
-	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam4" onblur="comprobar(this)" value=""/> <img src="./images/sero.png" id="img4" width="50"/></td>
+	<td><img src="../../images/policia.png"/></td>
+	<td><input type="text" class="respuesta" size="1" maxlength="1" id="cam4" onblur="comprobar(this)" value=""/> <img src="../../images/sero.png" id="img4" width="50"/></td>
   </tr>
   </table>
  </body>
