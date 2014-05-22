@@ -1,7 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
     <head>
-        <TITLE> New Document </TITLE>
+        <TITLE> Login peques </TITLE>
+		 <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
@@ -36,7 +38,11 @@
                         "pato.png",
                         "perro.png"
                     }
-
+				$(function(){
+					$("#visor1").attr("src", imagenes[Math.floor(Math.random()*imagenes.length)]);
+					$("#visor2").attr("src", imagenes[Math.floor(Math.random()*imagenes.length)]);
+					$("#visor3").attr("src", imagenes[Math.floor(Math.random()*imagenes.length)]);
+				});
                 $("#anterior1") .click(function(){  $("#visor1").css("src", images_route + imagen[codigo1-- < 1 ? 24 : codigo1]); });
                 $("#anterior2") .click(function(){  $("#visor2").css("src", images_route + imagen[codigo2-- < 1 ? 24 : codigo2]); });
                 $("#anterior3") .click(function(){  $("#visor3").css("src", images_route + imagen[codigo3-- < 1 ? 24 : codigo3]); });
@@ -50,7 +56,8 @@
         </script>
     </head>
 
-    <body>
+    <BODY id="ninos">
+
         <?php
 session_start();
 include("conexion.php");
@@ -77,39 +84,35 @@ if (isset($_POST["cod"]) && isset($_SESSION["face"]))
 
 
 
-        <div name="cabecera" id="cabecera"><H1 align="center">Identificaci&oacute;n</H1></div>
-        <div name="cuerpo" id="cuerpo">
+        <div id="cabecera">
+        <p>EDUPEQUES Educaci&oacute;n Infantil</p>
+    </div>
+	<div name="cuerpo" class="ninos" id="nin">
             <form method='post' action='password.php'>";
-                <table align="center" border="1">
+                <table align="center" style="padding:2%;margin-left:15%;">
 
-                    <tr>
-                        <td width=30%>
-                            <input id="siguiente1" type="button" value=" > "><br />
-                            <img src="../images/buho.png" height="70" id="visor1" name="visor1"><br />
-                            <input id="anterior1" type="button" value=" < "><br />
-                        </td>
+<TR>
+	<TD width=30%><a id="siguiente1"><img src="../images/up.png"/></a></TD>
+	<TD width=30%><a id="siguiente2"><img src="../images/up.png"/></a></TD>
+	<TD width=30%><a id="siguiente3"><img src="../images/up.png"/></a></TD>
+</TR>
+<TR>
+	<TD class="ninos"><img src="../images/buho.png" class="ninos" id="visor1" name="visor1"></TD>
+	<TD class="ninos"><img src="../images/perro.png" class="ninos" id="visor2" name="visor2"></TD>
+	<TD class="ninos"><img src="../images/perro.png" class="ninos" id="visor3" name="visor3"></TD>
+</TR>
+<TR>
+	<TD width=30%><a id="anterior1"><img src="../images/down.png"/></a></TD>
+	<TD width=30%><a id="anterior2"><img src="../images/down.png"/></a></TD>
+	<TD width=30%><a id="anterior3"><img src="../images/down.png"/></a></TD>
+</TR>
+<TR>
+	<TD COLSPAN=3 ALIGN=CENTER>
+	<img onClick='Enviar()' src="../images/tiki.png" id="send">
+	</td>
+</tr>
 
-
-                        <td width=30%>
-                            <input id="siguiente2" type="button" value=" > "><br />
-                            <img src="../images/perro.png" height="70" id="visor2" name="visor2"><br />
-                            <input id="anterior2" type="button" value=" < "><br />
-                        </td>
-
-                        <td width=30%>
-                            <input id="siguiente3" type="button" value=" > "><br />
-                            <img src="../images/perro.png" height="70" id="visor3" name="visor3"><br />
-                            <input id="anterior3" type="button" value=" < "><br />
-                        </td>
-
-                    </tr>
-                    <tr>
-                        <td COLSPAN=3 ALIGN=CENTER>
-                            <input id="send" type="submit" value='Enviar'>
-                        </td>
-                    </tr>
-
-                </table>
+</table>
             </form>
         </div>
     </div>

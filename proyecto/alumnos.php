@@ -1,7 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <HTML>
     <HEAD>
-        <TITLE> New Document </TITLE>
+        <TITLE> Alumnos </TITLE>
+		<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../css/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
@@ -14,7 +16,13 @@
             });
         </script>
     </HEAD>
-    <BODY>
+    <BODY id="ninos">
+ 	<div id="cabecera">
+        <p>EDUPEQUES Educaci&oacute;n Infantil</p>
+    </div>	  
+	<div class="ninos">
+  		<table style="padding:2%;">
+        	<tr> 
             <?php
 
 include("conexion.php");
@@ -27,7 +35,11 @@ if($stmt=$mysqli->prepare("SELECT * FROM alumns WHERE class=?"))
     $i = 0;
     while ($row = $result->fetch_assoc()) 
     {
-        echo "<img src='img/".$row['photo']."' width=100 title='".$row['entry']."' class='imageFace'/>";
+		if($row['entry']%5==0)
+		{
+				echo "<tr></tr>";
+		}
+        echo "<img src='img/".$row['photo']."' width=100 title='".$row['entry']."' class='imageFace' class='ninos'/>";
         if($i==1)
         {
             $i = 0;
@@ -40,10 +52,12 @@ if($stmt=$mysqli->prepare("SELECT * FROM alumns WHERE class=?"))
 
 }
             ?>
-
+		</tr>
+    	</table>
         <form>
             <input type="hidden" id="entry" name="entry" value="">
             <input type="submit" id="entrySubmit">
         </form>
+		</div>
     </BODY>
 </HTML>

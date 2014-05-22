@@ -101,24 +101,14 @@ body
     font-size:27px;
 }
 
-/*ESTILOS DEL MENU DE LOS ALMNOS*/
+/*ESTILOS DEL MENU DE LOS ALUMNOS*/
 .grupo
 {
     position:absolute;
-    /*width:50%;
-    left:25%;
-    top:60%;*/
     font-size:30px;
     left:34%;
 }
 #ninos
-{
-    font-family:pipomayu;
-    background-image:url(../images/numbers.jpg),url(../images/numbers.jpg);
-    background-repeat:repeat-y;
-    background-position:5%,95%;
-}
-#loginninos
 { 
     font-family:pipomayu;
 	background: #fefcea; /* Old browsers */
@@ -130,11 +120,40 @@ body
     background: linear-gradient(to bottom,  #fefcea 0%,#f2e98d 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f2e98d',GradientType=0 ); /* IE6-9 */
 }
+div.ninos
+{
+    width:80%;
+    background: #a9fedc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a9fedc 0%, #03d6af 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9fedc), color-stop(100%,#03d6af)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #a9fedc 0%,#03d6af 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #a9fedc 0%,#03d6af 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #a9fedc 0%,#03d6af 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #a9fedc 0%,#03d6af 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9fedc', endColorstr='#03d6af',GradientType=0 ); /* IE6-9 */
+    margin-left:10%;
+    margin-top:10%;
+    border-radius: 10px;
+}
+img.ninos
+{
+    width:30%;
+    height:80%;
+    padding:1%;
+}
+td.ninos { height:130px; }
 img.edad
 {
     left:20%;
 	margin-top:35%;
 }
+#send
+{
+    margin-left:-20%;
+    margin-top:7%;
+}
+#accept:hover{height: 75px;}
+#nin{height:420px;}
 /*ESTILOS DEL MENU DE PROFESORES*/
 #profes
 {
@@ -178,10 +197,7 @@ img.edad
 		  margin-left:15%;
 		  float:left;
 	}
-	#tercero
-	{
-		 margin-left:70%;
-	}
+	#tercero{margin-left:70%;}
      .invisible1, .invisible2, .invisible3
     {
 	position: absolute;
