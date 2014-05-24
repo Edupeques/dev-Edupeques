@@ -1,150 +1,151 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <HTML>
     <HEAD>
         <TITLE>Las Profesiones</TITLE>
-		 <meta name="David Bernia">
-		 <meta name="Aprende las profesiones">
+        <meta name="David Bernia">
+        <meta name="Aprende las profesiones">
 
-<script type="text/javascript">
-var sonidos=
-{
-	new Audio("EN_Carpenter.mp3")
-
-}
-	
-
-function pintar(obj)
-{
-   document.getElementById(obj).style.display = '';
-}
-</script>
-<style type="text/css">
-    .principal
-    {
-		
-          margin-left:20%;
-          background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
-          background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
-          background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
-          background: linear-gradient(#00ff66,#cc0066); /* Standard syntax (must be last) */
-          border-radius:30px;
-          width:75%;
-          height:620px;
-    }
-    .contenedor
-    {
-		font-family: Homer Simpson, cursive; 
-		font-size: 16pt; 
-        height:43px;
-        margin-left:3%;
-		margin-bottom:50%;
-		padding-top:1%;
-		color:#000000;
-
-    }
- 
+        <script type="text/javascript">
+            var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("EN_Carpenter.mp3")
+            }
 
 
- .imagen
-{
- position:absolute;
- top:10px;
- left:200px;
- width:416;
- height:512;
- padding:40;
-               
-} 
+            function pintar(obj)
+            {
+                document.getElementById(obj).style.display = '';
+            }
+        </script>
+        <style type="text/css">
+            .principal
+            {
+
+                margin-left:20%;
+                background: -webkit-linear-gradient(#9CF, #cc99ff); /* For Safari 5.1 to 6.0 */
+                background: -o-linear-gradient(#9CF, #cc99ff); /* For Opera 11.1 to 12.0 */
+                background: -moz-linear-gradient(#9CF, #cc99ff); /* For Firefox 3.6 to 15 */
+                background: linear-gradient(#00ff66,#cc0066); /* Standard syntax (must be last) */
+                border-radius:30px;
+                width:75%;
+                height:620px;
+            }
+            .contenedor
+            {
+                font-family: Homer Simpson, cursive; 
+                font-size: 16pt; 
+                height:43px;
+                margin-left:3%;
+                margin-bottom:50%;
+                padding-top:1%;
+                color:#000000;
+
+            }
 
 
-.titulo
-{
-	padding:50px;
-	float:left;
-	height:512;
 
-}
- .imagen
-{
- position:absolute;
- top:50px;
- left:400px;
- width:416;
- height:512;
- padding:40;
+            .imagen
+            {
+                position:absolute;
+                top:10px;
+                left:200px;
+                width:416;
+                height:512;
+                padding:40;
 
- 
-                
-} 
+            } 
 
-</style>
+
+            .titulo
+            {
+                padding:50px;
+                float:left;
+                height:512;
+
+            }
+            .imagen
+            {
+                position:absolute;
+                top:50px;
+                left:400px;
+                width:416;
+                height:512;
+                padding:40;
+
+
+
+            } 
+
+        </style>
 
 
     </HEAD>
-<body bgcolor="#9933cc">
+    <body bgcolor="#9933cc">
 
- <div class="cabezera">
-		
+        <div class="cabezera">
 
- </div>
-<!-- <div style="cursor: pointer"> -->
-<IMG SRC="./imagenes/oficiosCompleto.png" class="imagen" USEMAP="#oficiosCompleto.png" >
 
-<div class="principal"> 
-	<div class="titulo"> 
-		<p style="text-align:center;font-size:50px;margin-top:-10%"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las Profesiones </b></p>
-	</div>
-     <div class="contenedor" > 
-<audio id="demo" src="Habitos/sounds/Professions/EN_Fisherman.mp3"></audio>
-<IMG SRC="./imagenes/pescador.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="pescador" style="display:none" >
-<IMG SRC="./imagenes/informatica.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="informatica" style="display:none">
-<IMG SRC="./imagenes/panadero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="panadero" style="display:none">
-<IMG SRC="./imagenes/pintor.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="pintor" style="display:none">
-<IMG SRC="./imagenes/carpintero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="carpintero" style="display:none">
-<IMG SRC="./imagenes/mecanico.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="mecanico" style="display:none">
-<IMG SRC="./imagenes/profesora.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="profesora" style="display:none">
-<IMG SRC="./imagenes/electricista.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="electricista" style="display:none">
-<IMG SRC="./imagenes/zapatero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="zapatero" style="display:none">
-<IMG SRC="./imagenes/fotografo.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="fotografo" style="display:none">
-<IMG SRC="./imagenes/pastelero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="pastelero" style="display:none">
-<IMG SRC="./imagenes/cartero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="cartero" style="display:none">
-<IMG SRC="./imagenes/costurera.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="costurera" style="display:none">
-<IMG SRC="./imagenes/bombero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="bombero" style="display:none">
+        </div>
+        <!-- <div style="cursor: pointer"> -->
+        <IMG SRC="./imagenes/oficiosCompleto.png" class="imagen" USEMAP="#oficiosCompleto.png" />
 
-<MAP NAME="oficiosCompleto.png">
-<!-- pescador-->
-<AREA SHAPE=RECT COORDS="8,8,157,184" OnClick="pintar('pescador')"style="cursor: pointer">
-<!-- informatica -->
-<AREA SHAPE=RECT COORDS="7,196,155,368" Onclick="pintar('informatica')"style="cursor: pointer">
-<!-- panadero -->
-<AREA SHAPE=RECT COORDS="6,381,160,555" Onclick="pintar('panadero')"style="cursor: pointer">
-<!-- pintor-->   
-<AREA SHAPE=RECT COORDS="169,8,309,181" Onclick="pintar('pintor')"style="cursor: pointer">
-<!-- carpintero-->
-<AREA SHAPE=RECT COORDS="167,195,318,368" Onclick="pintar('carpintero');sonidos[0].play()"style="cursor: pointer">
-<!-- mecanico -->
-<AREA SHAPE=RECT COORDS="165,380,315,550" Onclick="pintar('mecanico')"style="cursor: pointer">
-<!-- profesora -->
-<AREA SHAPE=RECT COORDS="324,7,475,186" Onclick="pintar('profesora')"style="cursor: pointer">
-<!-- electricista -->
-<AREA SHAPE=RECT COORDS="326,197,471,371" Onclick="pintar('electricista')"style="cursor: pointer">
-<!-- zapatero -->
-<AREA SHAPE=RECT COORDS="327,381,475,555" Onclick="pintar('zapatero')"style="cursor: pointer">
-<!-- fotografo-->
-<AREA SHAPE=RECT COORDS="485,5,632,180" OnClick="pintar('fotografo')"style="cursor: pointer">
-<!-- pastelero-->
-<AREA SHAPE=RECT COORDS="487,194,634,371" OnClick="pintar('pastelero')"style="cursor: pointer">
-<!-- cartero-->
-<AREA SHAPE=RECT COORDS="484,379,629,554" OnClick="pintar('cartero')"style="cursor: pointer">
-<!-- costurera-->
-<AREA SHAPE=RECT COORDS="645,8,792,186" OnClick="pintar('costurera')"style="cursor: pointer">
-<!-- bombero-->
-<AREA SHAPE=RECT COORDS="641,194,796,368" OnClick="pintar('bombero')"style="cursor: pointer">
+        <div class="principal"> 
+            <div class="titulo"> 
+                <p style="text-align:center;font-size:50px;margin-top:-10%"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Las Profesiones </b></p>
+            </div>
+            <div class="contenedor" > 
+                <IMG SRC="./imagenes/pescador.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="pescador" style="display:none" />
+                <IMG SRC="./imagenes/informatica.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="informatica" style="display:none"/>
+                <IMG SRC="./imagenes/panadero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="panadero" style="display:none"/>
+                <IMG SRC="./imagenes/pintor.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="pintor" style="display:none"/>
+                <IMG SRC="./imagenes/carpintero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="carpintero" style="display:none"/>
+                <IMG SRC="./imagenes/mecanico.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="mecanico" style="display:none"/>
+                <IMG SRC="./imagenes/profesora.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="profesora" style="display:none"/>
+                <IMG SRC="./imagenes/electricista.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="electricista" style="display:none"/>
+                <IMG SRC="./imagenes/zapatero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="zapatero" style="display:none"/>
+                <IMG SRC="./imagenes/fotografo.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="fotografo" style="display:none"/>
+                <IMG SRC="./imagenes/pastelero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="pastelero" style="display:none"/>
+                <IMG SRC="./imagenes/cartero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="cartero" style="display:none"/>
+                <IMG SRC="./imagenes/costurera.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="costurera" style="display:none"/>
+                <IMG SRC="./imagenes/bombero.gif" class="imagen" USEMAP="#oficiosCompleto.png" id="bombero" style="display:none"/>
 
-</MAP>
- </div>
+                <MAP NAME="oficiosCompleto.png">
+                    <!-- pescador-->
+                    <AREA SHAPE=RECT COORDS="8,8,157,184" OnClick="pintar('pescador')" style="cursor: pointer"/>
+                    <!-- informatica -->
+                    <AREA SHAPE=RECT COORDS="7,196,155,368" Onclick="pintar('informatica')" style="cursor: pointer"/>
+                    <!-- panadero -->
+                    <AREA SHAPE=RECT COORDS="6,381,160,555" Onclick="pintar('panadero')" style="cursor: pointer"/>
+                    <!-- pintor-->   
+                    <AREA SHAPE=RECT COORDS="169,8,309,181" Onclick="pintar('pintor')" style="cursor: pointer"/>
+                    <!-- carpintero-->
+                    <AREA SHAPE=RECT COORDS="167,195,318,368" Onclick="pintar('carpintero');sonidos[0].play()" style="cursor: pointer"/>
+                    <!-- mecanico -->
+                    <AREA SHAPE=RECT COORDS="165,380,315,550" Onclick="pintar('mecanico')" style="cursor: pointer"/>
+                    <!-- profesora -->
+                    <AREA SHAPE=RECT COORDS="324,7,475,186" Onclick="pintar('profesora')" style="cursor: pointer"/>
+                    <!-- electricista -->
+                    <AREA SHAPE=RECT COORDS="326,197,471,371" Onclick="pintar('electricista')" style="cursor: pointer"/>
+                    <!-- zapatero -->
+                    <AREA SHAPE=RECT COORDS="327,381,475,555" Onclick="pintar('zapatero')" style="cursor: pointer"/>
+                    <!-- fotografo-->
+                    <AREA SHAPE=RECT COORDS="485,5,632,180" OnClick="pintar('fotografo')" style="cursor: pointer"/>
+                    <!-- pastelero-->
+                    <AREA SHAPE=RECT COORDS="487,194,634,371" OnClick="pintar('pastelero')" style="cursor: pointer"/>
+                    <!-- cartero-->
+                    <AREA SHAPE=RECT COORDS="484,379,629,554" OnClick="pintar('cartero')" style="cursor: pointer"/>
+                    <!-- costurera-->
+                    <AREA SHAPE=RECT COORDS="645,8,792,186" OnClick="pintar('costurera')" style="cursor: pointer"/>
+                    <!-- bombero-->
+                    <AREA SHAPE=RECT COORDS="641,194,796,368" OnClick="pintar('bombero')" style="cursor: pointer"/>
 
-</div>
+                </MAP>
+            </div>
 
- </body>
+        </div>
+
+    </body>
 </HTML>
