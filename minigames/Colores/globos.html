@@ -2,6 +2,21 @@
 <HTML>
  <HEAD>
   <TITLE> New Document </TITLE>
+<script type="text/javascript">
+ var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../sounds/Colours/ES_Red.mp3"),
+				1:new Audio("../../sounds/Colours/ES_Blue.mp3"),
+				2:new Audio("../../sounds/Colours/ES_Yellow.mp3"),
+				3:new Audio("../../sounds/Colours/ES_Green.mp3"),
+				4:new Audio("../../sounds/Colours/ES_Black.mp3"),
+				
+	
+            }
+			</script>
  <style>
 .opciones{
 			font-size:70px;
@@ -43,11 +58,11 @@
   <div class="elementos" >
 <TABLE align="center">
   <TR>
-	<TD><img id="rojo" name="rojo"  src="./images/boro.png" width=200 onclick="rojo.src='./images/boro1.png'"></TD>
-	<TD><img id="azul" name="azul" src="./images/boro2.png" width=200 onclick="azul.src='./images/boro3.png'"></TD>
-	<TD><img  id="rillo" name="rillo" src="./images/boro5.png" width=200 onclick="rillo.src='./images/boro6.png'"></TD>
-	<TD><img id="verde" name="verde" src="./images/boro7.png" width=200 onclick="verde.src='./images/boro8.png'"></TD>
-	<TD><img id="negro" name="negro" src="./images/boro9.png" width=200 onclick="negro.src='./images/boro10.png'"></TD>
+	<TD><img id="rojo" name="rojo"  src="./images/boro.png" width=200 onclick="rojo.src='./images/boro1.png';sonidos[0].play()"></TD>
+	<TD><img id="azul" name="azul" src="./images/boro2.png" width=200 onclick="azul.src='./images/boro3.png';sonidos[1].play()"></TD>
+	<TD><img  id="rillo" name="rillo" src="./images/boro5.png" width=200 onclick="rillo.src='./images/boro6.png';sonidos[2].play()"></TD>
+	<TD><img id="verde" name="verde" src="./images/boro7.png" width=200 onclick="verde.src='./images/boro8.png';sonidos[3].play()"></TD>
+	<TD><img id="negro" name="negro" src="./images/boro9.png" width=200 onclick="negro.src='./images/boro10.png';sonidos[4].play()"></TD>
   </TR>
   </TABLE>
 </div>

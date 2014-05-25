@@ -6,6 +6,28 @@
 		 <meta name="Aprende las profesiones">
 
 <script type="text/javascript">
+  var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../sounds/Professions/ES_Fisherman.mp3"),
+				1:new Audio("../../sounds/Professions/ES_Baker.mp3"),
+				2:new Audio("../../sounds/Professions/ES_Dressmaker.mp3"),
+				3:new Audio("../../sounds/Professions/ES_Electrician.mp3"),
+				4:new Audio("../../sounds/Professions/ES_Fireman.mp3"),
+				5:new Audio("../../sounds/Professions/ES_Informatic.mp3"),
+				6:new Audio("../../sounds/Professions/ES_Mechanics.mp3"),
+					7:new Audio("../../sounds/Professions/ES_Painter.mp3"),
+				8:new Audio("../../sounds/Professions/ES_Pastry.mp3"),
+				9:new Audio("../../sounds/Professions/ES_Photographer.mp3"),
+				10:new Audio("../../sounds/Professions/ES_Postman.mp3"),
+				11:new Audio("../../sounds/Professions/ES_Shoemaker.mp3"),
+				12:new Audio("../../sounds/Professions/ES_Teacher.mp3"),
+				13:new Audio("../../sounds/Professions/ES_Carpenter.mp3"),
+				//1:new Audio("/Habitos/minigames/Sounds/Professions/ES_Baker.mp3"),
+            }
+
 function pintar(obj)
 {
    document.getElementById(obj).style.display = '';
@@ -106,33 +128,33 @@ function pintar(obj)
 
 <MAP NAME="oficiosCompleto.png">
 <!-- pescador-->
-<AREA SHAPE=RECT COORDS="8,8,157,184" OnClick="pintar('pescador') "style="cursor: pointer">
-<!-- informatica -->
-<AREA SHAPE=RECT COORDS="7,196,155,368" Onclick="pintar('informatica')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="8,8,157,184" OnClick="pintar('pescador');sonidos[0].play() "style="cursor: pointer">
+<!-- informatica --> 
+<AREA SHAPE=RECT COORDS="7,196,155,368" Onclick="pintar('informatica');sonidos[5].play()"style="cursor: pointer">
 <!-- panadero -->
-<AREA SHAPE=RECT COORDS="6,381,160,555" Onclick="pintar('panadero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="6,381,160,555" Onclick="pintar('panadero');sonidos[1].play()"style="cursor: pointer">
 <!-- pintor-->   
-<AREA SHAPE=RECT COORDS="169,8,309,181" Onclick="pintar('pintor')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="169,8,309,181" Onclick="pintar('pintor');sonidos[7].play()"style="cursor: pointer">
 <!-- carpintero-->
-<AREA SHAPE=RECT COORDS="167,195,318,368" Onclick="pintar('carpintero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="167,195,318,368" Onclick="pintar('carpintero');sonidos[13].play()"style="cursor: pointer">
 <!-- mecanico -->
-<AREA SHAPE=RECT COORDS="165,380,315,550" Onclick="pintar('mecanico')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="165,380,315,550" Onclick="pintar('mecanico');sonidos[6].play()"style="cursor: pointer">
 <!-- profesora -->
-<AREA SHAPE=RECT COORDS="324,7,475,186" Onclick="pintar('profesora')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="324,7,475,186" Onclick="pintar('profesora');sonidos[12].play()"style="cursor: pointer">
 <!-- electricista -->
-<AREA SHAPE=RECT COORDS="326,197,471,371" Onclick="pintar('electricista')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="326,197,471,371" Onclick="pintar('electricista');sonidos[3].play()"style="cursor: pointer">
 <!-- zapatero -->
-<AREA SHAPE=RECT COORDS="327,381,475,555" Onclick="pintar('zapatero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="327,381,475,555" Onclick="pintar('zapatero');sonidos[11].play()"style="cursor: pointer">
 <!-- fotografo-->
-<AREA SHAPE=RECT COORDS="485,5,632,180" OnClick="pintar('fotografo')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="485,5,632,180" OnClick="pintar('fotografo');sonidos[9].play()"style="cursor: pointer">
 <!-- pastelero-->
-<AREA SHAPE=RECT COORDS="487,194,634,371" OnClick="pintar('pastelero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="487,194,634,371" OnClick="pintar('pastelero');sonidos[8].play()"style="cursor: pointer">
 <!-- cartero-->
-<AREA SHAPE=RECT COORDS="484,379,629,554" OnClick="pintar('cartero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="484,379,629,554" OnClick="pintar('cartero');sonidos[10].play()"style="cursor: pointer">
 <!-- costurera-->
-<AREA SHAPE=RECT COORDS="645,8,792,186" OnClick="pintar('costurera')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="645,8,792,186" OnClick="pintar('costurera');sonidos[2].play()"style="cursor: pointer">
 <!-- bombero-->
-<AREA SHAPE=RECT COORDS="641,194,796,368" OnClick="pintar('bombero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="641,194,796,368" OnClick="pintar('bombero');sonidos[4].play()"style="cursor: pointer">
 
 </MAP>
  </div>
