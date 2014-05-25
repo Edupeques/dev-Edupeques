@@ -6,6 +6,21 @@
 		 <meta name="Aprende los distintos transportes">
 
 <script type="text/javascript">
+var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../sounds/Transports/ES_Boat.mp3"),
+				1:new Audio("../../sounds/Transports/ES_Car.mp3"),
+				2:new Audio("../../sounds/Transports/ES_Bus.mp3"),
+				3:new Audio("../../sounds/Transports/ES_Helicopter.mp3"),
+				4:new Audio("../../sounds/Transports/ES_Plane.mp3"),
+				5:new Audio("../../sounds/Transports/ES_Train.mp3"),
+					
+				//1:new Audio("/Habitos/minigames/Sounds/Professions/ES_Baker.mp3"),
+            }
+
 function pintar(obj)
 {
    document.getElementById(obj).style.display = '';
@@ -83,18 +98,18 @@ function pintar(obj)
 
 <MAP NAME="transportesCompleto.png">
 <!-- barco2 -->
-<AREA SHAPE=RECT COORDS="28,12,311,237" OnClick="pintar('barco2')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="28,12,311,237" OnClick="pintar('barco2');sonidos[0].play()"style="cursor: pointer">
 <!-- coche -->
-<AREA SHAPE=RECT COORDS="312,9,608,251" Onclick="pintar('coche')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="312,9,608,251" Onclick="pintar('coche');sonidos[1].play()"style="cursor: pointer">
 <!-- autobus -->
-<AREA SHAPE=RECT COORDS="13,242,302,449" Onclick="pintar('autobus')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="13,242,302,449" Onclick="pintar('autobus');sonidos[2].play()"style="cursor: pointer">
 <!-- helicoptero-->   
-<AREA SHAPE=RECT COORDS="300,250,573,458" Onclick="pintar('helicoptero')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="300,250,573,458" Onclick="pintar('helicoptero');sonidos[3].play()"style="cursor: pointer">
 <!-- avion -->
-<AREA SHAPE=RECT COORDS="605,11,941,228" Onclick="pintar('avion')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="605,11,941,228" Onclick="pintar('avion');sonidos[4].play()"style="cursor: pointer">
 <!-- tren -->
 
-<AREA SHAPE=RECT COORDS="565,247,958,457" Onclick="pintar('tren')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="565,247,958,457" Onclick="pintar('tren');sonidos[5].play()"style="cursor: pointer">
 
 
 </MAP>
