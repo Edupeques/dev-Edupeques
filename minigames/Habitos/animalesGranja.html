@@ -4,6 +4,27 @@
   <title> Animales de la granja </title>
   
 <script type="text/javascript">
+var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../sounds/FarmAnimals/ES_Bee.mp3"),
+				2:new Audio("../../sounds/FarmAnimals/ES_Cow.mp3"),
+				1:new Audio("../../sounds/FarmAnimals/ES_Cat.mp3"),
+				3:new Audio("../../sounds/FarmAnimals/ES_Hen.mp3"),
+				4:new Audio("../../sounds/FarmAnimals/ES_Cricket.mp3"),
+				5:new Audio("../../sounds/FarmAnimals/ES_Dog.mp3"),
+				6:new Audio("../../sounds/FarmAnimals/ES_Duck.mp3"),
+				 7:new Audio("../../sounds/FarmAnimals/ES_Frog.mp3"),
+				8:new Audio("../../sounds/FarmAnimals/ES_Goat.mp3"),
+				9:new Audio("../../sounds/FarmAnimals/ES_Horse.mp3"),
+				10:new Audio("../../sounds/FarmAnimals/ES_Pig.mp3"),
+				11:new Audio("../../sounds/FarmAnimals/ES_Sheep.mp3"),
+				
+					
+				
+            }
 function pintar(obj)
 {
    document.getElementById(obj).style.display = '';
@@ -11,6 +32,8 @@ function pintar(obj)
 </script>
 
 <style type="text/css">
+
+
     .principal
     {
 		
@@ -101,29 +124,29 @@ function pintar(obj)
 
 <MAP NAME="animalesGranja.png">
 <!-- avispa-->
-<AREA SHAPE=RECT COORDS="16,128,103,212" OnClick="pintar('avispa')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="16,128,103,212" OnClick="pintar('avispa');sonidos[0].play()"style="cursor: pointer">
 <!-- gato-->
-<AREA SHAPE=RECT COORDS="118,129,204,209" OnClick="pintar('gato')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="118,129,204,209" OnClick="pintar('gato');sonidos[1].play()"style="cursor: pointer">
 <!-- vaca-->
-<AREA SHAPE=RECT COORDS="221,128,305,207" OnClick="pintar('vaca')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="221,128,305,207" OnClick="pintar('vaca');sonidos[2].play()"style="cursor: pointer">
 <!-- gallina-->
-<AREA SHAPE=RECT COORDS="20,229,96,314" OnClick="pintar('gallina')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="20,229,96,314" OnClick="pintar('gallina');sonidos[3].play()"style="cursor: pointer">
 <!-- saltamontes-->
-<AREA SHAPE=RECT COORDS="121,232,203,306" OnClick="pintar('saltamontes')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="121,232,203,306" OnClick="pintar('saltamontes');sonidos[4].play()"style="cursor: pointer">
 <!-- perro-->
-<AREA SHAPE=RECT COORDS="221,234,306,308" OnClick="pintar('perro')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="221,234,306,308" OnClick="pintar('perro');sonidos[5].play()"style="cursor: pointer">
 <!-- pato-->
-<AREA SHAPE=RECT COORDS="16,333,95,413" OnClick="pintar('pato')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="16,333,95,413" OnClick="pintar('pato');sonidos[6].play()"style="cursor: pointer">
 <!-- rana-->
-<AREA SHAPE=RECT COORDS="123,333,204,414" OnClick="pintar('rana')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="123,333,204,414" OnClick="pintar('rana');sonidos[7].play()"style="cursor: pointer">
 <!-- cabra-->
-<AREA SHAPE=RECT COORDS="224,331,307,415" OnClick="pintar('cabra')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="224,331,307,415" OnClick="pintar('cabra');sonidos[8].play()"style="cursor: pointer">
 <!-- cabra-->
-<AREA SHAPE=RECT COORDS="17,434,103,515" OnClick="pintar('caballo')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="17,434,103,515" OnClick="pintar('caballo');sonidos[9].play()"style="cursor: pointer">
 <!-- cerdo-->
-<AREA SHAPE=RECT COORDS="118,437,204,516" OnClick="pintar('cerdo')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="118,437,204,516" OnClick="pintar('cerdo');sonidos[10].play()"style="cursor: pointer">
 <!-- oveja-->
-<AREA SHAPE=RECT COORDS="222,435,308,513" OnClick="pintar('oveja')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="222,435,308,513" OnClick="pintar('oveja');sonidos[11].play()"style="cursor: pointer">
 
 </MAP>
  </div>
