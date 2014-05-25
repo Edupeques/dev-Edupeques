@@ -4,6 +4,25 @@
   <title> Aprende los numeros  </title>
   
 <script type="text/javascript">
+var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../sounds/Numbers/ES_1.mp3"),
+				1:new Audio("../../sounds/Numbers/ES_2.mp3"),
+				2:new Audio("../../sounds/Numbers/ES_3.mp3"),
+				3:new Audio("../../sounds/Numbers/ES_4.mp3"),
+				4:new Audio("../../sounds/Numbers/ES_5.mp3"),
+				5:new Audio("../../sounds/Numbers/ES_6.mp3"),
+				6:new Audio("../../sounds/Numbers/ES_7.mp3"),
+				7:new Audio("../../sounds/Numbers/ES_8.mp3"),
+				8:new Audio("../../sounds/Numbers/ES_9.mp3"),
+				9:new Audio("../../sounds/Numbers/ES_10.mp3"),
+					
+				//1:new Audio("/Habitos/minigames/Sounds/Professions/ES_Baker.mp3"),
+            }
+
 function pintar(obj)
 {
    document.getElementById(obj).style.display = '';
@@ -74,25 +93,25 @@ function pintar(obj)
 
 <MAP NAME="diseno-numeros2.jpg">
 <!-- uno-->
-<AREA SHAPE=RECT COORDS="72,117,211,348" OnClick="pintar('uno')" style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="72,117,211,348" OnClick="pintar('uno');sonidos[0].play()" style="cursor: pointer">
 <!-- dos-->
-<AREA SHAPE=RECT COORDS="226,135,395,340" OnClick="pintar('dos')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="226,135,395,340" OnClick="pintar('dos');sonidos[1].play()"style="cursor: pointer">
 <!-- tres-->
-<AREA SHAPE=RECT COORDS="422,108,573,334" OnClick="pintar('tres')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="422,108,573,334" OnClick="pintar('tres');sonidos[2].play()"style="cursor: pointer">
 <!--cuatro-->
-<AREA SHAPE=RECT COORDS="593,119,769,337" OnClick="pintar('cuatro')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="593,119,769,337" OnClick="pintar('cuatro');sonidos[3].play()"style="cursor: pointer">
 <!--cinco-->
-<AREA SHAPE=RECT COORDS="802,119,958,311" OnClick="pintar('cinco')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="802,119,958,311" OnClick="pintar('cinco');sonidos[4].play()"style="cursor: pointer">
 <!--seis-->
-<AREA SHAPE=RECT COORDS="67,383,233,583" OnClick="pintar('seis')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="67,383,233,583" OnClick="pintar('seis');sonidos[5].play()"style="cursor: pointer">
 <!--siete-->
-<AREA SHAPE=RECT COORDS="254,392,380,573" OnClick="pintar('siete')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="254,392,380,573" OnClick="pintar('siete');sonidos[6].play()"style="cursor: pointer">
 <!--ocho-->
-<AREA SHAPE=RECT COORDS="424,395,543,567" OnClick="pintar('ocho')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="424,395,543,567" OnClick="pintar('ocho');sonidos[7].play()"style="cursor: pointer">
 <!--nueve-->
-<AREA SHAPE=RECT COORDS="576,394,729,572" OnClick="pintar('nueve')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="576,394,729,572" OnClick="pintar('nueve');sonidos[8].play()"style="cursor: pointer">
 <!--diez-->
-<AREA SHAPE=RECT COORDS="743,397,972,569" OnClick="pintar('diez')"style="cursor: pointer">
+<AREA SHAPE=RECT COORDS="743,397,972,569" OnClick="pintar('diez');sonidos[9].play()"style="cursor: pointer">
 
 
 
