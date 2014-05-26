@@ -1,43 +1,32 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
- <head>
-  <title> login.php </title>
- 
- </head>
+    <head>
+        <title> login.php </title>
 
-  <body>
-  <?php
- session_start();
+    </head>
+
+    <body>
+        <?php
+
+session_start();
 
 
-$name=$_POST['name'];
+$email=$_POST['email'];
 $pwd=$_POST['pwd'];
 
 include("conexion.php");
 
-$sql="SELECT * FROM teachers WHERE name='$name'";
+$result = $fsql->execute("SELECT * FROM teachers WHERE email = ? and pwd = ?",array($email, $pwd));
+if(!$result)
 
-
-$registros = mysql_query($sql);
-if (mysql_num_rows($registros)==0)
-{
-  echo "Usuario NO EXISTE <a href='index.html'>pulse aqui para continuar</a>";
-}
+    echo "Usuario NO EXISTE <a href='index.html'>pulse aqui para continuar</a>".$email.":".$pwd;
 else
-{
-  while($linea=mysql_fetch_array($registros))
-	{
-  if($linea['pwd']!=($pwd))
-	{
-	echo "Clave INCORRECTA <a href='index.html'>pulse aqui para continuar</a>";
-	}
-  else
+    foreach($result as $row)
     {
-	   $_SESSION['login']= $name;
-	   header("location:pag2.php");
-	}
-	}
-}
-  ?>
- </body>
+        $_SESSION['login']= $row["name"];
+        $_SESSION['entry']= $row["entry"];
+        header("location:pag2.php");
+    }
+        ?>
+    </body>
 </html>

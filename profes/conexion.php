@@ -1,6 +1,4 @@
 <?php
-			
-			$conexion=mysql_connect("localhost","root",""); 
-			$base=mysql_select_db("edupeques",$conexion);  
-			
+include("../libs/fsql.php");
+$fsql = new fsql("localhost","root","","edupeques");
 ?>
