@@ -26,7 +26,7 @@
             <?php
 session_start();
 if(!isset($_GET["ref"])) header("location:index.html");
-if(isset($_GET["m"]) && $_GET["m"]==1) header("location:password.php?id=".$ref);
+if(isset($_GET["m"]) && $_GET["m"]==1) header("location:password.php?id=".$_GET["ref"]);
 
 $ref = $_GET["ref"];
 switch($ref)
@@ -47,7 +47,7 @@ foreach($fsql->execute("SELECT * FROM alumns WHERE class = ?",array($ref)) as $r
     {
             echo "<tr></tr>";
     }
-    echo "<img src='img/".$row['photo']."' width=100 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' class='imageFace' class='ninos'/>";
+    echo "<img src='img/".$row['photo']."' width=100 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' alt='".$row["name"]."' title='".$row["name"]."' class='imageFace' class='ninos'/>";
     if($i==1)
     {
         $i = 0;

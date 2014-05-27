@@ -61,7 +61,8 @@
         <?php
 session_start();
 include("conexion.php");
-if (isset($_POST["cod"]) && isset($_GET["id"]))
+if (!isset($_GET["id"])) header("location:index.html");
+if (isset($_POST["cod"]))
 {
     foreach($fsql->execute("SELECT * FROM alumns WHERE entry = ? AND pwd = ?",array($_GET["id"], $_POST["cod"])) as $result)
     {
@@ -70,7 +71,6 @@ if (isset($_POST["cod"]) && isset($_GET["id"]))
     }
     header("location:password.php");
 }
-header("location:index.html");
         ?>
         <div id="cabecera">
             <p>EDUPEQUES Educaci&oacute;n Infantil</p>
