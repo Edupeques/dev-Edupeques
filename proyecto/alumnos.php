@@ -24,40 +24,40 @@
   		<table style="padding:2%;">
         	<tr> 
             <?php
+session_start();
+if(!isset($_GET["ref"])) header("location:index.html");
+if(isset($_GET["m"]) && $_GET["m"]==1) header("location:password.php?id=".$ref);
 
-include("conexion.php");
-
-$indice=$_GET['ref'];
-if($stmt=$mysqli->prepare("SELECT * FROM alumns WHERE class=?"))
+$ref = $_GET["ref"];
+switch($ref)
 {
-    $stmt->bind_param("i",$indice);
-    $result = $stmt->execute();
-    $i = 0;
-    while ($row = $result->fetch_assoc()) 
+    case 31: $ref = 1; break;
+    case 32: $ref = 2; break;
+    case 41: $ref = 3; break;
+    case 42: $ref = 4; break;
+    case 51: $ref = 5; break;
+    case 52: $ref = 6; break;
+    default: $ref = 1; break;
+}
+$i = 0;
+include("conexion.php");
+foreach($fsql->execute("SELECT * FROM alumns WHERE class = ?",array($ref)) as $row)
+{
+    if($row['entry']%5==0)
     {
-		if($row['entry']%5==0)
-		{
-				echo "<tr></tr>";
-		}
-        echo "<img src='img/".$row['photo']."' width=100 title='".$row['entry']."' class='imageFace' class='ninos'/>";
-        if($i==1)
-        {
-            $i = 0;
-            echo("<br />");
-        }
-        $i++;
+            echo "<tr></tr>";
     }
-    $result->free();
-    $stmt->close();
-
+    echo "<img src='img/".$row['photo']."' width=100 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' class='imageFace' class='ninos'/>";
+    if($i==1)
+    {
+        $i = 0;
+        echo("<br />");
+    }
+    $i++;
 }
             ?>
 		</tr>
     	</table>
-        <form>
-            <input type="hidden" id="entry" name="entry" value="">
-            <input type="submit" id="entrySubmit">
-        </form>
 		</div>
     </BODY>
 </HTML>

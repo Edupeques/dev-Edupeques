@@ -1,5 +1,4 @@
 <?php
-    $mysqli = new mysqli("localhost","root","","edupeques");
-    if($conexion->connect_error)
-        die($conexion->connect_error);
+include("../libs/fsql.php");
+$fsql = new fsql("localhost","root","putapass","edupeques");
 ?>
