@@ -1,4 +1,4 @@
 <?php
 include("../libs/fsql.php");
-$fsql = new fsql("localhost","root","putapass","edupeques");
+$fsql = new fsql("localhost","root","","edupeques");
 ?>

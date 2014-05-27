@@ -47,7 +47,7 @@ foreach($fsql->execute("SELECT * FROM alumns WHERE class = ?",array($ref)) as $r
     {
             echo "<tr></tr>";
     }
-    echo "<img src='img/".$row['photo']."' width=100 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' alt='".$row["name"]."' title='".$row["name"]."' class='imageFace' class='ninos'/>";
+    echo "<td><img src='img/".$row['photo']."' width=100 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' alt='".$row["name"]."' title='".$row["name"]."' class='imageFace, ninos'/></td>";
     if($i==1)
     {
         $i = 0;
