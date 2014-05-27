@@ -2,7 +2,45 @@
 <HTML>
  <HEAD>
   <TITLE> Abecedario </TITLE>
-
+<script type="text/javascript">
+  var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../sounds/Alphabet/ES_A.mp3"),
+				1:new Audio("../../sounds/Alphabet/ES_B.mp3"),
+				2:new Audio("../../sounds/Alphabet/ES_C.mp3"),
+				3:new Audio("../../sounds/Alphabet/ES_CH.mp3"),
+				4:new Audio("../../sounds/Alphabet/ES_D.mp3"),
+				5:new Audio("../../sounds/Alphabet/ES_E.mp3"),
+				6:new Audio("../../sounds/Alphabet/ES_F.mp3"),
+				7:new Audio("../../sounds/Alphabet/ES_G.mp3"),
+				8:new Audio("../../sounds/Alphabet/ES_H.mp3"),
+				9:new Audio("../../sounds/Alphabet/ES_I.mp3"),
+				10:new Audio("../../sounds/Alphabet/ES_J.mp3"),
+				11:new Audio("../../sounds/Alphabet/ES_K.mp3"),
+				12:new Audio("../../sounds/Alphabet/ES_L.mp3"),
+				13:new Audio("../../sounds/Alphabet/ES_LL.mp3"),
+				14:new Audio("../../sounds/Alphabet/ES_M.mp3"),
+				15:new Audio("../../sounds/Alphabet/ES_N.mp3"),
+				16:new Audio("../../sounds/Alphabet/ES_Ñ.mp3"),
+				17:new Audio("../../sounds/Alphabet/ES_O.mp3"),
+				18:new Audio("../../sounds/Alphabet/ES_P.mp3"),
+				19:new Audio("../../sounds/Alphabet/ES_Q.mp3"),
+				20:new Audio("../../sounds/Alphabet/ES_R.mp3"),
+				21:new Audio("../../sounds/Alphabet/ES_RR.mp3"),
+				
+				22:new Audio("../../sounds/Alphabet/ES_T.mp3"),
+				23:new Audio("../../sounds/Alphabet/ES_U.mp3"),
+				24:new Audio("../../sounds/Alphabet/ES_V.mp3"),
+				25:new Audio("../../sounds/Alphabet/ES_W.mp3"),
+				26:new Audio("../../sounds/Alphabet/ES_X.mp3"),
+				27:new Audio("../../sounds/Alphabet/ES_Y.mp3"),
+				28:new Audio("../../sounds/Alphabet/ES_Z.mp3"),29:new Audio("../../sounds/Alphabet/ES_S.mp3"),
+				//1:new Audio("/Habitos/minigames/Sounds/Professions/ES_Baker.mp3"),
+            }
+			</script>
 <style>
 
 .opciones{
@@ -65,36 +103,36 @@
   <div class="contenedor">
   <IMG SRC="./images/letrilandia/abc.jpg" USEMAP="#abc.jpg" WIDTH=1024 HEIGHT=768 BORDER=0 >
 <MAP NAME="abc.jpg">
-<AREA SHAPE=RECT COORDS="54,45,157,179" onclick="window.open('./images/letrilandia/A.jpg','width=500,height=200,left=400'  )">
-<AREA SHAPE=RECT COORDS="186,46,287,188" onclick="window.open('./images/letrilandia/B.jpg','width=500,height=200,left=400' )" >
-<AREA SHAPE=RECT COORDS="329,45,427,187"onclick="window.open('./images/letrilandia/Cc.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="458,45,567,188" onclick="window.open('./images/letrilandia/CH.jpg','width=500,height=200,left=400' )" >
-<AREA SHAPE=RECT COORDS="590,45,696,195" onclick="window.open('./images/letrilandia/D.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="718,45,835,194" onclick="window.open('./images/letrilandia/E.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="858,43,954,195" onclick="window.open('./images/letrilandia/F.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="59,218,169,370" onclick="window.open('./images/letrilandia/G.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="186,215,299,373" onclick="window.open('./images/letrilandia/H.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="330,209,434,369" onclick="window.open('./images/letrilandia/I.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="463,211,568,370" onclick="window.open('./images/letrilandia/J.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="592,221,699,371" onclick="window.open('./images/letrilandia/K.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="731,222,852,373" onclick="window.open('./images/letrilandia/L.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="877,217,993,372" onclick="window.open('./images/letrilandia/LL.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="58,394,164,556" onclick="window.open('./images/letrilandia/M.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="201,406,241,545" onclick="window.open('./images/letrilandia/N.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="257,402,298,540" onclick="window.open('./images/letrilandia/Ñ.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="335,394,465,561" onclick="window.open('./images/letrilandia/O.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="501,400,609,559" onclick="window.open('./images/letrilandia/P.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="633,403,742,557" onclick="window.open('./images/letrilandia/Q.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="762,408,868,548"onclick="window.open('./images/letrilandia/R.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="902,411,1011,546" onclick="window.open('./images/letrilandia/RR.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="53,563,156,708" onclick="window.open('./images/letrilandia/S.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="206,588,314,708" onclick="window.open('./images/letrilandia/T.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="357,576,457,703" onclick="window.open('./images/letrilandia/U.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="493,575,605,700" onclick="window.open('./images/letrilandia/V.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="634,589,715,709" onclick="window.open('./images/letrilandia/W.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="724,587,799,710" onclick="window.open('./images/letrilandia/X.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="820,585,892,717" onclick="window.open('./images/letrilandia/Y.jpg','width=500,height=200,left=400' )">
-<AREA SHAPE=RECT COORDS="916,577,1011,719" onclick="window.open('./images/letrilandia/Z.jpg','width=500,height=200,left=400' )">
+<AREA SHAPE=RECT COORDS="54,45,157,179" onclick="window.open('./images/letrilandia/A.jpg','width=500,height=200,left=400'  );sonidos[0].play() ">
+<AREA SHAPE=RECT COORDS="186,46,287,188" onclick="window.open('./images/letrilandia/B.jpg','width=500,height=200,left=400' );sonidos[1].play()" >
+<AREA SHAPE=RECT COORDS="329,45,427,187"onclick="window.open('./images/letrilandia/Cc.jpg','width=500,height=200,left=400' );sonidos[2].play()">
+<AREA SHAPE=RECT COORDS="458,45,567,188" onclick="window.open('./images/letrilandia/CH.jpg','width=500,height=200,left=400' );sonidos[3].play()" >
+<AREA SHAPE=RECT COORDS="590,45,696,195" onclick="window.open('./images/letrilandia/D.jpg','width=500,height=200,left=400' );sonidos[4].play()">
+<AREA SHAPE=RECT COORDS="718,45,835,194" onclick="window.open('./images/letrilandia/E.jpg','width=500,height=200,left=400' );sonidos[5].play()">
+<AREA SHAPE=RECT COORDS="858,43,954,195" onclick="window.open('./images/letrilandia/F.jpg','width=500,height=200,left=400' );sonidos[6].play()">
+<AREA SHAPE=RECT COORDS="59,218,169,370" onclick="window.open('./images/letrilandia/G.jpg','width=500,height=200,left=400' );sonidos[7].play()">
+<AREA SHAPE=RECT COORDS="186,215,299,373" onclick="window.open('./images/letrilandia/H.jpg','width=500,height=200,left=400' );sonidos[8].play()">
+<AREA SHAPE=RECT COORDS="330,209,434,369" onclick="window.open('./images/letrilandia/I.jpg','width=500,height=200,left=400' );sonidos[9].play()">
+<AREA SHAPE=RECT COORDS="463,211,568,370" onclick="window.open('./images/letrilandia/J.jpg','width=500,height=200,left=400' );sonidos[10].play()">
+<AREA SHAPE=RECT COORDS="592,221,699,371" onclick="window.open('./images/letrilandia/K.jpg','width=500,height=200,left=400' );sonidos[11].play()">
+<AREA SHAPE=RECT COORDS="731,222,852,373" onclick="window.open('./images/letrilandia/L.jpg','width=500,height=200,left=400' );sonidos[12].play()">
+<AREA SHAPE=RECT COORDS="877,217,993,372" onclick="window.open('./images/letrilandia/LL.jpg','width=500,height=200,left=400' );sonidos[13].play()">
+<AREA SHAPE=RECT COORDS="58,394,164,556" onclick="window.open('./images/letrilandia/M.jpg','width=500,height=200,left=400' );sonidos[14].play()">
+<AREA SHAPE=RECT COORDS="201,406,241,545" onclick="window.open('./images/letrilandia/N.jpg','width=500,height=200,left=400' );sonidos[15].play()">
+<AREA SHAPE=RECT COORDS="257,402,298,540" onclick="window.open('./images/letrilandia/Ñ.jpg','width=500,height=200,left=400' );sonidos[16].play()">
+<AREA SHAPE=RECT COORDS="335,394,465,561" onclick="window.open('./images/letrilandia/O.jpg','width=500,height=200,left=400' );sonidos[17].play()">
+<AREA SHAPE=RECT COORDS="501,400,609,559" onclick="window.open('./images/letrilandia/P.jpg','width=500,height=200,left=400' );sonidos[18].play()">
+<AREA SHAPE=RECT COORDS="633,403,742,557" onclick="window.open('./images/letrilandia/Q.jpg','width=500,height=200,left=400' );sonidos[19].play()">
+<AREA SHAPE=RECT COORDS="762,408,868,548"onclick="window.open('./images/letrilandia/R.jpg','width=500,height=200,left=400' );sonidos[20].play()">
+<AREA SHAPE=RECT COORDS="902,411,1011,546" onclick="window.open('./images/letrilandia/RR.jpg','width=500,height=200,left=400' );sonidos[21].play()">
+<AREA SHAPE=RECT COORDS="53,563,156,708" onclick="window.open('./images/letrilandia/S.jpg','width=500,height=200,left=400' );sonidos[29].play()">
+<AREA SHAPE=RECT COORDS="206,588,314,708" onclick="window.open('./images/letrilandia/T.jpg','width=500,height=200,left=400' );sonidos[22].play()">
+<AREA SHAPE=RECT COORDS="357,576,457,703" onclick="window.open('./images/letrilandia/U.jpg','width=500,height=200,left=400' );sonidos[23].play()">
+<AREA SHAPE=RECT COORDS="493,575,605,700" onclick="window.open('./images/letrilandia/V.jpg','width=500,height=200,left=400' );sonidos[24].play()">
+<AREA SHAPE=RECT COORDS="634,589,715,709" onclick="window.open('./images/letrilandia/W.jpg','width=500,height=200,left=400' );sonidos[25].play()">
+<AREA SHAPE=RECT COORDS="724,587,799,710" onclick="window.open('./images/letrilandia/X.jpg','width=500,height=200,left=400' );sonidos[26].play()">
+<AREA SHAPE=RECT COORDS="820,585,892,717" onclick="window.open('./images/letrilandia/Y.jpg','width=500,height=200,left=400' );sonidos[27].play()">
+<AREA SHAPE=RECT COORDS="916,577,1011,719" onclick="window.open('./images/letrilandia/Z.jpg','width=500,height=200,left=400' );sonidos[28].play()">
 </MAP>
 </div>
  </BODY>
