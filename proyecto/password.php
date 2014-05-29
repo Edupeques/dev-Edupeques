@@ -92,9 +92,9 @@ if (isset($_GET["cod"]))
 
                 </TR>
                 <TR>
-                    <TD class="ninos"><img src="../images/buho.png" class="ninos" id="visor1" name="visor1"></TD>
-                    <TD class="ninos"><img src="../images/perro.png" class="ninos" id="visor2" name="visor2"></TD>
-                    <TD class="ninos"><img src="../images/perro.png" class="ninos" id="visor3" name="visor3"></TD>
+                    <TD class="ninos"><img src="../images/buho.png" class="visor" id="visor1" name="visor1"></TD>
+                    <TD class="ninos"><img src="../images/perro.png" class="visor" id="visor2" name="visor2"></TD>
+                    <TD class="ninos"><img src="../images/perro.png" class="visor" id="visor3" name="visor3"></TD>
                 </TR>
                 <TR>
                     <TD width=30%><a id="anterior1"><img src="../images/down.png"/></a></TD>
