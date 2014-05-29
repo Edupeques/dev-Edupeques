@@ -6,8 +6,7 @@
 	 numeros[1]="./images/L.png";
 
 /*REPASO DE CONTORNOS DE LOS NUMEROS*/
-
- function rellenar(part)
+funcion rellenar(part)
 {      
 		//rellenamos poco a poco la matriz    
 		if(cont==part.substr(3))

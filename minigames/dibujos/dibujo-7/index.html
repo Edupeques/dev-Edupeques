@@ -18,17 +18,28 @@
         </style>
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
+			var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../../sounds/Colours/ES_Red.mp3"),
+				1:new Audio("../../../sounds/Colours/ES_Blue.mp3"),
+				2:new Audio("../../../sounds/Colours/ES_Yellow.mp3"),
+				3:new Audio("../../../sounds/Colours/ES_Grey.mp3"),
+					4:new Audio("../../../sounds/Colours/ES_Brown.mp3"),
+				}
             components = 
             ["manillar","marco","marco2","marco3","rueda1","rueda2","asiento","delantera","faro","faro2","faro3","guardabarro","llanta1","llanta2"];
         </script>
     </head>
     <body>
         <div class="colorSelector">
-            <div class="circle ctype1" onClick="setColor(1);">ROJO</div>
-            <div class="circle ctype2" onClick="setColor(2);">AZUL</div>
-            <div class="circle ctype3" onClick="setColor(3);">AMARILLO</div>
-            <div class="circle ctype4" onClick="setColor(4);"><font color="#FFFFFF">GRIS</font></div>
-            <div class="circle ctype5" onClick="setColor(5);">MARRON</div>
+            <div class="circle ctype1" onClick="setColor(1);sonidos[0].play()">ROJO</div>
+            <div class="circle ctype2" onClick="setColor(2);sonidos[1].play()">AZUL</div>
+            <div class="circle ctype3" onClick="setColor(3);sonidos[2].play()">AMARILLO</div>
+            <div class="circle ctype4" onClick="setColor(4);sonidos[3].play()"><font color="#FFFFFF">GRIS</font></div>
+            <div class="circle ctype5" onClick="setColor(5);sonidos[4].play()">MARRON</div>
         </div>
         <img src="images/base.png"          class="draw" usemap="#moto"/>
         <img src="images/manillar.png"      class="draw" style="display:none;" usemap="#moto" id="manillar"/>

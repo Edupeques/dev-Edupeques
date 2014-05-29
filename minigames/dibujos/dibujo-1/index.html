@@ -60,6 +60,19 @@
             
         </STYLE>
         <SCRIPT>
+		var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../../sounds/Colours/ES_Red.mp3"),
+				1:new Audio("../../../sounds/Colours/ES_Yellow.mp3"),
+				2:new Audio("../../../sounds/Colours/ES_Green.mp3"),
+				3:new Audio("../../../sounds/Colours/ES_Brown.mp3"),	
+				
+					
+				
+            }
             var color=0;
             
             function pintar(obj, num) 
@@ -95,11 +108,11 @@
     </HEAD>
     <BODY>
         <DIV CLASS="colorSelector">
-            <DIV CLASS="circle ctype1" onClick="setColor(1);">ROJO</DIV>
-            <DIV CLASS="circle ctype2" onClick="setColor(2);">AMARILLO</DIV>
-            <DIV CLASS="circle ctype3" onClick="setColor(3);">VERDE</DIV>
-            <DIV CLASS="circle ctype4" onClick="setColor(4);">VERDE</DIV>
-            <DIV CLASS="circle ctype5" onClick="setColor(5);">MARRON</DIV>
+            <DIV CLASS="circle ctype1" onClick="setColor(1);sonidos[0].play()">ROJO</DIV>
+            <DIV CLASS="circle ctype2" onClick="setColor(2);sonidos[1].play()">AMARILLO</DIV>
+            <DIV CLASS="circle ctype3" onClick="setColor(3);sonidos[2].play()">VERDE</DIV>
+            <DIV CLASS="circle ctype4" onClick="setColor(4);sonidos[2].play()">VERDE</DIV>
+            <DIV CLASS="circle ctype5" onClick="setColor(5);sonidos[3].play()">MARRON</DIV>
         </DIV>
         
         <IMG SRC="./images/mainImg.jpg" CLASS="imagen" USEMAP="#map1" WIDTH=750 HEIGHT=852 BORDER=0>

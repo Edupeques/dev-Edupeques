@@ -16,14 +16,23 @@
         </style>
         <script language="javascript" src="../script.js" type="text/javascript"></script>
         <script>
+		var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../../sounds/Colours/ES_Red.mp3"),
+				1:new Audio("../../../sounds/Colours/ES_Blue.mp3"),
+				2:new Audio("../../../sounds/Colours/ES_Yellow.mp3"),
+				}
             components = ["papada","pata1","pata2","pico","ala","cresta","cuerpo"];
         </script>
     </head>
     <body>
         <div class="colorSelector">
-            <div class="circle ctype1" onClick="setColor(1);">ROJO</div>
-            <div class="circle ctype2" onClick="setColor(2);">AZUL</div>
-            <div class="circle ctype3" onClick="setColor(3);">AMARILLO</div>
+            <div class="circle ctype1" onClick="setColor(1);sonidos[0].play()">ROJO</div>
+            <div class="circle ctype2" onClick="setColor(2);sonidos[1].play()">AZUL</div>
+            <div class="circle ctype3" onClick="setColor(3);sonidos[2].play()">AMARILLO</div>
         </div>
         <img src="images/base.png" width="494" height="550" usemap="#gallina" class="draw"/>
         <img src="images/papada.png" class="draw" id="papada" usemap="#gallina" style="display:none;"/>

@@ -18,15 +18,27 @@
         </style>
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
+				var sonidos = 
+            {
+                /*
+                ID:new Audio(FILENAME),  <- remember to use comma
+                */
+                0:new Audio("../../../sounds/Colours/ES_Red.mp3"),
+				2:new Audio("../../../sounds/Colours/ES_Green.mp3"),
+				3:new Audio("../../../sounds/Colours/ES_Brown.mp3"),	
+				
+					
+				
+            }
             components = 
 			["manzana1","manzana2","manzana3","manzana4","manzana5","tronco","hojas"];
         </script>
     </head>
     <body>
         <div class="colorSelector">
-            <div class="circle ctype1" onClick="setColor(1);">ROJO</div>
-            <div class="circle ctype2" onClick="setColor(2);">VERDE</div>
-            <div class="circle ctype3" onClick="setColor(3);">MARRON</div>
+            <div class="circle ctype1" onClick="setColor(1);sonidos[0].play()">ROJO</div>
+            <div class="circle ctype2" onClick="setColor(2);sonidos[2].play()">VERDE</div>
+            <div class="circle ctype3" onClick="setColor(3);sonidos[3].play()">MARRON</div>
         </div>
         <img class="draw" usemap="#arbolmap" src="./images/arbol.png">
         <img class="draw" usemap="#arbolmap" id="manzana1" src="./images/manzana-1.png" style="display:none">
