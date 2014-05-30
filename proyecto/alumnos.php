@@ -21,7 +21,7 @@
             <p>EDUPEQUES Educaci&oacute;n Infantil</p>
         </div>	  
         <div class="ninos">
-            <table style="padding:2%;">
+            <table  cellspacing="50">
                 <tr> 
                     <?php
 session_start();
@@ -43,9 +43,9 @@ $i = 0;
 include("conexion.php");
 foreach($fsql->execute("SELECT * FROM alumns WHERE class = ?",array($ref)) as $row)
 {
-    if($row['entry']%5==0)
+    if($row['entry']%6==0)
         echo "</tr><tr>";
-    echo "<td><img src='img/".$row['photo']."' width=100 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' alt='".$row["name"]."' title='".$row["name"]."' class='imageFace, ninos'/></td>";
+    echo "<td><img src='".$row['photo']."' width=150 onClick='parent.location=\"alumnos.php?ref=".$row['entry']."&m=1\"' alt='".$row["name"]."' title='".$row["name"]."' class='imageFace'/></td>";
     if($i==1)
     {
         $i = 0;

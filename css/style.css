@@ -152,6 +152,12 @@ img.edad
     left:20%;
 	margin-top:35%;
 }
+img.imageFace
+{
+	border-radius:5px;
+	border:solid;
+	border-color:#669999;
+}
 #send
 {
     margin-left:-20%;
@@ -190,6 +196,23 @@ img.edad
     background: linear-gradient(to right,  #272926 0%,#a1afb2 95%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272926', endColorstr='#a1afb2',GradientType=1 ); /* IE6-9 */
 
+}
+table.datosAlumno
+{
+    margin-top:6%;
+    width:20%;
+}
+tr.datosAlumno
+{
+    height:75px;
+    background-color:#FF8000;
+    text-align:center;
+}
+td.datosAlumno
+{
+    padding:2%;
+    vertical-align:middle;
+    border-radius:5px;
 }
 /*ESTILOS DE LOS RECORRIDOS */
 	#primer
