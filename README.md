@@ -16,7 +16,7 @@ Fecha | Desarrollo | Fecha Inicio | Plazo Final | Completado
 **4ª semana de Abril** | `3º infantil` | 21 Abril | 27 Abril | ![](https://raw.githubusercontent.com/Edupeques/dev-Edupeques/master/images/complete.png "Completado")
 **1ª semana de Mayo** | `base de datos` | 28 Abril | 4 Mayo | ![](https://raw.githubusercontent.com/Edupeques/dev-Edupeques/master/images/complete.png "Completado")
 **2ª semana de Mayo** | `desarrollo del login ` | 5 Mayo | 11 Mayo | ![](https://raw.githubusercontent.com/Edupeques/dev-Edupeques/master/images/complete.png "Completado")
-**3ª semana de Mayo** | `sonidos`  | 12 Mayo | 18 Mayo |
+**3ª semana de Mayo** | `sonidos`  | 12 Mayo | 18 Mayo |![](https://raw.githubusercontent.com/Edupeques/dev-Edupeques/master/images/complete.png "Completado")
 **4ª semana de Mayo** | `ultimar detalles` | 19 Mayo | 25 Mayo |
 **5ª semana de Mayo** | `guiones y presentacion` | 26 Mayo | 1 Junio |
 
