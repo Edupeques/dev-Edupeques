@@ -21,6 +21,7 @@
                     foreach($students as $student)
                     {
                         echo("Tab".$student["entry"].": 'div".$student["entry"]."',");
+                    }
                 ?>
             };
             $(function(){
