@@ -1,0 +1,1 @@
+ALTER TABLE  `games` CHANGE  `course`  `age` TINYINT( 2 ) UNSIGNED NOT NULL ;
