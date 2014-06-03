@@ -50,3 +50,66 @@ section { /* Marcamos como de separados están los dos cuadrados */
 	height: 198px;
 }
 
+#contenedorPuzzle {
+		
+		font-family:"pipomayu"
+			background: #fcecfc; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			height:500px;
+			padding-top:6%;
+			}
+.opciones{
+			font-size:70px;
+			text-align: center;
+			font-family:"pipomayu";
+			background: #84bfff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #84bfff 1%, #96b9ff 50%, #c7d8e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#84bfff), color-stop(50%,#96b9ff), color-stop(100%,#c7d8e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bfff', endColorstr='#c7d8e5',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			}
+#contenedorPuzzle {
+		
+		font-family:"pipomayu"
+			background: #fcecfc; /* Old browsers */
+			background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcecfc), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:1%;
+			height:400px;
+			padding-top:4%;
+			padding-bottom: 4%;
+			}
+.opciones{
+			font-size:40px;
+			text-align: center;
+			font-family:"pipomayu";
+			background: #84bfff; /* Old browsers */
+			background: -moz-linear-gradient(top,  #84bfff 1%, #96b9ff 50%, #c7d8e5 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#84bfff), color-stop(50%,#96b9ff), color-stop(100%,#c7d8e5)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #84bfff 1%,#96b9ff 50%,#c7d8e5 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84bfff', endColorstr='#c7d8e5',GradientType=0 ); /* IE6-9 */
+			border-radius:30px;
+			margin-top:2%;
+			}

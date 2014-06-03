@@ -62,12 +62,13 @@ section { /* Marcamos como de separados están los dos cuadrados */
 			background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
 			border-radius:30px;
-			margin-top:2%;
-			height:500px;
-			padding-top:6%;
+			margin-top:1%;
+			height:400px;
+			padding-top:4%;
+			padding-bottom: 4%;
 			}
 .opciones{
-			font-size:70px;
+			font-size:40px;
 			text-align: center;
 			font-family:"pipomayu";
 			background: #84bfff; /* Old browsers */
