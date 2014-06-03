@@ -42,6 +42,7 @@
             <div class="circle ctype3" onClick="setColor(3);sonidos[2].play()">AMARILLO</div>
             <div class="circle ctype4" onClick="setColor(4);sonidos[3].play()"><font color="#FFFFFF">GRIS</font></div>
             <div class="circle ctype5" onClick="setColor(5);sonidos[4].play()">MARRON</div>
+			<a href="game.php"><img src="../iconos/atras.png" width="70" height="70"></a>
         </div>
         <img src="images/base.png"          class="draw" usemap="#moto"/>
         <img src="images/manillar.png"      class="draw" style="display:none;" usemap="#moto" id="manillar"/>

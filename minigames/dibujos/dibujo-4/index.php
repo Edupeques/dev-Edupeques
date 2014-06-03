@@ -34,7 +34,8 @@
         <div class="colorSelector">
             <div class="circle ctype1" onClick="setColor(1);sonidos[0].play()">ROJO</div>
             <div class="circle ctype2" onClick="setColor(2);sonidos[1].play()">AZUL</div>
-            <div class="circle ctype3" onClick="setColor(3);sonidos[2].play()">AMARILLO</div>
+            <div class="circle ctype3" onClick="setColor(3);sonidos[2].play()">AMARILLO</div><br><br><br><br><br><br><br><br><br>
+			<a href="game.php"><img src="../iconos/atras.png" width="70" height="70"></a>
         </div>
         <img src="images/base.png" width="494" height="550" usemap="#gallina" class="draw"/>
         <img src="images/papada.png" class="draw" id="papada" usemap="#gallina" style="display:none;"/>

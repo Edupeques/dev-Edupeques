@@ -27,7 +27,8 @@
             <div class="circle ctype1" onClick="setColor(1);"><font color="#FFFFFF">ROJO</font></div>
             <div class="circle ctype2" onClick="setColor(2);"><font color="#FFFFFF">AZUL</font></div>
             <div class="circle ctype3" onClick="setColor(3);">AMARILLO</div>
-            <div class="circle ctype4" onClick="setColor(4);">VERDE</div>
+            <div class="circle ctype4" onClick="setColor(4);">VERDE</div><br><br><br><br><br>
+			<a href="game.php"><img src="../iconos/atras.png" width="70" height="70"></a>
         </div>
         
         <img src="images/base.png"   class="draw" usemap="#loro"/>

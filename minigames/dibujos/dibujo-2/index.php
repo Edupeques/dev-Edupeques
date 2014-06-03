@@ -40,7 +40,8 @@
         <div class="colorSelector">
             <div class="circle ctype1" onClick="setColor(1);sonidos[0].play()">ROJO</div>
             <div class="circle ctype2" onClick="setColor(2);sonidos[2].play()">VERDE</div>
-            <div class="circle ctype3" onClick="setColor(3);sonidos[3].play()">MARRON</div>
+            <div class="circle ctype3" onClick="setColor(3);sonidos[3].play()">MARRON</div><br><br><br><br><br><br><br><br><br>
+			<a href="game.php"><img src="../iconos/atras.png" width="70" height="70"></a>
         </div>
         <img class="draw" usemap="#arbolmap" src="./images/arbol.png">
         <img class="draw" usemap="#arbolmap" id="manzana1" src="./images/manzana-1.png" style="display:none">

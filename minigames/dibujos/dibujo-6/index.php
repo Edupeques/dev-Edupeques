@@ -37,7 +37,8 @@
             <div class="circle ctype1" onClick="setColor(1);sonidos[0].play()">MORADO</div>
             <div class="circle ctype2" onClick="setColor(2);sonidos[1].play()">AZUL</div>
             <div class="circle ctype3" onClick="setColor(3);sonidos[2].play()">AMARILLO</div>
-            <div class="circle ctype4" onClick="setColor(4);sonidos[3].play()"><font color="#FFFFFF">NEGRO</font></div>
+            <div class="circle ctype4" onClick="setColor(4);sonidos[3].play()"><font color="#FFFFFF">NEGRO</font></div><br><br><br><br><br>
+			<a href="game.php"><img src="../iconos/atras.png" width="70" height="70"></a>
         </div>
         <img src="images/base.png"      class="draw" usemap="#abeja"/>
         <img src="images/cara.png"      class="draw" style="display:none;" usemap="#abeja" id="cara"/>
