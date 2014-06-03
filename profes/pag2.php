@@ -80,7 +80,7 @@
                                     <td class='datosAlumno' colspan=2>".$student["name"]." ".$student["subname"]."</td>
                                     
                                  </tr>");
-                            $results = $fsql->execute("SELECT * FROM results INNER JOIN games ON results.game = games.entry WHERE alumn = ?",array($student["entry"]));
+                            $results = $fsql->execute("SELECT games.entry, games.game AS game, SUM(success) AS success, SUM(failed) AS failed FROM results INNER JOIN games ON results.game = games.entry WHERE alumn = ? GROUP BY games.entry",array($student["entry"]));
                             foreach($results as $result)
                             {
                                 echo("<tr class='datosAlumno,toggleDiv' id='div".$student["entry"]."'>
