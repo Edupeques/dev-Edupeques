@@ -26,6 +26,8 @@
 				2:new Audio("../../../sounds/Colours/ES_Yellow.mp3"),
 				}
             components = ["papada","pata1","pata2","pico","ala","cresta","cuerpo"];
+            gameID = 4;
+            lang = "<?php echo(isset($_SESSION["lang"]) ? $_SESSION["lang"] : "EN"); ?>";
         </script>
     </head>
     <body>

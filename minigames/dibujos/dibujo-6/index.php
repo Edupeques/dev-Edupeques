@@ -28,6 +28,8 @@
 				3:new Audio("../../../sounds/Colours/ES_Black.mp3"),
 				}
             components = ["cara","raya1","raya2","raya3","ala1","ala2","antena1","antena2"];
+            gameID = 7;
+            lang = "<?php echo(isset($_SESSION["lang"]) ? $_SESSION["lang"] : "EN"); ?>";
         </script>
     </head>
     <body>

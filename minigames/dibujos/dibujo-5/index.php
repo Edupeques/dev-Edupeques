@@ -18,6 +18,8 @@
         <script type="text/javascript" src="../script.js"></script>
         <script type="text/javascript">
             components = ["cara","cuerpo","pata1","pata2","pico1","pico2","ala"];
+            gameID = 5;
+            lang = "<?php echo(isset($_SESSION["lang"]) ? $_SESSION["lang"] : "EN"); ?>";
         </script>
     </head>
     <body>

@@ -31,6 +31,8 @@
 				}
             components = 
             ["manillar","marco","marco2","marco3","rueda1","rueda2","asiento","delantera","faro","faro2","faro3","guardabarro","llanta1","llanta2"];
+            gameID = 7;
+            lang = "<?php echo(isset($_SESSION["lang"]) ? $_SESSION["lang"] : "EN"); ?>";
         </script>
     </head>
     <body>

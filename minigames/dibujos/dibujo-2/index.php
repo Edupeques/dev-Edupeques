@@ -32,6 +32,8 @@
             }
             components = 
 			["manzana1","manzana2","manzana3","manzana4","manzana5","tronco","hojas"];
+            gameID = 2;
+            lang = "<?php echo(isset($_SESSION["lang"]) ? $_SESSION["lang"] : "EN"); ?>";
         </script>
     </head>
     <body>

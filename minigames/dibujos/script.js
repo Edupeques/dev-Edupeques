@@ -1,21 +1,41 @@
 var curColor = 0;
-var components = []; // OVERRIDE THIS
+var aciertos = 0, fallos = 0;
+var components = [], gameID = 0, lang = "EN"; // OVERRIDE THIS
+var miscSounds = "../../../sounds/Misc/";
+var mainLocation = "../../../proyecto/";
+var sounds = 
+    {
+        "NO" : [ "_No.mp3", "_NotLikeThis.mp3" ],
+        "YES" : [ "_Perfect.mp3", "_VeryWell.mp3" ],
+        "DONE" : [ "_YouDoneIt.mp3" ]
+    }
 function pintar(id, color)
 {
-	if (isGameCompleted()) { alert("Juego terminado"); return; }
-	if (color == curColor)
-		document.getElementById(id).style.display = "";
-	else
-		alert("No, no!");
-	if (isGameCompleted())
-		alert("Bien!");
+    if (isGameCompleted()) { alert("Juego terminado"); return; }
+    if (color == curColor && document.getElementById(id).style.display != "")
+    {
+        document.getElementById(id).style.display = "";
+        aciertos++;
+    }
+    else if(document.getElementById(id).style.display!="" && color != curColor)
+    {
+        new Audio(miscSounds + lang + sounds["NO"][Math.floor(Math.random()*(sounds["NO"].length))]).play();
+        fallos++;
+    }
+    if (isGameCompleted())
+    {
+        new Audio(miscSounds + lang + sounds["DONE"][0]).play();
+        setTimeout(function(){
+            parent.location = mainLocation + "sendResults.php?g="+gameID+"&s="+aciertos+"&f="+fallos;
+        },1500);
+    }
 }
 
 function isGameCompleted()
 {
-	var res = true;
-	for(var i in components) res = isShown(components[i]) ? res : false;
-	return res;
+    var res = true;
+    for(var i in components) res = isShown(components[i]) ? res : false;
+    return res;
 }
 
 function setColor(num) { curColor = num; constructCursor(num); }
