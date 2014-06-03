@@ -54,7 +54,7 @@
                 $("#siguiente3").click(function(){ codigo3 = codigo3 >= imagen.length-1 ? 0 : codigo3+1; $("#visor3").attr("src", images_route + imagen[codigo3]); });
 
                 $("#send").click(function(){
-                    document.location='password.php?id='+<?php if(isset($_GET["id"])) echo "'".$_GET["id"]."'"; else echo "''"; ?>+'&cod='+codigo1+''+codigo2+''+codigo3;
+                    document.location='password.php?id='+<?php if(isset($_GET["id"])) echo "'".$_GET["id"]."'"; else echo "''"; ?>+'&cod='+codigo1+'-'+codigo2+'-'+codigo3;
                 });
 
             });
