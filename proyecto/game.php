@@ -23,10 +23,10 @@ $usu=$_SESSION["entry"];
     </HEAD>
     <BODY id="ninos">
         <div id="cabecera">
-            <p>EDUPEQUES Educaci&oacute;n Infantil <?php echo $usu;?></p>
+            <p>EDUPEQUES Educaci&oacute;n Infantil</p>
         </div>	  
         <div class="ninos">
-            <center><table style="padding:2%;">
+            <center><table style="padding:2%;" cellspacing=50>
                 <?php
 
 // obtenemos la edad recomendada del chaval a partir de su clase, no de su fecha de nacimiento
@@ -36,13 +36,12 @@ $ed = ($edad[0][0]==1 || $edad[0][0]==2) ? 3 : (($edad[0][0]==3 || $edad[0][0]==
 foreach($fsql->execute("SELECT categories.* FROM categories INNER JOIN games ON games.category = categories.entry WHERE games.age = ? GROUP BY categories.entry", array($ed)) as $categoria)
 {
     $i = 0;
-    echo "<tr><td colspan=5 align=center>".$categoria['name']."</td></tr>";
+    echo "<tr><td colspan=5 align=center><h2>".$categoria['name']."</h2></td></tr>";
     foreach($fsql->execute("SELECT * FROM games WHERE age = ? AND category = ?",array($ed, $categoria["entry"])) as $juego)
     {
 
         if($i%5==0){echo "</tr><tr>"; $i = 0; }
-        echo "<td><a href='".$juego['url']."'>".$juego['game']."</td>";
-        //<img src='".$juego['image']."' width=100 onClick='parent.location=\"".$juego['url']."\"' alt='".$juego["game"]."' title='".$juego["game"]."' class='imageFace, ninos'/>"
+        echo "<td align=center><a href='".$juego['url']."'><img height=100 src='.".$juego['image']."'/><br><a href='".$juego['url']."' style='text-decoration:none;color:#fff'>".$juego['game']."</td>";
         $i++;
     }
 

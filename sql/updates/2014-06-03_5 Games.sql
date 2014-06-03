@@ -1,0 +1,1 @@
+UPDATE `games` SET `image`='./images/sero.png' WHERE  `image`="";
