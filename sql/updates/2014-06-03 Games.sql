@@ -37,7 +37,7 @@ NULL ,  '6', '4', 'Letra L', '../minigames/abecedario/Lmayus.html', ''
 ), (
 NULL ,  '6', '4', 'Letra M', '../minigames/abecedario/Mmayus.html', ''
 ), (
-NULL ,  '6', '5', Tabla del Abacedario', '../minigames/abecedario/abecedarioTabla.html', ''
+NULL ,  '6', '5', 'Tabla del Abacedario', '../minigames/abecedario/abecedarioTabla.html', ''
 ), (
 NULL ,  '6', '5', 'Letra N', '../minigames/abecedario2/Nmayus.html', ''
 ), (
