@@ -1,0 +1,4 @@
+ALTER TABLE `alumns`
+	ALTER `pwd` DROP DEFAULT;
+ALTER TABLE `alumns`
+	CHANGE COLUMN `pwd` `pwd` VARCHAR(10) NOT NULL AFTER `photo`;
