@@ -60,4 +60,14 @@ NULL ,  '6', '5', 'Letra X', '../minigames/abecedario2/Xmayus.html', ''
 NULL ,  '6', '5', 'Letra Y', '../minigames/abecedario2/Ymayus.html', ''
 ), (
 NULL ,  '6', '5', 'Letra Z', '../minigames/abecedario2/Zmayus.html', ''
+), (
+NULL ,  '5', '5', 'Las Estaciones', '../minigames/estaciones/estaciones.html', ''
+), (
+NULL ,  '5', '5', 'Invierno', '../minigames/estaciones/elInvierno.html', ''
+), (
+NULL ,  '5', '5', 'Otoño', '../minigames/estaciones/elOtoño.html', ''
+), (
+NULL ,  '5', '5', 'Verano', '../minigames/estaciones/elVerano.html', ''
+), (
+NULL ,  '5', '5', 'Primavera', '../minigames/estaciones/laPrimavera.html', ''
 );
